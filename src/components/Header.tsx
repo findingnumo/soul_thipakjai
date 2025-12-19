@@ -24,21 +24,21 @@ export function Header() {
                 <nav className="flex items-center justify-end gap-6 md:gap-8">
                     <Link
                         href="/oracle"
-                        className={`px-8 py-2.5 rounded-full text-sm font-medium tracking-wide transition-all duration-200 ${pathname?.startsWith('/oracle')
+                        className={`inline-flex items-center justify-center !px-8 !py-2 rounded-full text-base font-medium tracking-wide transition-all duration-200 ${pathname?.startsWith('/oracle')
                             ? 'bg-[#134E4A] text-white shadow-md'
                             : 'text-gray-600 hover:bg-white hover:text-[#134E4A] hover:shadow-sm'
                             }`}
-                        style={{ fontFamily: 'var(--font-sans)' }}
+                        style={{ fontFamily: 'var(--font-sans)', padding: '10px 32px' }}
                     >
                         ทำนาย
                     </Link>
                     <Link
                         href="/blog"
-                        className={`px-8 py-2.5 rounded-full text-sm font-medium tracking-wide transition-all duration-200 ${pathname?.startsWith('/blog')
+                        className={`inline-flex items-center justify-center !px-8 !py-2 rounded-full text-base font-medium tracking-wide transition-all duration-200 ${pathname?.startsWith('/blog')
                             ? 'bg-[#134E4A] text-white shadow-md'
                             : 'text-gray-600 hover:bg-white hover:text-[#134E4A] hover:shadow-sm'
                             }`}
-                        style={{ fontFamily: 'var(--font-sans)' }}
+                        style={{ fontFamily: 'var(--font-sans)', padding: '10px 32px' }}
                     >
                         อ่านเล่น
                     </Link>

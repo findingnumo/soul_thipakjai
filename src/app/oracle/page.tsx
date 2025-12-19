@@ -305,136 +305,84 @@ function OraclePageContent() {
             <AnimatePresence>
                 {(state === 'revealing' || state === 'revealed') && currentCard && selectedCategory && (
                     <motion.div
-                        style={{
-                            position: 'fixed',
-                            inset: 0,
-                            zIndex: 40,
-                            backgroundColor: '#FDFBF7',
-                            overflowY: 'auto',
-                            paddingTop: '100px',
-                        }}
+                        className="fixed inset-0 z-40 bg-[#FDFBF7] flex flex-col h-[100dvh] overflow-hidden items-center"
+                        style={{ paddingTop: '80px' }}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                     >
-                        {/* Centered Container */}
-                        <div
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                minHeight: '100vh',
-                                padding: '24px 16px 160px 16px',
-                            }}
-                        >
-                            {/* Category Badge */}
+                        {/* 
+                            Center Everything Wrapper 
+                            - Added 'items-center' to parent above to force this wrapper to center horizontally
+                            - Added 'justify-between' to spacing
+                        */}
+                        <div className="flex-1 flex flex-col items-center justify-center gap-6 py-4 px-4 w-full max-w-lg h-full pb-8">
                             {categoryInfo && (
                                 <motion.div
-                                    style={{ textAlign: 'center', marginBottom: '16px' }}
+                                    className="shrink-0"
                                     initial={{ opacity: 0, y: -10 }}
                                     animate={{ opacity: 1, y: 0 }}
                                 >
-                                    <span style={{ fontSize: '14px', fontWeight: 500, color: '#0D7377' }}>
-                                        {categoryInfo.name_th}
-                                    </span>
+                                    <div
+                                        className="inline-flex items-center gap-2 !px-6 !py-2 rounded-full bg-white border border-neutral-200/60 shadow-sm"
+                                        style={{ padding: '8px 24px' }}
+                                    >
+                                        <span className="text-base font-bold !font-bold text-[#0D7377]">{categoryInfo.name_th}</span>
+                                    </div>
                                 </motion.div>
                             )}
 
-                            {/* Card Container with explicit dimensions */}
                             <motion.div
-                                style={{
-                                    width: '320px',
-                                    height: '480px',
-                                    margin: '0 auto',
-                                    maxWidth: '90vw',
-                                }}
+                                className="w-full flex items-center justify-center min-h-0 py-2"
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 0.2 }}
                             >
-                                <OracleCard
-                                    card={currentCard}
-                                    category={selectedCategory}
-                                    isRevealed={state === 'revealed'}
-                                    onReveal={revealCard}
-                                />
+                                <div className="w-full max-w-[280px] sm:max-w-[320px] h-auto max-h-[45vh] aspect-[3/4]">
+                                    <OracleCard
+                                        card={currentCard}
+                                        category={selectedCategory}
+                                        isRevealed={state === 'revealed'}
+                                        onReveal={revealCard}
+                                    />
+                                </div>
                             </motion.div>
 
-                            {/* Reflection Text */}
-                            <motion.p
-                                style={{
-                                    marginTop: '64px',
-                                    textAlign: 'center',
-                                    fontSize: '14px',
-                                    color: 'rgba(68, 64, 60, 0.6)',
-                                    fontWeight: 300,
-                                    maxWidth: '320px',
-                                    lineHeight: '1.8',
-                                }}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 1.0 }}
-                            >
-                                ลองหายใจลึกๆ แล้วคิดตามข้อความนี้สักครู่...<br />
-                                <span style={{ color: '#0D7377', fontWeight: 500 }}>
-                                    บางทีคำตอบก็อยู่ในใจเราเองแล้ว
-                                </span>
-                            </motion.p>
-
-                            {/* Large CTA Buttons */}
-                            <motion.div
-                                style={{
-                                    marginTop: '48px',
-                                    display: 'flex',
-                                    flexDirection: 'row',
-                                    alignItems: 'center',
-                                    gap: '16px',
-                                    flexWrap: 'wrap',
-                                    justifyContent: 'center',
-                                    maxWidth: '600px',
-                                }}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 1.2 }}
-                            >
-                                <button
-                                    onClick={reset}
-                                    style={{
-                                        padding: '16px 40px',
-                                        fontSize: '16px',
-                                        fontWeight: 600,
-                                        color: 'white',
-                                        backgroundColor: '#0D7377',
-                                        borderRadius: '16px',
-                                        border: 'none',
-                                        cursor: 'pointer',
-                                        flex: '1',
-                                        minWidth: '200px',
-                                        boxShadow: '0 4px 12px rgba(13, 115, 119, 0.2)',
-                                    }}
+                            {/* Footer Wrapper - Centered & Z-Indexed */}
+                            <div className="shrink-0 w-full relative z-10 flex flex-col items-center gap-6 mt-6">
+                                <motion.div
+                                    className="text-center px-4"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ delay: 1.0 }}
                                 >
-                                    ✨ เปิดไพ่ใบใหม่
-                                </button>
+                                    <p className="text-sm text-neutral-500 font-light leading-relaxed">
+                                        ลองหายใจลึกๆ แล้วคิดตามข้อความนี้สักครู่...<br />
+                                        <span className="text-[#0D7377] font-medium">คำตอบอยู่ที่ใจของเธอเอง</span>
+                                    </p>
+                                </motion.div>
 
-                                <Link
-                                    href="/blog"
-                                    style={{
-                                        padding: '16px 40px',
-                                        fontSize: '16px',
-                                        fontWeight: 600,
-                                        color: '#0D7377',
-                                        backgroundColor: 'rgba(13, 115, 119, 0.1)',
-                                        borderRadius: '16px',
-                                        textDecoration: 'none',
-                                        flex: '1',
-                                        minWidth: '200px',
-                                        textAlign: 'center',
-                                        border: '1px solid rgba(13, 115, 119, 0.2)',
-                                    }}
+                                <motion.div
+                                    className="w-full max-w-[320px] mx-auto grid grid-cols-2 gap-3"
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 1.2 }}
                                 >
-                                    📖 อ่านบทความเพิ่มเติม
-                                </Link>
-                            </motion.div>
+                                    <button
+                                        onClick={reset}
+                                        className="w-full h-12 bg-[#0D7377] text-white text-base font-semibold rounded-2xl shadow-lg shadow-[#0D7377]/20 hover:bg-[#0D7377]/90 active:scale-95 transition-all flex items-center justify-center gap-2"
+                                    >
+                                        ✨ เปิดไพ่ใบใหม่
+                                    </button>
+
+                                    <Link
+                                        href="/blog"
+                                        className="w-full h-12 bg-white text-[#0D7377] text-base font-semibold rounded-2xl border border-[#0D7377]/20 hover:bg-[#0D7377]/5 transition-all flex items-center justify-center gap-2"
+                                    >
+                                        📖 อ่านบทความ
+                                    </Link>
+                                </motion.div>
+                            </div>
                         </div>
                     </motion.div>
                 )}

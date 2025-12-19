@@ -1,19 +1,16 @@
 'use client';
 
-import { Header } from './Header';
 import { ReactNode } from 'react';
 
 interface AppLayoutProps {
   children: ReactNode;
   showFooter?: boolean;
-  customHeader?: ReactNode;
   isFullScreen?: boolean; // For oracle overlays
 }
 
 export function AppLayout({
   children,
   showFooter = true,
-  customHeader,
   isFullScreen = false
 }: AppLayoutProps) {
 
@@ -24,11 +21,8 @@ export function AppLayout({
 
   return (
     <div className="h-screen flex flex-col overflow-hidden bg-[#FDFBF7]">
-      {/* Header - Fixed height */}
-      {customHeader || <Header />}
-
       {/* Main Content - Flex grow, internally scrollable */}
-      <main className="flex-1 overflow-y-auto overflow-x-hidden">
+      <main className="flex-1 overflow-y-auto overflow-x-hidden pt-16">
         {children}
       </main>
 

@@ -3,6 +3,7 @@ import { Prompt, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { Header } from "@/components/Header";
 
 // Primary Thai Font - Modern & Looped (Friendly)
 const prompt = Prompt({
@@ -115,6 +116,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         >
           ข้ามไปยังเนื้อหาหลัก
         </a>
+
+        {/* Global Header - Visible on all pages */}
+        <Header />
 
         <div id="main-content">
           {children}

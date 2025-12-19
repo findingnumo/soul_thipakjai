@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import { Prompt, DM_Serif_Display } from "next/font/google";
+import { Prompt } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
-// Thai-friendly font - Prompt (for body text)
+// Primary Thai Font - Modern & Looped (Friendly)
 const prompt = Prompt({
-  variable: "--font-prompt",
+  variable: "--font-body",
   subsets: ["latin", "thai"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
-// Elegant serif font for headings
-const dmSerif = DM_Serif_Display({
-  variable: "--font-serif",
-  subsets: ["latin"],
-  weight: ["400"],
+// Use Prompt for headings too for consistency in this design system
+const promptHeading = Prompt({
+  variable: "--font-heading",
+  subsets: ["latin", "thai"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
@@ -85,7 +85,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </Script>
         {/* End Google Tag Manager */}
       </head>
-      <body className={`${prompt.variable} ${dmSerif.variable} antialiased`}>
+      <body className={`${prompt.variable} ${promptHeading.variable} antialiased`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -115,3 +115,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </html>
   );
 }
+

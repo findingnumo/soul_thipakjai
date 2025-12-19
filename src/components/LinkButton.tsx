@@ -45,20 +45,20 @@ export function LinkButton({
 
     const variantStyles = {
         primary: `
-      bg-brand-teal text-white
-      hover:bg-brand-teal-light hover:-translate-y-0.5
-      hover:shadow-lg hover:shadow-brand-teal/30
-      focus:ring-brand-teal
+      bg-indigo-600 text-white shadow-md shadow-indigo-200
+      hover:bg-indigo-700 hover:-translate-y-0.5
+      hover:shadow-lg hover:shadow-indigo-300
+      focus:ring-indigo-600
     `,
         secondary: `
-      bg-white text-brand-teal border-2 border-brand-teal
-      hover:bg-brand-teal hover:text-white hover:-translate-y-0.5
-      focus:ring-brand-teal
+      bg-white text-indigo-600 border-2 border-indigo-600
+      hover:bg-indigo-600 hover:text-white hover:-translate-y-0.5
+      focus:ring-indigo-600
     `,
         ghost: `
-      bg-transparent text-text-main
-      hover:bg-black/5 
-      focus:ring-gray-400
+      bg-transparent text-neutral-600
+      hover:bg-neutral-100 hover:text-neutral-900
+      focus:ring-neutral-400
     `,
     };
 

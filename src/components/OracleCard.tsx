@@ -76,38 +76,64 @@ export function OracleCard({ card, category, isRevealed, onReveal }: OracleCardP
                     </div>
                 </motion.div>
 
-                {/* Card Front (Result) */}
+                {/* Card Front (Result - Physical Card Look) */}
                 <motion.div
-                    className={`absolute inset-0 rounded-3xl ${gradientClass} shadow-2xl backface-hidden`}
+                    className="absolute inset-0 rounded-3xl bg-white shadow-2xl backface-hidden"
                     style={{
                         backfaceVisibility: 'hidden',
                         transform: 'rotateY(180deg)',
                     }}
                 >
                     {card && (
-                        <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-white">
-                            {/* Decorative border */}
-                            <div className="absolute inset-4 border-2 border-white/30 rounded-2xl" />
+                        <div className="absolute inset-0 flex flex-col items-center justify-between p-6 text-stone-800">
+                            {/* Subtle Aura Background Watermark */}
+                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden rounded-3xl">
+                                <motion.img
+                                    src={`/assets/auras/${category.charAt(0).toUpperCase() + category.slice(1)}.png`}
+                                    alt=""
+                                    className="w-[120%] h-[120%] object-cover opacity-10 blur-xl"
+                                    animate={{ rotate: 360 }}
+                                    transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+                                    style={{
+                                        maskImage: 'radial-gradient(circle, black 40%, transparent 70%)',
+                                        WebkitMaskImage: 'radial-gradient(circle, black 40%, transparent 70%)'
+                                    }}
+                                />
+                            </div>
 
-                            {/* Card content */}
-                            <div className="relative z-10 text-center">
-                                <motion.h3
-                                    className="text-2xl font-bold mb-4"
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={isRevealed ? { opacity: 1, y: 0 } : {}}
-                                    transition={{ delay: 0.5, duration: 0.5 }}
-                                >
-                                    {card.message_title}
-                                </motion.h3>
+                            {/* Double Border Decoration - Clean & Modern */}
+                            <div className="absolute inset-3 rounded-[20px] border border-neutral-100 pointer-events-none z-20" />
 
-                                <motion.p
-                                    className="text-lg leading-relaxed opacity-90"
-                                    initial={{ opacity: 0 }}
-                                    animate={isRevealed ? { opacity: 1 } : {}}
-                                    transition={{ delay: 0.7, duration: 0.5 }}
+                            {/* Middle: The Message */}
+                            <div className="flex-1 flex flex-col items-center justify-center text-center relative z-10 px-4">
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    animate={isRevealed ? { opacity: 1, scale: 1 } : {}}
+                                    transition={{ delay: 0.3, duration: 0.6 }}
+                                    className="flex flex-col gap-6"
                                 >
-                                    {card.message_body}
-                                </motion.p>
+                                    <span className="text-4xl">❝</span>
+
+                                    <h3
+                                        className="text-2xl sm:text-3xl font-bold leading-tight tracking-tight text-neutral-800"
+                                        style={{ fontFamily: 'var(--font-heading)' }}
+                                    >
+                                        {card.message_title}
+                                    </h3>
+
+                                    <p
+                                        className="text-lg leading-relaxed text-neutral-600 font-light"
+                                    >
+                                        {card.message_body}
+                                    </p>
+
+                                    <span className="text-4xl rotate-180">❝</span>
+                                </motion.div>
+                            </div>
+
+                            {/* Bottom: Footer Decoration */}
+                            <div className="mb-6 opacity-30 z-10">
+                                <span className="text-[10px] tracking-[0.2em] uppercase text-neutral-400">Heart's Haven</span>
                             </div>
                         </div>
                     )}

@@ -36,17 +36,18 @@ export default function BlogPage() {
     const regularPosts = posts.filter(p => !p.featured);
 
     return (
-        <div className="min-h-screen bg-[#FDF9F3]">
+
+        <div className="min-h-screen bg-neutral-50">
             {/* Header - Matching Main Page */}
-            <header className="fixed top-0 left-0 right-0 z-40 bg-[#FDF9F3]/95 backdrop-blur-lg border-b border-stone-200/30">
-                <div className="max-w-4xl mx-auto px-4 flex items-center justify-between h-16">
-                    <Link href="/" className="flex items-center gap-3">
-                        <span className="text-xl">🏡</span>
+            <header className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-b border-neutral-100 shadow-sm">
+                <div className="max-w-5xl mx-auto px-4 flex items-center justify-between h-16">
+                    <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                        <span className="text-2xl">🏡</span>
                         <div>
-                            <span className="text-lg font-medium text-stone-700" style={{ fontFamily: 'var(--font-serif)' }}>
+                            <span className="text-lg font-bold text-neutral-800" style={{ fontFamily: 'var(--font-heading)' }}>
                                 ที่พักใจ
                             </span>
-                            <span className="text-xs text-stone-500 block -mt-0.5">Soul Spectrum</span>
+                            <span className="text-xs text-neutral-500 block -mt-0.5 tracking-wide">Soul Spectrum</span>
                         </div>
                     </Link>
                     <MothershipLink />
@@ -54,62 +55,65 @@ export default function BlogPage() {
             </header>
 
             {/* Main Content */}
-            <main className="pt-24 pb-16 px-4">
-                <div className="max-w-4xl mx-auto">
+            <main className="pt-28 pb-20 px-4">
+                <div className="max-w-5xl mx-auto">
                     {/* Hero */}
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-16">
                         {/* Welcome Badge */}
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F0F4F2] border border-[#C1D1C8] mb-6">
-                            <span className="text-sm text-[#5B7B6F]">📚 องค์ความรู้</span>
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 mb-6">
+                            <span className="text-sm font-medium text-indigo-600">📚 คลังบทความฮีลใจ</span>
                         </div>
-                        <h1 className="text-3xl sm:text-4xl text-stone-800 mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
-                            บทความฮีลใจ
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6 tracking-tight" style={{ fontFamily: 'var(--font-heading)' }}>
+                            เติมพลังใจในวันที่อ่อนล้า
                         </h1>
-                        <p className="text-stone-500 text-lg max-w-2xl mx-auto leading-relaxed">
-                            รวมบทความดีๆ ที่จะช่วยให้คุณรู้สึกดีขึ้น
+                        <p className="text-neutral-500 text-lg max-w-2xl mx-auto leading-relaxed font-light">
+                            รวบรวมบทความคิดดีๆ เพื่อสุขภาพใจ การดูแลตัวเอง<br className="hidden sm:block" />
+                            และการเติบโตอย่างมีความสุข
                         </p>
                     </div>
 
                     {/* Featured Posts */}
                     {featuredPosts.length > 0 && (
-                        <section className="mb-12">
-                            <h2 className="text-xl font-semibold text-text-main mb-6 flex items-center gap-2">
-                                ⭐ บทความแนะนำ
-                            </h2>
-                            <div className="grid md:grid-cols-2 gap-6">
+                        <section className="mb-16">
+                            <div className="flex items-center gap-3 mb-8">
+                                <span className="text-xl">⭐</span>
+                                <h2 className="text-2xl font-bold text-neutral-800" style={{ fontFamily: 'var(--font-heading)' }}>
+                                    บทความแนะนำ
+                                </h2>
+                            </div>
+                            <div className="grid md:grid-cols-2 gap-8">
                                 {featuredPosts.map(post => {
                                     const categoryInfo = getCategoryInfo(post.category);
                                     return (
                                         <Link
                                             key={post.slug}
                                             href={`/blog/${post.slug}`}
-                                            className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100"
+                                            className="group block bg-white rounded-3xl overflow-hidden shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300 border border-neutral-100 hover:-translate-y-1"
                                         >
-                                            {/* Gradient Header */}
-                                            <div className={`h-2 ${post.relatedOracleCategory ? `gradient-${post.relatedOracleCategory}` : 'bg-gradient-to-r from-teal-400 to-cyan-400'}`} />
-
-                                            <div className="p-6">
+                                            <div className="p-8">
                                                 {/* Category */}
                                                 {categoryInfo && (
-                                                    <span className={`text-sm font-medium ${categoryInfo.color}`}>
+                                                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-4 ${categoryInfo.color} bg-opacity-10`}>
                                                         {categoryInfo.name_th}
                                                     </span>
                                                 )}
 
                                                 {/* Title */}
-                                                <h3 className="text-xl font-bold text-text-main mt-2 mb-3 group-hover:text-teal-600 transition-colors">
+                                                <h3 className="text-2xl font-bold text-neutral-800 mb-3 group-hover:text-indigo-600 transition-colors tracking-tight" style={{ fontFamily: 'var(--font-heading)' }}>
                                                     {post.title}
                                                 </h3>
 
                                                 {/* Description */}
-                                                <p className="text-text-secondary mb-4 line-clamp-2">
+                                                <p className="text-neutral-500 mb-6 line-clamp-2 leading-relaxed font-light">
                                                     {post.description}
                                                 </p>
 
                                                 {/* Meta */}
-                                                <div className="flex items-center justify-between text-sm text-text-light">
-                                                    <span>{formatDate(post.publishDate)}</span>
-                                                    <span>อ่าน {post.readingTime} นาที</span>
+                                                <div className="flex items-center justify-between text-sm text-neutral-400 border-t border-neutral-100 pt-4">
+                                                    <div className="flex items-center gap-2">
+                                                        <span>🗓️ {formatDate(post.publishDate)}</span>
+                                                    </div>
+                                                    <span className="flex items-center gap-1">⏱️ อ่าน {post.readingTime} นาที</span>
                                                 </div>
                                             </div>
                                         </Link>
@@ -121,22 +125,25 @@ export default function BlogPage() {
 
                     {/* All Posts */}
                     <section>
-                        <h2 className="text-xl font-semibold text-text-main mb-6 flex items-center gap-2">
-                            📖 บทความทั้งหมด
-                        </h2>
-                        <div className="space-y-4">
+                        <div className="flex items-center gap-3 mb-8">
+                            <span className="text-xl">📖</span>
+                            <h2 className="text-2xl font-bold text-neutral-800" style={{ fontFamily: 'var(--font-heading)' }}>
+                                บทความทั้งหมด
+                            </h2>
+                        </div>
+                        <div className="grid gap-4">
                             {regularPosts.map(post => {
                                 const categoryInfo = getCategoryInfo(post.category);
                                 return (
                                     <Link
                                         key={post.slug}
                                         href={`/blog/${post.slug}`}
-                                        className="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
+                                        className="group block bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-100 hover:border-indigo-100"
                                     >
-                                        <div className="flex items-start gap-4">
+                                        <div className="flex items-start gap-6">
                                             {/* Icon based on category */}
-                                            <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${post.relatedOracleCategory ? `gradient-${post.relatedOracleCategory}` : 'bg-gray-200'}`}>
-                                                <span className="text-2xl">
+                                            <div className={`w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 text-3xl shadow-inner ${post.relatedOracleCategory ? `bg-gradient-to-br from-indigo-50 to-purple-50` : 'bg-gray-50'}`}>
+                                                <span>
                                                     {post.category === 'mental-health' ? '🧠' :
                                                         post.category === 'self-care' ? '💆' :
                                                             post.category === 'relationships' ? '💕' :
@@ -145,30 +152,28 @@ export default function BlogPage() {
                                                 </span>
                                             </div>
 
-                                            <div className="flex-1 min-w-0">
-                                                {/* Category */}
-                                                {categoryInfo && (
-                                                    <span className={`text-sm font-medium ${categoryInfo.color}`}>
-                                                        {categoryInfo.name_th}
-                                                    </span>
-                                                )}
+                                            <div className="flex-1 min-w-0 py-1">
+                                                <div className="flex items-center gap-3 mb-2">
+                                                    {categoryInfo && (
+                                                        <span className="text-xs font-semibold text-indigo-500 uppercase tracking-wider">
+                                                            {categoryInfo.name_th}
+                                                        </span>
+                                                    )}
+                                                    <span className="text-neutral-300 text-xs">•</span>
+                                                    <span className="text-xs text-neutral-400">{formatDate(post.publishDate)}</span>
+                                                </div>
 
-                                                {/* Title */}
-                                                <h3 className="text-lg font-bold text-text-main group-hover:text-teal-600 transition-colors line-clamp-1">
+                                                <h3 className="text-lg font-bold text-neutral-800 group-hover:text-indigo-600 transition-colors line-clamp-1 mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
                                                     {post.title}
                                                 </h3>
 
-                                                {/* Description */}
-                                                <p className="text-text-secondary text-sm line-clamp-1 mt-1">
+                                                <p className="text-neutral-500 text-sm line-clamp-1 font-light">
                                                     {post.description}
                                                 </p>
+                                            </div>
 
-                                                {/* Meta */}
-                                                <div className="flex items-center gap-4 text-sm text-text-light mt-2">
-                                                    <span>{formatDate(post.publishDate)}</span>
-                                                    <span>·</span>
-                                                    <span>อ่าน {post.readingTime} นาที</span>
-                                                </div>
+                                            <div className="self-center pl-4 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300 text-indigo-400">
+                                                →
                                             </div>
                                         </div>
                                     </Link>
@@ -178,33 +183,33 @@ export default function BlogPage() {
                     </section>
 
                     {/* CTA */}
-                    <section className="mt-16 text-center bg-gradient-to-r from-[#F0F4F2] to-[#E8DFD2] rounded-3xl p-8">
-                        <h2 className="text-xl text-stone-800 mb-3" style={{ fontFamily: 'var(--font-serif)' }}>
-                            ลองเปิดไพ่รับคำตอบจากใจ 🔮
+                    <section className="mt-20 text-center bg-gradient-to-br from-indigo-600 to-purple-700 rounded-[2rem] p-10 sm:p-14 text-white shadow-2xl shadow-indigo-200">
+                        <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
+                            ยังไม่แน่ใจว่าจะเริ่มตรงไหน? 🔮
                         </h2>
-                        <p className="text-stone-500 mb-6">
-                            นอกจากบทความ ลองเปิดไพ่ Oracle ดูสิ่งที่ใจคุณต้องการได้
+                        <p className="text-indigo-100 mb-8 text-lg opacity-90 font-light">
+                            ลองเปิดไพ่ Oracle เพื่อค้นหาคำตอบที่ใจคุณต้องการในตอนนี้
                         </p>
                         <Link
                             href="/"
-                            className="inline-block bg-[#5B7B6F] text-white font-medium px-6 py-3 rounded-2xl hover:bg-[#4A6A5E] transition-colors shadow-md"
+                            className="inline-flex items-center gap-2 bg-white text-indigo-700 font-semibold px-8 py-4 rounded-full hover:bg-indigo-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
                         >
-                            เปิดไพ่เลย →
+                            <span>✨</span> เปิดไพ่ทันที
                         </Link>
                     </section>
                 </div>
             </main>
 
             {/* Footer */}
-            <footer className="border-t border-stone-200/30 py-10 px-4 text-center bg-[#F0EBE3]">
-                <p className="text-sm text-stone-600 mb-2">
+            <footer className="border-t border-neutral-100 py-12 px-4 text-center bg-white">
+                <p className="text-base font-medium text-neutral-600 mb-2">
                     🏡 ที่พักใจ (Heart&apos;s Haven)
                 </p>
-                <p className="text-xs text-stone-500 italic mb-4">
+                <p className="text-sm text-neutral-400 font-light mb-6">
                     &quot;พื้นที่ปลอดภัยในหน้าจอ สำหรับวันที่หัวใจต้องการคำตอบ&quot;
                 </p>
-                <p className="text-xs text-stone-400">
-                    Soul Spectrum — <a href="https://thipakjai.com" className="text-[#5B7B6F] hover:underline">thipakjai.com</a>
+                <p className="text-xs text-neutral-300">
+                    Soul Spectrum — <a href="https://thipakjai.com" className="text-indigo-400 hover:underline">thipakjai.com</a>
                 </p>
             </footer>
         </div>

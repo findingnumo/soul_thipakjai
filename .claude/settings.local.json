@@ -18,7 +18,8 @@
       "Bash(tasklist:*)",
       "Bash(powershell -Command \"if (Test-Path .next) { Remove-Item -Recurse -Force .next }\")",
       "Bash(powershell -Command \"if (Test-Path .next) { Remove-Item -Recurse -Force .next }; Write-Host ''Cache cleared''\")",
-      "Bash(timeout /t 3)"
+      "Bash(timeout /t 3)",
+      "Bash(powershell -Command \"Get-Content ''C:\\Users\\anek_\\.claude\\plans\\effervescent-forging-prism.md'' -Head 272 | Set-Content ''C:\\Users\\anek_\\.claude\\plans\\effervescent-forging-prism.md''\")"
     ],
     "deny": [],
     "ask": []

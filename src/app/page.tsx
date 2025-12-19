@@ -19,7 +19,7 @@ function SoulCard({
     delay: number;
 }) {
     return (
-        <Link href={href} className="group relative z-10 block">
+        <Link href={href} className="group relative z-10 block flex-shrink-0 snap-center">
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -84,10 +84,10 @@ export default function Home() {
             />
 
             {/* Main Content - now h-full and centered */}
-            <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4 font-sans text-[#44403C] selection:bg-[#0D7377]/10">
+            <div className="relative z-10 w-full h-full flex flex-col items-center justify-center font-sans text-[#44403C] selection:bg-[#0D7377]/10">
 
                 {/* Header Section - reduced margin */}
-                <div className="text-center max-w-3xl mx-auto mb-12">
+                <div className="text-center max-w-3xl mx-auto mb-12 px-4">
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -116,8 +116,8 @@ export default function Home() {
                     </motion.p>
                 </div>
 
-                {/* Card Deck - adjusted gap */}
-                <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 w-full max-w-[1200px]">
+                {/* Card Deck - Carousel on Mobile, Grid on Desktop */}
+                <div className="w-full max-w-[1200px] flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory px-8 pb-4 md:flex-wrap md:justify-center md:gap-8 md:overflow-visible md:pb-0 md:px-0">
                     <SoulCard
                         href="/oracle?category=love"
                         title="ความรัก"

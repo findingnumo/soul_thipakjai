@@ -316,7 +316,7 @@ function OraclePageContent() {
                             - Added 'items-center' to parent above to force this wrapper to center horizontally
                             - Added 'justify-between' to spacing
                         */}
-                        <div className="flex-1 flex flex-col items-center justify-center gap-6 py-4 px-4 w-full max-w-lg h-full pb-8">
+                        <div className="flex-1 flex flex-col items-center justify-center gap-8 py-4 px-4 w-full max-w-lg h-full pb-8">
                             {categoryInfo && (
                                 <motion.div
                                     className="shrink-0"
@@ -333,12 +333,18 @@ function OraclePageContent() {
                             )}
 
                             <motion.div
-                                className="w-full flex items-center justify-center min-h-0 py-2"
+                                className="w-full flex items-center justify-center min-h-0 py-2 shrink-0"
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 0.2 }}
                             >
-                                <div className="w-full max-w-[280px] sm:max-w-[320px] h-auto max-h-[45vh] aspect-[3/4]">
+                                <div
+                                    className="w-full h-auto aspect-[3/4] mx-auto"
+                                    style={{
+                                        maxHeight: '45vh',
+                                        maxWidth: 'min(280px, calc(45vh * 0.75))'
+                                    }}
+                                >
                                     <OracleCard
                                         card={currentCard}
                                         category={selectedCategory}
@@ -348,8 +354,8 @@ function OraclePageContent() {
                                 </div>
                             </motion.div>
 
-                            {/* Footer Wrapper - Centered & Z-Indexed */}
-                            <div className="shrink-0 w-full relative z-10 flex flex-col items-center gap-6 mt-6">
+                            {/* Footer Wrapper - Clean Stack, No Negative Margins */}
+                            <div className="shrink-0 w-full relative z-10 flex flex-col items-center gap-6">
                                 <motion.div
                                     className="text-center px-4"
                                     initial={{ opacity: 0 }}

@@ -4,6 +4,7 @@ import blogPosts from '@/data/blog_posts.json';
 import { BlogPost } from '@/types/blog';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import { MothershipLink } from '@/components/LinkButton';
+import { AppLayout } from '@/components/AppLayout';
 
 export const metadata: Metadata = {
     title: 'บทความฮีลใจ | Soul Spectrum',
@@ -36,26 +37,9 @@ export default function BlogPage() {
     const regularPosts = posts.filter(p => !p.featured);
 
     return (
-
-        <div className="min-h-screen bg-neutral-50">
-            {/* Header - Matching Main Page */}
-            <header className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-b border-neutral-100 shadow-sm">
-                <div className="max-w-5xl mx-auto px-4 flex items-center justify-between h-16">
-                    <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-                        <span className="text-2xl">🏡</span>
-                        <div>
-                            <span className="text-lg font-bold text-neutral-800" style={{ fontFamily: 'var(--font-heading)' }}>
-                                ที่พักใจ
-                            </span>
-                            <span className="text-xs text-neutral-500 block -mt-0.5 tracking-wide">Soul Spectrum</span>
-                        </div>
-                    </Link>
-                    <MothershipLink />
-                </div>
-            </header>
-
-            {/* Main Content */}
-            <main className="px-4" style={{ paddingTop: '90px', paddingBottom: '90px' }}>
+        <AppLayout showFooter={true}>
+            {/* Main Content - scrollable */}
+            <div className="px-4 py-16 bg-neutral-50">
                 <div className="max-w-5xl mx-auto">
                     {/* Hero */}
                     <div className="text-center mb-16">
@@ -198,20 +182,7 @@ export default function BlogPage() {
                         </Link>
                     </section>
                 </div>
-            </main>
-
-            {/* Footer */}
-            <footer className="border-t border-neutral-100 py-12 px-4 text-center bg-white">
-                <p className="text-base font-medium text-neutral-600 mb-2">
-                    🏡 ที่พักใจ (Heart&apos;s Haven)
-                </p>
-                <p className="text-sm text-neutral-400 font-light mb-6">
-                    &quot;พื้นที่ปลอดภัยในหน้าจอ สำหรับวันที่หัวใจต้องการคำตอบ&quot;
-                </p>
-                <p className="text-xs text-neutral-300">
-                    Soul Spectrum — <a href="https://thipakjai.com" className="text-indigo-400 hover:underline">thipakjai.com</a>
-                </p>
-            </footer>
-        </div>
+            </div>
+        </AppLayout>
     );
 }

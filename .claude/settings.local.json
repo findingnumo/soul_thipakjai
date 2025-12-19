@@ -17,7 +17,8 @@
       "Bash(git restore:*)",
       "Bash(tasklist:*)",
       "Bash(powershell -Command \"if (Test-Path .next) { Remove-Item -Recurse -Force .next }\")",
-      "Bash(powershell -Command \"if (Test-Path .next) { Remove-Item -Recurse -Force .next }; Write-Host ''Cache cleared''\")"
+      "Bash(powershell -Command \"if (Test-Path .next) { Remove-Item -Recurse -Force .next }; Write-Host ''Cache cleared''\")",
+      "Bash(timeout /t 3)"
     ],
     "deny": [],
     "ask": []

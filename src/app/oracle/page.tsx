@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import { useEffect, Suspense } from 'react';
 import Link from 'next/link';
-import { Header } from '@/components/Header';
+import { AppLayout } from '@/components/AppLayout';
 
 // Inline Icons
 const SparklesIcon = () => (
@@ -119,12 +119,10 @@ function OraclePageContent() {
     }, [initialCategory, selectedCategory, state, selectCategory, startRitual]);
 
     const categoryInfo = selectedCategory ? getCategoryInfo(selectedCategory) : null;
+    const isFullScreen = state !== 'idle';
 
     return (
-        <div className="min-h-screen bg-[#FDFBF7] flex flex-col font-sans text-[#44403C] relative overflow-x-hidden selection:bg-[#0D7377]/10">
-            {/* Header */}
-            <Header />
-
+        <AppLayout isFullScreen={isFullScreen} showFooter={false}>
             {/* Background Noise Texture */}
             <div
                 className="fixed inset-0 pointer-events-none opacity-[0.03] z-0"
@@ -133,59 +131,56 @@ function OraclePageContent() {
                 }}
             />
 
-            {/* Main Content */}
-            <main className="relative z-10 w-full min-h-screen flex flex-col items-center justify-center px-4" style={{ paddingTop: '150px', paddingBottom: '90px' }}>
+            {/* Idle State - Category Selection */}
+            <AnimatePresence mode="wait">
+                {state === 'idle' && (
+                    <motion.div
+                        className="w-full h-full flex flex-col items-center justify-center px-4 font-sans text-[#44403C] selection:bg-[#0D7377]/10"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        {/* Header Section */}
+                        <div className="text-center max-w-3xl mx-auto mb-12">
+                            <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 1 }}
+                                className="text-[#0D7377] text-xs md:text-sm tracking-[0.25em] uppercase mb-4 opacity-70"
+                            >
+                                Soul Spectrum
+                            </motion.p>
 
-                {/* Idle State - Category Selection */}
-                <AnimatePresence mode="wait">
-                    {state === 'idle' && (
-                        <motion.div
-                            className="w-full max-w-5xl mx-auto flex flex-col items-center"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            {/* Header Section */}
-                            <div className="text-center max-w-3xl mx-auto" style={{ marginBottom: '90px' }}>
-                                <motion.p
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 1 }}
-                                    className="text-[#0D7377] text-xs md:text-sm tracking-[0.25em] uppercase mb-4 opacity-70"
-                                >
-                                    Soul Spectrum
-                                </motion.p>
+                            <motion.h1
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, delay: 0.2 }}
+                                className="text-3xl md:text-5xl lg:text-6xl font-normal leading-tight mb-8 text-[#2A2826]"
+                            >
+                                ตอนนี้เรื่องไหนที่เธออยากจะหาคำตอบ
+                            </motion.h1>
+                        </div>
 
-                                <motion.h1
-                                    initial={{ opacity: 0, y: 10 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, delay: 0.2 }}
-                                    className="text-3xl md:text-5xl lg:text-6xl font-normal leading-tight mb-8 text-[#2A2826]"
-                                >
-                                    ตอนนี้เรื่องไหนที่เธออยากจะหาคำตอบ
-                                </motion.h1>
-                            </div>
-
-                            {/* Category Cards Grid */}
-                            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-                                {categories.map((cat, index) => (
-                                    <CategoryCard
-                                        key={cat.id}
-                                        category={cat.id}
-                                        title={cat.title}
-                                        imagePath={cat.imagePath}
-                                        onClick={() => {
-                                            selectCategory(cat.id as any);
-                                            setTimeout(() => startRitual(), 300);
-                                        }}
-                                        delay={0.4 + index * 0.1}
-                                    />
-                                ))}
-                            </div>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
+                        {/* Category Cards Grid */}
+                        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
+                            {categories.map((cat, index) => (
+                                <CategoryCard
+                                    key={cat.id}
+                                    category={cat.id}
+                                    title={cat.title}
+                                    imagePath={cat.imagePath}
+                                    onClick={() => {
+                                        selectCategory(cat.id as any);
+                                        setTimeout(() => startRitual(), 300);
+                                    }}
+                                    delay={0.4 + index * 0.1}
+                                />
+                            ))}
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
 
                 {/* Ritual State - Meditation Space */}
                 <AnimatePresence>
@@ -443,9 +438,7 @@ function OraclePageContent() {
                         </motion.div>
                     )}
                 </AnimatePresence>
-            </main>
-
-        </div>
+        </AppLayout>
     );
 }
 

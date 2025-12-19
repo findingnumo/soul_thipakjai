@@ -6,6 +6,7 @@ import { BlogPost } from '@/types/blog';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import { MothershipLink } from '@/components/LinkButton';
 import { CATEGORIES } from '@/types/oracle';
+import { AppLayout } from '@/components/AppLayout';
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -139,19 +140,10 @@ export default async function BlogPostPage({ params }: Props) {
         .slice(0, 2);
 
     return (
-        <div className="min-h-screen bg-aura-mesh">
-            {/* Header */}
-            <header className="fixed top-0 left-0 right-0 z-40 bg-white/70 backdrop-blur-xl border-b border-white/50">
-                <div className="max-w-4xl mx-auto px-4 flex items-center justify-between h-16">
-                    <Link href="/" className="flex items-center gap-2">
-                        <span className="font-light text-lg text-teal-800 tracking-wide">Soul Spectrum</span>
-                    </Link>
-                    <MothershipLink />
-                </div>
-            </header>
-
-            {/* Article */}
-            <article className="px-4 relative z-10" style={{ paddingTop: '90px', paddingBottom: '90px' }}>
+        <AppLayout showFooter={false}>
+            <div className="bg-aura-mesh">
+                {/* Article */}
+                <article className="px-4 py-16 relative z-10">
                 <div className="max-w-2xl mx-auto">
                     {/* Breadcrumb */}
                     <nav className="mb-6">
@@ -236,39 +228,40 @@ export default async function BlogPostPage({ params }: Props) {
                 </section>
             )}
 
-            {/* Mothership CTA - Bottom Section */}
-            <section className="py-12 px-4 bg-gradient-to-br from-teal-600 to-cyan-600 text-white relative z-10">
-                <div className="max-w-xl mx-auto text-center">
-                    <h2 className="text-xl font-semibold mb-3">
-                        แวะมาที่พักใจ
-                    </h2>
-                    <p className="text-white/80 mb-6">
-                        พบกับสินค้าฮีลใจ ที่ออกแบบมาเพื่อดูแลใจคุณโดยเฉพาะ
-                    </p>
-                    <a
-                        href="https://thipakjai.com/shop"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block bg-white text-teal-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition-colors shadow-lg"
-                    >
-                        เยี่ยมชม thipakjai.com →
-                    </a>
-                </div>
-            </section>
+                {/* Mothership CTA - Bottom Section */}
+                <section className="py-12 px-4 bg-gradient-to-br from-teal-600 to-cyan-600 text-white relative z-10">
+                    <div className="max-w-xl mx-auto text-center">
+                        <h2 className="text-xl font-semibold mb-3">
+                            แวะมาที่พักใจ
+                        </h2>
+                        <p className="text-white/80 mb-6">
+                            พบกับสินค้าฮีลใจ ที่ออกแบบมาเพื่อดูแลใจคุณโดยเฉพาะ
+                        </p>
+                        <a
+                            href="https://thipakjai.com/shop"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-white text-teal-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition-colors shadow-lg"
+                        >
+                            เยี่ยมชม thipakjai.com →
+                        </a>
+                    </div>
+                </section>
 
-            {/* Footer */}
-            <footer className="border-t border-slate-200/50 py-8 px-4 text-center text-slate-400 text-sm bg-white/30 backdrop-blur-sm relative z-10">
-                <p>© 2025 Soul Spectrum by ที่พักใจ | thipakjai.com</p>
-            </footer>
+                {/* Footer */}
+                <footer className="border-t border-slate-200/50 py-8 px-4 text-center text-slate-400 text-sm bg-white/30 backdrop-blur-sm relative z-10">
+                    <p>© 2025 Soul Spectrum by ที่พักใจ | thipakjai.com</p>
+                </footer>
 
-            {/* Floating CTA Button */}
-            <Link
-                href="/"
-                className="fab btn-primary flex items-center gap-2 text-sm"
-            >
-                <span>🔮</span>
-                <span>เปิดไพ่เลย</span>
-            </Link>
-        </div>
+                {/* Floating CTA Button (position: fixed, works outside layout) */}
+                <Link
+                    href="/"
+                    className="fab btn-primary flex items-center gap-2 text-sm"
+                >
+                    <span>🔮</span>
+                    <span>เปิดไพ่เลย</span>
+                </Link>
+            </div>
+        </AppLayout>
     );
 }

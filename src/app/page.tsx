@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Header } from '@/components/Header';
+import { AppLayout } from '@/components/AppLayout';
 
 // --- Components ---
 
@@ -74,10 +74,7 @@ function SoulCard({
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-[#FDFBF7] flex flex-col font-sans text-[#44403C] relative overflow-x-hidden selection:bg-[#0D7377]/10">
-            {/* Header */}
-            <Header />
-
+        <AppLayout>
             {/* Background Noise Texture */}
             <div
                 className="fixed inset-0 pointer-events-none opacity-[0.03] z-0"
@@ -86,11 +83,11 @@ export default function Home() {
                 }}
             />
 
-            {/* Main Content Container */}
-            <main className="relative z-10 w-full min-h-screen flex flex-col items-center px-4" style={{ paddingTop: '150px', paddingBottom: '90px' }}>
+            {/* Main Content - now h-full and centered */}
+            <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4 font-sans text-[#44403C] selection:bg-[#0D7377]/10">
 
-                {/* Header Section */}
-                <div className="text-center max-w-3xl mx-auto" style={{ marginBottom: '90px' }}>
+                {/* Header Section - reduced margin */}
+                <div className="text-center max-w-3xl mx-auto mb-12">
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -119,8 +116,8 @@ export default function Home() {
                     </motion.p>
                 </div>
 
-                {/* Card Deck Section */}
-                <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 w-full max-w-[1200px]">
+                {/* Card Deck - adjusted gap */}
+                <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 w-full max-w-[1200px]">
                     <SoulCard
                         href="/oracle?category=love"
                         title="ความรัก"
@@ -146,16 +143,7 @@ export default function Home() {
                         delay={0.9}
                     />
                 </div>
-
-            </main>
-
-            {/* Footer */}
-            <footer className="relative z-10 py-8 text-center">
-                <p className="text-xs text-neutral-400">
-                    © 2025 Soul Spectrum · Made with ❤️
-                </p>
-            </footer>
-
-        </div>
+            </div>
+        </AppLayout>
     );
 }

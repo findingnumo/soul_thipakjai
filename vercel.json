@@ -6,7 +6,9 @@
   "outputDirectory": ".next",
   "git": {
     "deploymentEnabled": {
-      "master": true
+      "master": true,
+      "main": true
     }
-  }
+  },
+  "productionBranch": "master"
 }

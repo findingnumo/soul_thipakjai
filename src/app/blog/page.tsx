@@ -36,13 +36,18 @@ export default function BlogPage() {
     const regularPosts = posts.filter(p => !p.featured);
 
     return (
-        <div className="min-h-screen bg-cloud">
-            {/* Header */}
-            <header className="fixed top-0 left-0 right-0 z-40 bg-cloud/80 backdrop-blur-md border-b border-gray-100">
+        <div className="min-h-screen bg-[#FDF9F3]">
+            {/* Header - Matching Main Page */}
+            <header className="fixed top-0 left-0 right-0 z-40 bg-[#FDF9F3]/95 backdrop-blur-lg border-b border-stone-200/30">
                 <div className="max-w-4xl mx-auto px-4 flex items-center justify-between h-16">
-                    <Link href="/" className="flex items-center gap-2">
-                        <span className="text-2xl">🌈</span>
-                        <span className="font-semibold text-lg text-text-main">Soul Spectrum</span>
+                    <Link href="/" className="flex items-center gap-3">
+                        <span className="text-xl">🏡</span>
+                        <div>
+                            <span className="text-lg font-medium text-stone-700" style={{ fontFamily: 'var(--font-serif)' }}>
+                                ที่พักใจ
+                            </span>
+                            <span className="text-xs text-stone-500 block -mt-0.5">Soul Spectrum</span>
+                        </div>
                     </Link>
                     <MothershipLink />
                 </div>
@@ -53,13 +58,15 @@ export default function BlogPage() {
                 <div className="max-w-4xl mx-auto">
                     {/* Hero */}
                     <div className="text-center mb-12">
-                        <h1 className="text-3xl sm:text-4xl font-bold text-text-main mb-4">
-                            บทความฮีลใจ 📚
+                        {/* Welcome Badge */}
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F0F4F2] border border-[#C1D1C8] mb-6">
+                            <span className="text-sm text-[#5B7B6F]">📚 องค์ความรู้</span>
+                        </div>
+                        <h1 className="text-3xl sm:text-4xl text-stone-800 mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
+                            บทความฮีลใจ
                         </h1>
-                        <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-                            รวมบทความเกี่ยวกับสุขภาพจิต การดูแลตัวเอง และเคล็ดลับการใช้ชีวิต
-                            <br className="hidden sm:block" />
-                            ที่จะช่วยให้วันของคุณดีขึ้น
+                        <p className="text-stone-500 text-lg max-w-2xl mx-auto leading-relaxed">
+                            รวมบทความดีๆ ที่จะช่วยให้คุณรู้สึกดีขึ้น
                         </p>
                     </div>
 
@@ -171,16 +178,16 @@ export default function BlogPage() {
                     </section>
 
                     {/* CTA */}
-                    <section className="mt-16 text-center bg-gradient-to-r from-teal-50 to-cyan-50 rounded-3xl p-8">
-                        <h2 className="text-xl font-bold text-text-main mb-3">
+                    <section className="mt-16 text-center bg-gradient-to-r from-[#F0F4F2] to-[#E8DFD2] rounded-3xl p-8">
+                        <h2 className="text-xl text-stone-800 mb-3" style={{ fontFamily: 'var(--font-serif)' }}>
                             ลองเปิดไพ่รับคำตอบจากใจ 🔮
                         </h2>
-                        <p className="text-text-secondary mb-6">
+                        <p className="text-stone-500 mb-6">
                             นอกจากบทความ ลองเปิดไพ่ Oracle ดูสิ่งที่ใจคุณต้องการได้
                         </p>
                         <Link
                             href="/"
-                            className="inline-block bg-teal-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-teal-700 transition-colors"
+                            className="inline-block bg-[#5B7B6F] text-white font-medium px-6 py-3 rounded-2xl hover:bg-[#4A6A5E] transition-colors shadow-md"
                         >
                             เปิดไพ่เลย →
                         </Link>
@@ -189,8 +196,16 @@ export default function BlogPage() {
             </main>
 
             {/* Footer */}
-            <footer className="border-t border-gray-100 py-8 px-4 text-center text-text-light text-sm">
-                <p>© 2025 Soul Spectrum by ที่พักใจ | thipakjai.com</p>
+            <footer className="border-t border-stone-200/30 py-10 px-4 text-center bg-[#F0EBE3]">
+                <p className="text-sm text-stone-600 mb-2">
+                    🏡 ที่พักใจ (Heart&apos;s Haven)
+                </p>
+                <p className="text-xs text-stone-500 italic mb-4">
+                    &quot;พื้นที่ปลอดภัยในหน้าจอ สำหรับวันที่หัวใจต้องการคำตอบ&quot;
+                </p>
+                <p className="text-xs text-stone-400">
+                    Soul Spectrum — <a href="https://thipakjai.com" className="text-[#5B7B6F] hover:underline">thipakjai.com</a>
+                </p>
             </footer>
         </div>
     );

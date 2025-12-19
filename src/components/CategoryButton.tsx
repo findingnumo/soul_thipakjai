@@ -9,13 +9,13 @@ interface CategoryButtonProps {
     disabled?: boolean;
 }
 
-// Aura colors for each category (muted watercolor style)
-const auraColors: Record<OracleCategory, { from: string; to: string }> = {
-    health: { from: '#A7C4A0', to: '#7B9E73' },
-    love: { from: '#D4A5A5', to: '#C88C8C' },
-    work: { from: '#A8B4C4', to: '#8A9BB3' },
-    finance: { from: '#D4B896', to: '#C4A67C' },
-    family: { from: '#B8A9C9', to: '#9E8BB5' },
+// Aura colors for each category (softer, healing tones)
+const auraColors: Record<OracleCategory, { from: string; to: string; label: string }> = {
+    health: { from: '#9DB5A3', to: '#7A9982', label: 'ดูแลกายใจ' },
+    love: { from: '#D4A5A5', to: '#C08888', label: 'รักและความสัมพันธ์' },
+    work: { from: '#A4B4C4', to: '#8899AA', label: 'เติบโตในหน้าที่' },
+    finance: { from: '#C9B896', to: '#B5A378', label: 'มั่นคงทางการเงิน' },
+    family: { from: '#B8A9C9', to: '#9E8BB5', label: 'ครอบครัวที่รัก' },
 };
 
 export function CategoryButton({ category, onClick, disabled }: CategoryButtonProps) {
@@ -61,14 +61,14 @@ export function CategoryButton({ category, onClick, disabled }: CategoryButtonPr
                         className="text-base tracking-wide"
                         style={{
                             fontFamily: 'var(--font-heading, Georgia, serif)',
-                            color: '#44403C',
+                            color: '#3D3D3D',
                             fontWeight: 400,
                         }}
                     >
                         {category.name_th}
                     </h3>
-                    <p className="text-xs mt-1 leading-relaxed" style={{ color: '#78716C' }}>
-                        {category.description}
+                    <p className="text-xs mt-1 leading-relaxed" style={{ color: '#5B7B6F' }}>
+                        {auraColors[category.id].label}
                     </p>
                 </div>
             </div>

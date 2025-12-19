@@ -24,20 +24,24 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-paper">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-40 bg-[#FFF8E7]/90 backdrop-blur-md border-b border-stone-200/50">
+      {/* Header - Welcoming & Cozy */}
+      <header className="fixed top-0 left-0 right-0 z-40 bg-[#FDF9F3]/95 backdrop-blur-lg border-b border-stone-200/30">
         <div className="container-main flex items-center justify-between h-16">
-          <div className="flex items-center gap-2">
-            <span className="text-lg text-stone-700 tracking-wide" style={{ fontFamily: 'var(--font-heading)' }}>
-              Soul Spectrum
-            </span>
+          <div className="flex items-center gap-3">
+            <span className="text-xl">🏡</span>
+            <div>
+              <span className="text-lg font-medium text-stone-700" style={{ fontFamily: 'var(--font-heading)' }}>
+                ที่พักใจ
+              </span>
+              <span className="text-xs text-stone-500 block -mt-0.5">Soul Spectrum</span>
+            </div>
           </div>
           <nav className="flex items-center gap-6">
             <Link
               href="/blog"
-              className="text-sm text-stone-600 hover:text-teal-700 transition-colors font-medium"
+              className="text-sm text-stone-600 hover:text-[#5B7B6F] transition-colors font-medium"
             >
-              📖 บทความ
+              📖 บทความฮีลใจ
             </Link>
             <MothershipLink />
           </nav>
@@ -56,21 +60,32 @@ export default function Home() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              {/* Hero Section */}
+              {/* Hero Section - Gentle Welcome */}
               <motion.div
                 className="text-center max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
               >
+                {/* Welcome Badge */}
+                <motion.div
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F0F4F2] border border-[#C1D1C8] mb-6"
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                >
+                  <span className="text-sm text-[#5B7B6F]">🌿 พื้นที่ปลอดภัยทางใจ</span>
+                </motion.div>
+
                 <h1
                   className="text-3xl sm:text-4xl lg:text-5xl text-stone-800 mb-4 tracking-wide"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
-                  วันนี้ใจเธอสีอะไร?
+                  วันนี้หัวใจต้องการอะไร?
                 </h1>
-                <p className="text-stone-500 text-lg">
-                  เลือกไพ่ที่ดึงดูดสายตาเธอที่สุด
+                <p className="text-stone-500 text-lg leading-relaxed">
+                  ไม่ต้องเร่ง ไม่ต้องรีบ<br />
+                  เลือกไพ่ที่ดึงดูดใจเธอที่สุด
                 </p>
               </motion.div>
 
@@ -87,17 +102,18 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
               >
-                ไพ่จิตวิทยาเชิงบวก — ไม่ใช่การดูดวง แต่เป็นคำตอบที่หัวใจต้องการ
+                ไพ่จิตวิทยาเชิงบวก — เครื่องรางทางใจยุคดิจิทัล
               </motion.p>
             </motion.div>
           )}
         </AnimatePresence>
 
-        {/* Ritual State - Breathing Animation (CREAM BACKGROUND) */}
+        {/* Ritual State - Meditation Space */}
         <AnimatePresence>
           {(state === 'ritual' || state === 'selecting') && (
             <motion.div
-              className="fixed inset-0 z-50 bg-[#FFF8E7]/98 backdrop-blur-sm flex items-center justify-center"
+              className="fixed inset-0 z-50 flex items-center justify-center"
+              style={{ background: 'linear-gradient(180deg, #FDF9F3 0%, #F5EFE6 100%)' }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -110,47 +126,48 @@ export default function Home() {
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ delay: 0.2 }}
                   >
-                    <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/80 border border-stone-200 shadow-sm">
+                    <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/90 border border-[#C1D1C8] shadow-sm">
                       <span className="font-medium text-stone-700">{categoryInfo.name_th}</span>
                     </div>
                   </motion.div>
                 )}
 
                 <motion.h2
-                  className="text-2xl text-stone-700 mb-6 tracking-wide"
+                  className="text-2xl text-stone-700 mb-4 tracking-wide"
                   style={{ fontFamily: 'var(--font-heading)' }}
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.3 }}
                 >
-                  นึกถึงคำถามในใจ...
+                  หายใจลึกๆ...
                 </motion.h2>
 
                 <motion.p
-                  className="text-stone-500 mb-10"
+                  className="text-stone-500 mb-10 leading-relaxed"
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.4 }}
                 >
-                  หายใจเข้าลึกๆ ปล่อยใจให้ว่าง
-                  <br />
-                  แล้วกดเพื่อเปิดไพ่
+                  ปล่อยให้ความคิดเบาลง<br />
+                  นึกถึงสิ่งที่อยากถามใจ
                 </motion.p>
 
-                {/* Breathing Circle */}
+                {/* Breathing Circle - Gentle Healing Colors */}
                 <motion.div
                   className="relative mb-12"
                   initial={{ scale: 0.5, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ delay: 0.5, type: "spring" }}
                 >
-                  <div
-                    className="w-28 h-28 mx-auto rounded-full"
+                  <motion.div
+                    className="w-32 h-32 mx-auto rounded-full"
+                    animate={{
+                      scale: [1, 1.08, 1],
+                      boxShadow: ['0 0 0 rgba(91,123,111,0.1)', '0 0 40px rgba(91,123,111,0.2)', '0 0 0 rgba(91,123,111,0.1)'],
+                    }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                     style={{
-                      background: 'linear-gradient(45deg, #D4A5A5 0%, #D4B896 25%, #A8B4C4 50%, #B8A9C9 75%, #D4A5A5 100%)',
-                      backgroundSize: '400% 400%',
-                      animation: 'holographic-shift 8s ease-in-out infinite',
-                      boxShadow: '0 8px 32px rgba(0,0,0,0.1)',
+                      background: 'radial-gradient(circle, #E8DFD2 0%, #C9B896 50%, #B5A378 100%)',
                     }}
                   />
                 </motion.div>
@@ -167,7 +184,7 @@ export default function Home() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  เปิดไพ่รับคำตอบ
+                  🌟 พร้อมรับคำตอบแล้ว
                 </motion.button>
 
                 <motion.button
@@ -184,11 +201,12 @@ export default function Home() {
           )}
         </AnimatePresence>
 
-        {/* Revealed State - Show Card Result (CREAM BACKGROUND) */}
+        {/* Revealed State - Card Result */}
         <AnimatePresence>
           {(state === 'revealing' || state === 'revealed') && currentCard && selectedCategory && (
             <motion.div
-              className="fixed inset-0 z-50 bg-[#FFF8E7]/98 backdrop-blur-sm flex items-center justify-center overflow-y-auto py-8"
+              className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto py-8"
+              style={{ background: 'linear-gradient(180deg, #FDF9F3 0%, #F5EFE6 100%)' }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -248,22 +266,25 @@ export default function Home() {
         </AnimatePresence>
       </main>
 
-      {/* Footer */}
-      <footer className="py-8 border-t border-stone-200/50 bg-[#FFF8E7]/80 relative z-10">
+      {/* Footer - Warm Farewell */}
+      <footer className="py-10 border-t border-stone-200/30 bg-[#F0EBE3] relative z-10">
         <div className="container-main text-center">
-          <p className="text-sm text-stone-500">
-            Soul Spectrum by{' '}
+          <p className="text-sm text-stone-600 mb-2">
+            🏡 ที่พักใจ (Heart&apos;s Haven)
+          </p>
+          <p className="text-xs text-stone-500 italic mb-4">
+            &quot;พื้นที่ปลอดภัยในหน้าจอ สำหรับวันที่หัวใจต้องการคำตอบ&quot;
+          </p>
+          <p className="text-xs text-stone-400">
+            Soul Spectrum — เครื่องรางทางใจยุคดิจิทัล |{' '}
             <a
               href="https://thipakjai.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal-700 hover:text-teal-800 hover:underline transition-colors"
+              className="text-[#5B7B6F] hover:text-[#4A6A5E] hover:underline transition-colors"
             >
-              ที่พักใจ (Heart&apos;s Haven)
+              thipakjai.com
             </a>
-          </p>
-          <p className="text-xs text-stone-400 mt-2">
-            พื้นที่ปลอดภัยในหน้าจอ สำหรับวันที่หัวใจต้องการคำตอบ
           </p>
         </div>
       </footer>

@@ -10,8 +10,6 @@
       "main": true
     }
   },
-  "productionBranch": "master",
-  "previewDeploymentSuffix": null,
   "github": {
     "silent": true
   }

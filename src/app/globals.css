@@ -68,6 +68,7 @@
   /* Fonts - Thai Friendly */
   --font-body: var(--font-body), 'IBM Plex Sans Thai', sans-serif;
   --font-heading: var(--font-heading), 'Bai Jamjuree', sans-serif;
+  --font-playfair: var(--font-playfair), 'Playfair Display', serif;
 }
 
 /* Tailwind v4 Theme Integration */
@@ -120,7 +121,6 @@ body {
   background: var(--bg-main);
   color: var(--text-main);
   font-family: var(--font-body);
-  min-height: 100vh;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

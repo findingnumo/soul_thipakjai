@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Prompt } from "next/font/google";
+import { Prompt, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -17,6 +17,14 @@ const promptHeading = Prompt({
   variable: "--font-heading",
   subsets: ["latin", "thai"],
   weight: ["400", "500", "600"],
+  display: "swap",
+});
+
+// Playfair Display for logo (premium serif font)
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -85,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </Script>
         {/* End Google Tag Manager */}
       </head>
-      <body className={`${prompt.variable} ${promptHeading.variable} antialiased`}>
+      <body className={`${prompt.variable} ${promptHeading.variable} ${playfairDisplay.variable} antialiased`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

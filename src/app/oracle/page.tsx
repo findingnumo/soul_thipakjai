@@ -182,262 +182,263 @@ function OraclePageContent() {
                 )}
             </AnimatePresence>
 
-                {/* Ritual State - Meditation Space */}
-                <AnimatePresence>
-                    {(state === 'ritual' || state === 'selecting') && (
-                        <motion.div
-                            className="fixed inset-0 z-50 flex items-center justify-center bg-[#FDFBF7]/98 backdrop-blur-xl"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                        >
-                            <div className="text-center w-full max-w-lg mx-auto px-6 relative z-10 flex flex-col items-center justify-center">
-                                {categoryInfo && (
-                                    <motion.div
-                                        className="mb-10"
-                                        initial={{ scale: 0.8, opacity: 0 }}
-                                        animate={{ scale: 1, opacity: 1 }}
-                                        transition={{ delay: 0.2 }}
-                                    >
-                                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-white/60 shadow-sm">
-                                            <span className="text-sm font-medium text-[#44403C]">{categoryInfo.name_th}</span>
-                                        </div>
-                                    </motion.div>
-                                )}
-
-                                <motion.h2
-                                    className="text-3xl font-normal text-[#2A2826] mb-12 tracking-tight"
-                                    initial={{ y: 20, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ delay: 0.3 }}
-                                >
-                                    หายใจลึกๆ...
-                                </motion.h2>
-
-                                <motion.p
-                                    className="text-[#44403C]/60 mb-16 text-lg font-light"
-                                    style={{ lineHeight: '2' }}
-                                    initial={{ y: 20, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ delay: 0.4 }}
-                                >
-                                    ปล่อยให้ความคิดเบาลง นึกถึงสิ่งที่อยากถามใจ<br />
-                                    <span className="text-[#0D7377]">ลืมตาแล้วแตะที่ไพ่เพื่อหาคำตอบ</span>
-                                </motion.p>
-
-                                {/* Selected Category Card - CLICKABLE & Larger on Desktop */}
-                                <motion.button
-                                    onClick={() => {
-                                        drawCard();
-                                        setTimeout(() => revealCard(), 500);
-                                    }}
-                                    className="relative flex items-center justify-center cursor-pointer group"
-                                    initial={{ opacity: 0, scale: 0.9, y: 20 }}
-                                    animate={{ opacity: 1, scale: 1, y: 0 }}
-                                    transition={{ delay: 0.5, duration: 0.6 }}
-                                    whileHover={{ scale: 1.02 }}
-                                    whileTap={{ scale: 0.98 }}
-                                >
-                                    {/* The Card - Larger on Desktop */}
-                                    <motion.div
-                                        className="w-[200px] sm:w-[260px] md:w-[280px] lg:w-[320px] aspect-[2/3] relative rounded-3xl"
-                                        animate={{ y: [0, -10, 0] }}
-                                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                                    >
-                                        {/* Card Body */}
-                                        <div className="absolute inset-0 bg-[#FDFBF7] rounded-3xl shadow-xl overflow-hidden border border-white/60 group-hover:shadow-2xl transition-shadow duration-300">
-                                            {/* Aura Image */}
-                                            <div className="absolute inset-0 flex items-center justify-center p-4">
-                                                <motion.img
-                                                    src={categories.find(c => c.id === selectedCategory)?.imagePath || '/assets/auras/Love.png'}
-                                                    alt=""
-                                                    className="w-[130%] h-[130%] object-contain opacity-95"
-                                                    animate={{ rotate: 360 }}
-                                                    transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-                                                    style={{
-                                                        maskImage: 'radial-gradient(circle, black 35%, transparent 55%)',
-                                                        WebkitMaskImage: 'radial-gradient(circle, black 35%, transparent 55%)'
-                                                    }}
-                                                />
-                                            </div>
-
-                                            {/* Subtle Glow Pulse */}
-                                            <motion.div
-                                                className="absolute inset-0 rounded-3xl"
-                                                animate={{ opacity: [0.1, 0.3, 0.1] }}
-                                                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                                                style={{
-                                                    background: 'radial-gradient(circle, rgba(13,115,119,0.15) 0%, transparent 70%)',
-                                                }}
-                                            />
-
-                                            {/* Tap Hint */}
-                                            <div className="absolute bottom-4 left-0 right-0 text-center">
-                                                <span className="text-xs text-[#0D7377]/60 font-medium tracking-wide">แตะเพื่อเปิดไพ่</span>
-                                            </div>
-                                        </div>
-
-                                        {/* Card Shadow */}
-                                        <motion.div
-                                            className="absolute -bottom-4 left-6 right-6 h-6 bg-black/10 blur-2xl rounded-full"
-                                            animate={{ opacity: [0.3, 0.5, 0.3] }}
-                                            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                                        />
-                                    </motion.div>
-                                </motion.button>
-
-                                {/* Cancel Button Only */}
-                                <motion.button
-                                    onClick={reset}
-                                    className="mt-10 text-sm text-[#44403C]/50 hover:text-[#44403C] transition-colors"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ delay: 0.8 }}
-                                >
-                                    ยกเลิก
-                                </motion.button>
-                            </div>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
-
-                {/* Revealed State - Card Result */}
-                <AnimatePresence>
-                    {(state === 'revealing' || state === 'revealed') && currentCard && selectedCategory && (
-                        <motion.div
-                            style={{
-                                position: 'fixed',
-                                inset: 0,
-                                zIndex: 50,
-                                backgroundColor: '#FDFBF7',
-                                overflowY: 'auto',
-                            }}
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                        >
-                            {/* Centered Container */}
-                            <div
-                                style={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    alignItems: 'center',
-                                    minHeight: '100vh',
-                                    padding: '24px 16px 160px 16px',
-                                }}
-                            >
-                                {/* Category Badge */}
-                                {categoryInfo && (
-                                    <motion.div
-                                        style={{ textAlign: 'center', marginBottom: '16px' }}
-                                        initial={{ opacity: 0, y: -10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                    >
-                                        <span style={{ fontSize: '14px', fontWeight: 500, color: '#0D7377' }}>
-                                            {categoryInfo.name_th}
-                                        </span>
-                                    </motion.div>
-                                )}
-
-                                {/* Card Container with explicit dimensions */}
+            {/* Ritual State - Meditation Space */}
+            <AnimatePresence>
+                {(state === 'ritual' || state === 'selecting') && (
+                    <motion.div
+                        className="fixed inset-0 z-40 flex items-center justify-center bg-[#FDFBF7]/98 backdrop-blur-xl pt-20"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                    >
+                        <div className="text-center w-full max-w-lg mx-auto px-6 relative z-10 flex flex-col items-center justify-center">
+                            {categoryInfo && (
                                 <motion.div
-                                    style={{
-                                        width: '320px',
-                                        height: '480px',
-                                        margin: '0 auto',
-                                        maxWidth: '90vw',
-                                    }}
-                                    initial={{ opacity: 0, scale: 0.95 }}
-                                    animate={{ opacity: 1, scale: 1 }}
+                                    className="mb-10"
+                                    initial={{ scale: 0.8, opacity: 0 }}
+                                    animate={{ scale: 1, opacity: 1 }}
                                     transition={{ delay: 0.2 }}
                                 >
-                                    <OracleCard
-                                        card={currentCard}
-                                        category={selectedCategory}
-                                        isRevealed={state === 'revealed'}
-                                        onReveal={revealCard}
+                                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-white/60 shadow-sm">
+                                        <span className="text-sm font-medium text-[#44403C]">{categoryInfo.name_th}</span>
+                                    </div>
+                                </motion.div>
+                            )}
+
+                            <motion.h2
+                                className="text-3xl font-normal text-[#2A2826] mb-12 tracking-tight"
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.3 }}
+                            >
+                                หายใจลึกๆ...
+                            </motion.h2>
+
+                            <motion.p
+                                className="text-[#44403C]/60 mb-16 text-lg font-light"
+                                style={{ lineHeight: '2' }}
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.4 }}
+                            >
+                                ปล่อยให้ความคิดเบาลง นึกถึงสิ่งที่อยากถามใจ<br />
+                                <span className="text-[#0D7377]">ลืมตาแล้วแตะที่ไพ่เพื่อหาคำตอบ</span>
+                            </motion.p>
+
+                            {/* Selected Category Card - CLICKABLE & Larger on Desktop */}
+                            <motion.button
+                                onClick={() => {
+                                    drawCard();
+                                    setTimeout(() => revealCard(), 500);
+                                }}
+                                className="relative flex items-center justify-center cursor-pointer group"
+                                initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                                animate={{ opacity: 1, scale: 1, y: 0 }}
+                                transition={{ delay: 0.5, duration: 0.6 }}
+                                whileHover={{ scale: 1.02 }}
+                                whileTap={{ scale: 0.98 }}
+                            >
+                                {/* The Card - Larger on Desktop */}
+                                <motion.div
+                                    className="w-[200px] sm:w-[260px] md:w-[280px] lg:w-[320px] aspect-[2/3] relative rounded-3xl"
+                                    animate={{ y: [0, -10, 0] }}
+                                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                                >
+                                    {/* Card Body */}
+                                    <div className="absolute inset-0 bg-[#FDFBF7] rounded-3xl shadow-xl overflow-hidden border border-white/60 group-hover:shadow-2xl transition-shadow duration-300">
+                                        {/* Aura Image */}
+                                        <div className="absolute inset-0 flex items-center justify-center p-4">
+                                            <motion.img
+                                                src={categories.find(c => c.id === selectedCategory)?.imagePath || '/assets/auras/Love.png'}
+                                                alt=""
+                                                className="w-[130%] h-[130%] object-contain opacity-95"
+                                                animate={{ rotate: 360 }}
+                                                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+                                                style={{
+                                                    maskImage: 'radial-gradient(circle, black 35%, transparent 55%)',
+                                                    WebkitMaskImage: 'radial-gradient(circle, black 35%, transparent 55%)'
+                                                }}
+                                            />
+                                        </div>
+
+                                        {/* Subtle Glow Pulse */}
+                                        <motion.div
+                                            className="absolute inset-0 rounded-3xl"
+                                            animate={{ opacity: [0.1, 0.3, 0.1] }}
+                                            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                                            style={{
+                                                background: 'radial-gradient(circle, rgba(13,115,119,0.15) 0%, transparent 70%)',
+                                            }}
+                                        />
+
+                                        {/* Tap Hint */}
+                                        <div className="absolute bottom-4 left-0 right-0 text-center">
+                                            <span className="text-xs text-[#0D7377]/60 font-medium tracking-wide">แตะเพื่อเปิดไพ่</span>
+                                        </div>
+                                    </div>
+
+                                    {/* Card Shadow */}
+                                    <motion.div
+                                        className="absolute -bottom-4 left-6 right-6 h-6 bg-black/10 blur-2xl rounded-full"
+                                        animate={{ opacity: [0.3, 0.5, 0.3] }}
+                                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                                     />
                                 </motion.div>
+                            </motion.button>
 
-                                {/* Reflection Text */}
-                                <motion.p
-                                    style={{
-                                        marginTop: '64px',
-                                        textAlign: 'center',
-                                        fontSize: '14px',
-                                        color: 'rgba(68, 64, 60, 0.6)',
-                                        fontWeight: 300,
-                                        maxWidth: '320px',
-                                        lineHeight: '1.8',
-                                    }}
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ delay: 1.0 }}
-                                >
-                                    ลองหายใจลึกๆ แล้วคิดตามข้อความนี้สักครู่...<br />
-                                    <span style={{ color: '#0D7377', fontWeight: 500 }}>
-                                        บางทีคำตอบก็อยู่ในใจเราเองแล้ว
-                                    </span>
-                                </motion.p>
+                            {/* Cancel Button Only */}
+                            <motion.button
+                                onClick={reset}
+                                className="mt-10 text-sm text-[#44403C]/50 hover:text-[#44403C] transition-colors"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.8 }}
+                            >
+                                ยกเลิก
+                            </motion.button>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
 
-                                {/* Large CTA Buttons */}
+            {/* Revealed State - Card Result */}
+            <AnimatePresence>
+                {(state === 'revealing' || state === 'revealed') && currentCard && selectedCategory && (
+                    <motion.div
+                        style={{
+                            position: 'fixed',
+                            inset: 0,
+                            zIndex: 40,
+                            backgroundColor: '#FDFBF7',
+                            overflowY: 'auto',
+                            paddingTop: '100px',
+                        }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                    >
+                        {/* Centered Container */}
+                        <div
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                minHeight: '100vh',
+                                padding: '24px 16px 160px 16px',
+                            }}
+                        >
+                            {/* Category Badge */}
+                            {categoryInfo && (
                                 <motion.div
-                                    style={{
-                                        marginTop: '48px',
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        alignItems: 'center',
-                                        gap: '16px',
-                                        flexWrap: 'wrap',
-                                        justifyContent: 'center',
-                                        maxWidth: '600px',
-                                    }}
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ delay: 1.2 }}
+                                    style={{ textAlign: 'center', marginBottom: '16px' }}
+                                    initial={{ opacity: 0, y: -10 }}
+                                    animate={{ opacity: 1, y: 0 }}
                                 >
-                                    <button
-                                        onClick={reset}
-                                        style={{
-                                            padding: '16px 40px',
-                                            fontSize: '16px',
-                                            fontWeight: 600,
-                                            color: 'white',
-                                            backgroundColor: '#0D7377',
-                                            borderRadius: '16px',
-                                            border: 'none',
-                                            cursor: 'pointer',
-                                            flex: '1',
-                                            minWidth: '200px',
-                                            boxShadow: '0 4px 12px rgba(13, 115, 119, 0.2)',
-                                        }}
-                                    >
-                                        ✨ เปิดไพ่ใบใหม่
-                                    </button>
-
-                                    <Link
-                                        href="/blog"
-                                        style={{
-                                            padding: '16px 40px',
-                                            fontSize: '16px',
-                                            fontWeight: 600,
-                                            color: '#0D7377',
-                                            backgroundColor: 'rgba(13, 115, 119, 0.1)',
-                                            borderRadius: '16px',
-                                            textDecoration: 'none',
-                                            flex: '1',
-                                            minWidth: '200px',
-                                            textAlign: 'center',
-                                            border: '1px solid rgba(13, 115, 119, 0.2)',
-                                        }}
-                                    >
-                                        📖 อ่านบทความเพิ่มเติม
-                                    </Link>
+                                    <span style={{ fontSize: '14px', fontWeight: 500, color: '#0D7377' }}>
+                                        {categoryInfo.name_th}
+                                    </span>
                                 </motion.div>
-                            </div>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
+                            )}
+
+                            {/* Card Container with explicit dimensions */}
+                            <motion.div
+                                style={{
+                                    width: '320px',
+                                    height: '480px',
+                                    margin: '0 auto',
+                                    maxWidth: '90vw',
+                                }}
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: 0.2 }}
+                            >
+                                <OracleCard
+                                    card={currentCard}
+                                    category={selectedCategory}
+                                    isRevealed={state === 'revealed'}
+                                    onReveal={revealCard}
+                                />
+                            </motion.div>
+
+                            {/* Reflection Text */}
+                            <motion.p
+                                style={{
+                                    marginTop: '64px',
+                                    textAlign: 'center',
+                                    fontSize: '14px',
+                                    color: 'rgba(68, 64, 60, 0.6)',
+                                    fontWeight: 300,
+                                    maxWidth: '320px',
+                                    lineHeight: '1.8',
+                                }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 1.0 }}
+                            >
+                                ลองหายใจลึกๆ แล้วคิดตามข้อความนี้สักครู่...<br />
+                                <span style={{ color: '#0D7377', fontWeight: 500 }}>
+                                    บางทีคำตอบก็อยู่ในใจเราเองแล้ว
+                                </span>
+                            </motion.p>
+
+                            {/* Large CTA Buttons */}
+                            <motion.div
+                                style={{
+                                    marginTop: '48px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'center',
+                                    gap: '16px',
+                                    flexWrap: 'wrap',
+                                    justifyContent: 'center',
+                                    maxWidth: '600px',
+                                }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 1.2 }}
+                            >
+                                <button
+                                    onClick={reset}
+                                    style={{
+                                        padding: '16px 40px',
+                                        fontSize: '16px',
+                                        fontWeight: 600,
+                                        color: 'white',
+                                        backgroundColor: '#0D7377',
+                                        borderRadius: '16px',
+                                        border: 'none',
+                                        cursor: 'pointer',
+                                        flex: '1',
+                                        minWidth: '200px',
+                                        boxShadow: '0 4px 12px rgba(13, 115, 119, 0.2)',
+                                    }}
+                                >
+                                    ✨ เปิดไพ่ใบใหม่
+                                </button>
+
+                                <Link
+                                    href="/blog"
+                                    style={{
+                                        padding: '16px 40px',
+                                        fontSize: '16px',
+                                        fontWeight: 600,
+                                        color: '#0D7377',
+                                        backgroundColor: 'rgba(13, 115, 119, 0.1)',
+                                        borderRadius: '16px',
+                                        textDecoration: 'none',
+                                        flex: '1',
+                                        minWidth: '200px',
+                                        textAlign: 'center',
+                                        border: '1px solid rgba(13, 115, 119, 0.2)',
+                                    }}
+                                >
+                                    📖 อ่านบทความเพิ่มเติม
+                                </Link>
+                            </motion.div>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </AppLayout>
     );
 }

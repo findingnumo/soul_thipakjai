@@ -20,15 +20,15 @@ export function AppLayout({
   }
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden bg-[#FDFBF7]">
-      {/* Main Content - Flex grow, internally scrollable */}
-      <main className="flex-1 overflow-y-auto overflow-x-hidden pt-16">
+    <div className="min-h-screen flex flex-col bg-[#FDFBF7]">
+      {/* Main Content - Flex grow, uses body scroll */}
+      <main className="flex-1 w-full max-w-[100vw] overflow-x-hidden">
         {children}
       </main>
 
-      {/* Footer - Fixed at bottom */}
+      {/* Footer */}
       {showFooter && (
-        <footer className="flex-shrink-0 py-4 text-center bg-white/40 border-t border-neutral-100/50">
+        <footer className="flex-shrink-0 py-6 text-center bg-white/40 border-t border-neutral-100/50">
           <p className="text-xs text-neutral-400">
             © 2025 Soul Spectrum · Made with ❤️
           </p>

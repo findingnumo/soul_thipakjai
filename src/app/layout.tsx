@@ -121,6 +121,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <Header />
 
         <div id="main-content">
+          <div className="h-28 w-full pointer-events-none" aria-hidden="true" />
           {children}
         </div>
       </body>

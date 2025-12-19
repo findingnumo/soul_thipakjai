@@ -7,38 +7,38 @@ export function Header() {
     const pathname = usePathname();
 
     return (
-        <header className="fixed top-0 w-full z-50 bg-white/60 backdrop-blur-md border-b border-white/20">
-            <div className="max-w-6xl mx-auto px-8 py-4 flex items-center justify-between">
-                {/* Brand Identity - Elegant & Book-like */}
-                <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                    <span className="text-2xl">✨</span>
+        <header className="fixed top-0 w-full z-50 h-20 bg-white/70 backdrop-blur-md border-b border-white/20 flex items-center transition-all duration-300">
+            <div className="w-full max-w-[1400px] mx-auto px-8 md:px-12 flex items-center justify-between h-full">
+                {/* Brand Identity - Deep Teal Serif */}
+                <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity group">
+                    <span className="text-2xl text-[#134E4A] group-hover:rotate-12 transition-transform">✨</span>
                     <span
-                        className="text-2xl font-medium text-[#0D7377]"
+                        className="text-2xl font-bold text-[#134E4A] tracking-tight"
                         style={{ fontFamily: 'var(--font-playfair)' }}
                     >
                         Soul Spectrum
                     </span>
                 </Link>
 
-                {/* Navigation - Premium Pills */}
-                <nav className="flex items-center justify-end gap-4">
+                {/* Navigation - Library Pill Style */}
+                <nav className="flex items-center justify-end gap-6 md:gap-8">
                     <Link
                         href="/oracle"
-                        className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                            pathname?.startsWith('/oracle')
-                                ? 'bg-[#E8F3E8] text-emerald-800'
-                                : 'border border-gray-300/50 text-gray-600 hover:bg-[#E8F3E8] hover:text-emerald-800'
-                        }`}
+                        className={`px-8 py-2.5 rounded-full text-sm font-medium tracking-wide transition-all duration-200 ${pathname?.startsWith('/oracle')
+                            ? 'bg-[#134E4A] text-white shadow-md'
+                            : 'text-gray-600 hover:bg-white hover:text-[#134E4A] hover:shadow-sm'
+                            }`}
+                        style={{ fontFamily: 'var(--font-sans)' }}
                     >
                         ทำนาย
                     </Link>
                     <Link
                         href="/blog"
-                        className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                            pathname?.startsWith('/blog')
-                                ? 'bg-[#E8F3E8] text-emerald-800'
-                                : 'border border-gray-300/50 text-gray-600 hover:bg-[#E8F3E8] hover:text-emerald-800'
-                        }`}
+                        className={`px-8 py-2.5 rounded-full text-sm font-medium tracking-wide transition-all duration-200 ${pathname?.startsWith('/blog')
+                            ? 'bg-[#134E4A] text-white shadow-md'
+                            : 'text-gray-600 hover:bg-white hover:text-[#134E4A] hover:shadow-sm'
+                            }`}
+                        style={{ fontFamily: 'var(--font-sans)' }}
                     >
                         อ่านเล่น
                     </Link>

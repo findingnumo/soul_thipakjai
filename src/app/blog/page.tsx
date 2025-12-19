@@ -1,187 +1,193 @@
+'use client';
+
 import Link from 'next/link';
-import { Metadata } from 'next';
+import { Suspense, useState } from 'react';
 import blogPosts from '@/data/blog_posts.json';
 import { BlogPost } from '@/types/blog';
-import { BLOG_CATEGORIES } from '@/types/blog';
-import { MothershipLink } from '@/components/LinkButton';
 import { AppLayout } from '@/components/AppLayout';
 
-export const metadata: Metadata = {
-    title: 'บทความฮีลใจ | Soul Spectrum',
-    description: 'รวมบทความเกี่ยวกับสุขภาพจิต การดูแลตัวเอง ความสัมพันธ์ และการทำงาน เพื่อช่วยให้คุณมีพลังใจที่ดีขึ้น',
-    keywords: ['บทความสุขภาพจิต', 'ดูแลตัวเอง', 'ฮีลใจ', 'mental health', 'self care thailand'],
-    openGraph: {
-        title: 'บทความฮีลใจ | Soul Spectrum',
-        description: 'รวมบทความเกี่ยวกับสุขภาพจิต การดูแลตัวเอง และการใช้ชีวิต',
-        type: 'website',
-        url: 'https://soul.thipakjai.com/blog',
-    }
+// Category label mapper
+const getCategoryLabel = (post: BlogPost): string => {
+    if (post.category === 'relationships') return 'เรื่องหัวใจ';
+    if (post.category === 'career') return 'Work Life';
+    if (post.category === 'life-advice') return 'จังหวะชีวิต';
+    if (post.category === 'mental-health') return 'Mental Health';
+    if (post.category === 'self-care') return 'Self Care';
+    if (post.category === 'mindfulness') return 'ดูแลใจ';
+    return 'Work Life';
 };
 
-function getCategoryInfo(categoryId: string) {
-    return BLOG_CATEGORIES.find(c => c.id === categoryId);
+// Category type definition
+type CategoryFilter = 'all' | 'mental-health' | 'self-care' | 'relationships' | 'career' | 'life-advice' | 'mindfulness';
+
+// Filter button categories
+const CATEGORIES: { value: CategoryFilter; label: string }[] = [
+    { value: 'all', label: 'ทั้งหมด' },
+    { value: 'mental-health', label: 'Mental Health' },
+    { value: 'self-care', label: 'Self Care' },
+    { value: 'relationships', label: 'เรื่องหัวใจ' },
+    { value: 'career', label: 'Work Life' },
+    { value: 'life-advice', label: 'จังหวะชีวิต' },
+    { value: 'mindfulness', label: 'ดูแลใจ' },
+];
+
+// Card Component - Based on Reference Image
+function BlogCard({ post }: { post: BlogPost }) {
+    const categoryLabel = getCategoryLabel(post);
+
+    return (
+        <Link href={`/blog/${post.slug}`} className="group block h-full">
+            <article
+                className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 h-full border-l-4 border-teal-500"
+                style={{ padding: '40px 36px' }}
+            >
+                {/* Category */}
+                <p
+                    className="text-teal-600 font-medium"
+                    style={{ fontSize: '14px', marginBottom: '28px' }}
+                >
+                    {categoryLabel}
+                </p>
+
+                {/* Title */}
+                <h3
+                    className="text-teal-700 font-bold leading-snug"
+                    style={{
+                        fontFamily: 'var(--font-heading)',
+                        fontSize: '22px',
+                        marginBottom: '24px',
+                        lineHeight: '1.4'
+                    }}
+                >
+                    {post.title}
+                </h3>
+
+                {/* Description */}
+                <p
+                    className="text-gray-600"
+                    style={{
+                        fontSize: '14px',
+                        lineHeight: '1.9',
+                        marginBottom: '32px'
+                    }}
+                >
+                    {post.description}
+                </p>
+
+                {/* Read More */}
+                <p className="text-teal-600 font-medium group-hover:text-teal-700 transition-colors" style={{ fontSize: '14px' }}>
+                    อ่านต่อ &nbsp;→
+                </p>
+            </article>
+        </Link>
+    );
 }
 
-function formatDate(dateString: string) {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('th-TH', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    });
+function BlogContent() {
+    const allPosts = blogPosts as BlogPost[];
+    const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>('all');
+
+    // Filter out future/scheduled posts and sort by date (newest first)
+    const currentDate = new Date();
+    const publishedPosts = allPosts
+        .filter(post => new Date(post.publishDate) <= currentDate)
+        .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
+
+    // Then apply category filter
+    const filteredPosts = selectedCategory === 'all'
+        ? publishedPosts
+        : publishedPosts.filter(post => post.category === selectedCategory);
+
+    return (
+        <div style={{ padding: '80px 24px' }}>
+            {/* Centered Container */}
+            <div style={{ maxWidth: '880px', margin: '0 auto' }}>
+
+                {/* Header */}
+                <header style={{ textAlign: 'center', marginBottom: '60px' }}>
+                    <div style={{ fontSize: '48px', marginBottom: '16px' }}>✨</div>
+                    <h1
+                        className="text-gray-900 font-bold"
+                        style={{
+                            fontFamily: 'var(--font-heading)',
+                            fontSize: '48px',
+                            marginBottom: '16px'
+                        }}
+                    >
+                        Reading Room
+                    </h1>
+                    <p className="text-gray-500" style={{ fontSize: '18px', lineHeight: '1.6' }}>
+                        มุมพักใจ.. อ่านสบายๆ ในวันที่โลกหมุนเร็ว
+                    </p>
+                </header>
+
+                {/* Filter Buttons */}
+                <div style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    gap: '12px',
+                    justifyContent: 'center',
+                    marginBottom: '60px'
+                }}>
+                    {CATEGORIES.map((category) => (
+                        <button
+                            key={category.value}
+                            onClick={() => setSelectedCategory(category.value)}
+                            className={`transition-all duration-200 ${
+                                selectedCategory === category.value
+                                    ? 'bg-teal-600 text-white shadow-md'
+                                    : 'bg-white text-gray-700 border border-gray-200 hover:border-teal-400'
+                            }`}
+                            style={{
+                                padding: '10px 20px',
+                                borderRadius: '50px',
+                                fontSize: '14px',
+                                fontWeight: '500',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            {category.label}
+                        </button>
+                    ))}
+                </div>
+
+                {/* Cards Grid */}
+                {filteredPosts.length > 0 ? (
+                    <div
+                        style={{
+                            display: 'grid',
+                            gridTemplateColumns: 'repeat(2, 1fr)',
+                            gap: '32px'
+                        }}
+                        className="max-md:grid-cols-1"
+                    >
+                        {filteredPosts.map((post) => (
+                            <BlogCard key={post.slug} post={post} />
+                        ))}
+                    </div>
+                ) : (
+                    <div style={{ textAlign: 'center', padding: '80px 0' }}>
+                        <div style={{ fontSize: '64px', marginBottom: '16px' }}>📚</div>
+                        <p className="text-gray-500" style={{ fontSize: '18px', marginBottom: '8px' }}>
+                            ยังไม่มีบทความในหมวดนี้
+                        </p>
+                        <p className="text-gray-400" style={{ fontSize: '14px' }}>
+                            รอติดตามนะ...
+                        </p>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
 }
 
 export default function BlogPage() {
-    const posts = blogPosts as BlogPost[];
-    const featuredPosts = posts.filter(p => p.featured);
-    const regularPosts = posts.filter(p => !p.featured);
-
     return (
         <AppLayout showFooter={true}>
-            {/* Main Content - scrollable */}
-            <div className="px-4 py-16 bg-neutral-50">
-                <div className="max-w-5xl mx-auto">
-                    {/* Hero */}
-                    <div className="text-center mb-16">
-                        {/* Welcome Badge */}
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 mb-6">
-                            <span className="text-sm font-medium text-indigo-600">📚 คลังบทความฮีลใจ</span>
-                        </div>
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6 tracking-tight" style={{ fontFamily: 'var(--font-heading)' }}>
-                            เติมพลังใจในวันที่อ่อนล้า
-                        </h1>
-                        <p className="text-neutral-500 text-lg max-w-2xl mx-auto leading-relaxed font-light">
-                            รวบรวมบทความคิดดีๆ เพื่อสุขภาพใจ การดูแลตัวเอง<br className="hidden sm:block" />
-                            และการเติบโตอย่างมีความสุข
-                        </p>
-                    </div>
-
-                    {/* Featured Posts */}
-                    {featuredPosts.length > 0 && (
-                        <section className="mb-16">
-                            <div className="flex items-center gap-3 mb-8">
-                                <span className="text-xl">⭐</span>
-                                <h2 className="text-2xl font-bold text-neutral-800" style={{ fontFamily: 'var(--font-heading)' }}>
-                                    บทความแนะนำ
-                                </h2>
-                            </div>
-                            <div className="grid md:grid-cols-2 gap-8">
-                                {featuredPosts.map(post => {
-                                    const categoryInfo = getCategoryInfo(post.category);
-                                    return (
-                                        <Link
-                                            key={post.slug}
-                                            href={`/blog/${post.slug}`}
-                                            className="group block bg-white rounded-3xl overflow-hidden shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300 border border-neutral-100 hover:-translate-y-1"
-                                        >
-                                            <div className="p-8">
-                                                {/* Category */}
-                                                {categoryInfo && (
-                                                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-4 ${categoryInfo.color} bg-opacity-10`}>
-                                                        {categoryInfo.name_th}
-                                                    </span>
-                                                )}
-
-                                                {/* Title */}
-                                                <h3 className="text-2xl font-bold text-neutral-800 mb-3 group-hover:text-indigo-600 transition-colors tracking-tight" style={{ fontFamily: 'var(--font-heading)' }}>
-                                                    {post.title}
-                                                </h3>
-
-                                                {/* Description */}
-                                                <p className="text-neutral-500 mb-6 line-clamp-2 leading-relaxed font-light">
-                                                    {post.description}
-                                                </p>
-
-                                                {/* Meta */}
-                                                <div className="flex items-center justify-between text-sm text-neutral-400 border-t border-neutral-100 pt-4">
-                                                    <div className="flex items-center gap-2">
-                                                        <span>🗓️ {formatDate(post.publishDate)}</span>
-                                                    </div>
-                                                    <span className="flex items-center gap-1">⏱️ อ่าน {post.readingTime} นาที</span>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    );
-                                })}
-                            </div>
-                        </section>
-                    )}
-
-                    {/* All Posts */}
-                    <section>
-                        <div className="flex items-center gap-3 mb-8">
-                            <span className="text-xl">📖</span>
-                            <h2 className="text-2xl font-bold text-neutral-800" style={{ fontFamily: 'var(--font-heading)' }}>
-                                บทความทั้งหมด
-                            </h2>
-                        </div>
-                        <div className="grid gap-4">
-                            {regularPosts.map(post => {
-                                const categoryInfo = getCategoryInfo(post.category);
-                                return (
-                                    <Link
-                                        key={post.slug}
-                                        href={`/blog/${post.slug}`}
-                                        className="group block bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-100 hover:border-indigo-100"
-                                    >
-                                        <div className="flex items-start gap-6">
-                                            {/* Icon based on category */}
-                                            <div className={`w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 text-3xl shadow-inner ${post.relatedOracleCategory ? `bg-gradient-to-br from-indigo-50 to-purple-50` : 'bg-gray-50'}`}>
-                                                <span>
-                                                    {post.category === 'mental-health' ? '🧠' :
-                                                        post.category === 'self-care' ? '💆' :
-                                                            post.category === 'relationships' ? '💕' :
-                                                                post.category === 'career' ? '💼' :
-                                                                    post.category === 'life-advice' ? '✨' : '🧘'}
-                                                </span>
-                                            </div>
-
-                                            <div className="flex-1 min-w-0 py-1">
-                                                <div className="flex items-center gap-3 mb-2">
-                                                    {categoryInfo && (
-                                                        <span className="text-xs font-semibold text-indigo-500 uppercase tracking-wider">
-                                                            {categoryInfo.name_th}
-                                                        </span>
-                                                    )}
-                                                    <span className="text-neutral-300 text-xs">•</span>
-                                                    <span className="text-xs text-neutral-400">{formatDate(post.publishDate)}</span>
-                                                </div>
-
-                                                <h3 className="text-lg font-bold text-neutral-800 group-hover:text-indigo-600 transition-colors line-clamp-1 mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
-                                                    {post.title}
-                                                </h3>
-
-                                                <p className="text-neutral-500 text-sm line-clamp-1 font-light">
-                                                    {post.description}
-                                                </p>
-                                            </div>
-
-                                            <div className="self-center pl-4 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300 text-indigo-400">
-                                                →
-                                            </div>
-                                        </div>
-                                    </Link>
-                                );
-                            })}
-                        </div>
-                    </section>
-
-                    {/* CTA */}
-                    <section className="mt-20 text-center bg-gradient-to-br from-indigo-600 to-purple-700 rounded-[2rem] p-10 sm:p-14 text-white shadow-2xl shadow-indigo-200">
-                        <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
-                            ยังไม่แน่ใจว่าจะเริ่มตรงไหน? 🔮
-                        </h2>
-                        <p className="text-indigo-100 mb-8 text-lg opacity-90 font-light">
-                            ลองเปิดไพ่ Oracle เพื่อค้นหาคำตอบที่ใจคุณต้องการในตอนนี้
-                        </p>
-                        <Link
-                            href="/"
-                            className="inline-flex items-center gap-2 bg-white text-indigo-700 font-semibold px-8 py-4 rounded-full hover:bg-indigo-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
-                        >
-                            <span>✨</span> เปิดไพ่ทันที
-                        </Link>
-                    </section>
-                </div>
+            <div className="min-h-screen bg-[#F8F8F8]">
+                <Suspense fallback={<div className="h-screen w-full" />}>
+                    <BlogContent />
+                </Suspense>
             </div>
         </AppLayout>
     );

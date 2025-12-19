@@ -2,14 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-
-// Inline Icons for the Floating Nav
-const SparklesIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L12 3Z" /><path d="M5 3v4" /><path d="M9 5h4" /></svg>
-);
-const BookIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
-);
+import { Header } from '@/components/Header';
 
 // --- Components ---
 
@@ -76,39 +69,14 @@ function SoulCard({
     );
 }
 
-// 2. Floating Glass Navigation
-function FloatingNav() {
-    return (
-        <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1, duration: 0.8, type: "spring", stiffness: 100 }}
-            className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50"
-        >
-            <div className="flex items-center gap-1 p-1.5 bg-white/70 backdrop-blur-xl border border-white/60 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-
-                {/* Tab 1: Oracle */}
-                <button className="flex items-center gap-2 px-6 py-3 bg-white rounded-full shadow-sm text-[#0D7377] transition-all">
-                    <SparklesIcon />
-                    <span className="text-sm font-medium tracking-wide">ทำนาย</span>
-                </button>
-
-                {/* Tab 2: Blog */}
-                <Link href="/blog" className="flex items-center gap-2 px-6 py-3 text-[#44403C]/70 hover:text-[#0D7377] hover:bg-white/50 rounded-full transition-all">
-                    <BookIcon />
-                    <span className="text-sm font-medium tracking-wide">อ่านเล่น</span>
-                </Link>
-
-            </div>
-        </motion.div>
-    );
-}
 
 // --- Main Page ---
 
 export default function Home() {
     return (
         <div className="min-h-screen bg-[#FDFBF7] flex flex-col font-sans text-[#44403C] relative overflow-x-hidden selection:bg-[#0D7377]/10">
+            {/* Header */}
+            <Header />
 
             {/* Background Noise Texture */}
             <div
@@ -119,10 +87,10 @@ export default function Home() {
             />
 
             {/* Main Content Container */}
-            <main className="relative z-10 w-full min-h-screen flex flex-col items-center justify-center py-20 px-4">
+            <main className="relative z-10 w-full min-h-screen flex flex-col items-center px-4" style={{ paddingTop: '150px', paddingBottom: '90px' }}>
 
-                {/* Header Section - EQUAL SPACING: mb-40 */}
-                <div className="text-center mb-40 max-w-3xl mx-auto">
+                {/* Header Section */}
+                <div className="text-center max-w-3xl mx-auto" style={{ marginBottom: '90px' }}>
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -151,8 +119,8 @@ export default function Home() {
                     </motion.p>
                 </div>
 
-                {/* Card Deck Section - EQUAL SPACING: pb-40 */}
-                <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 pb-40 w-full max-w-[1200px]">
+                {/* Card Deck Section */}
+                <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 w-full max-w-[1200px]">
                     <SoulCard
                         href="/oracle?category=love"
                         title="ความรัก"
@@ -181,8 +149,12 @@ export default function Home() {
 
             </main>
 
-            {/* Floating Navigation */}
-            <FloatingNav />
+            {/* Footer */}
+            <footer className="relative z-10 py-8 text-center">
+                <p className="text-xs text-neutral-400">
+                    © 2025 Soul Spectrum · Made with ❤️
+                </p>
+            </footer>
 
         </div>
     );

@@ -55,7 +55,7 @@ export default function BlogPage() {
             </header>
 
             {/* Main Content */}
-            <main className="pt-28 pb-20 px-4">
+            <main className="px-4" style={{ paddingTop: '90px', paddingBottom: '90px' }}>
                 <div className="max-w-5xl mx-auto">
                     {/* Hero */}
                     <div className="text-center mb-16">

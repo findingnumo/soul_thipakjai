@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import { useEffect, Suspense } from 'react';
 import Link from 'next/link';
+import { Header } from '@/components/Header';
 
 // Inline Icons
 const SparklesIcon = () => (
@@ -80,39 +81,6 @@ function CategoryCard({
 }
 
 // Floating Glass Navigation (Same as Home)
-function FloatingNav() {
-    return (
-        <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.8, type: "spring", stiffness: 100 }}
-            className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50"
-        >
-            <div className="flex items-center gap-1 p-1.5 bg-white/70 backdrop-blur-xl border border-white/60 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-
-                {/* Tab 1: Home */}
-                <Link href="/" className="flex items-center gap-2 px-6 py-3 text-[#44403C]/70 hover:text-[#0D7377] hover:bg-white/50 rounded-full transition-all">
-                    <HomeIcon />
-                    <span className="text-sm font-medium tracking-wide">หน้าแรก</span>
-                </Link>
-
-                {/* Tab 2: Oracle (Active) */}
-                <button className="flex items-center gap-2 px-6 py-3 bg-white rounded-full shadow-sm text-[#0D7377] transition-all">
-                    <SparklesIcon />
-                    <span className="text-sm font-medium tracking-wide">ทำนาย</span>
-                </button>
-
-                {/* Tab 3: Blog */}
-                <Link href="/blog" className="flex items-center gap-2 px-6 py-3 text-[#44403C]/70 hover:text-[#0D7377] hover:bg-white/50 rounded-full transition-all">
-                    <BookIcon />
-                    <span className="text-sm font-medium tracking-wide">อ่านเล่น</span>
-                </Link>
-
-            </div>
-        </motion.div>
-    );
-}
-
 // Category data
 const categories = [
     { id: 'love', title: 'ความรัก', imagePath: '/assets/auras/Love.png' },
@@ -154,6 +122,8 @@ function OraclePageContent() {
 
     return (
         <div className="min-h-screen bg-[#FDFBF7] flex flex-col font-sans text-[#44403C] relative overflow-x-hidden selection:bg-[#0D7377]/10">
+            {/* Header */}
+            <Header />
 
             {/* Background Noise Texture */}
             <div
@@ -164,7 +134,7 @@ function OraclePageContent() {
             />
 
             {/* Main Content */}
-            <main className="relative z-10 w-full min-h-screen flex flex-col items-center justify-center py-20 px-4">
+            <main className="relative z-10 w-full min-h-screen flex flex-col items-center justify-center px-4" style={{ paddingTop: '150px', paddingBottom: '90px' }}>
 
                 {/* Idle State - Category Selection */}
                 <AnimatePresence mode="wait">
@@ -177,7 +147,7 @@ function OraclePageContent() {
                             transition={{ duration: 0.5 }}
                         >
                             {/* Header Section */}
-                            <div className="text-center mb-20 max-w-3xl mx-auto">
+                            <div className="text-center max-w-3xl mx-auto" style={{ marginBottom: '90px' }}>
                                 <motion.p
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
@@ -198,7 +168,7 @@ function OraclePageContent() {
                             </div>
 
                             {/* Category Cards Grid */}
-                            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 pb-40">
+                            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
                                 {categories.map((cat, index) => (
                                     <CategoryCard
                                         key={cat.id}
@@ -241,7 +211,7 @@ function OraclePageContent() {
                                 )}
 
                                 <motion.h2
-                                    className="text-3xl font-normal text-[#2A2826] mb-6 tracking-tight"
+                                    className="text-3xl font-normal text-[#2A2826] mb-12 tracking-tight"
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ delay: 0.3 }}
@@ -250,13 +220,14 @@ function OraclePageContent() {
                                 </motion.h2>
 
                                 <motion.p
-                                    className="text-[#44403C]/60 mb-10 text-lg leading-relaxed font-light"
+                                    className="text-[#44403C]/60 mb-16 text-lg font-light"
+                                    style={{ lineHeight: '2' }}
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ delay: 0.4 }}
                                 >
                                     ปล่อยให้ความคิดเบาลง นึกถึงสิ่งที่อยากถามใจ<br />
-                                    <span className="text-[#0D7377]">ลืมตาแล้วกดลงที่ไพ่เพื่อหาคำตอบ</span>
+                                    <span className="text-[#0D7377]">ลืมตาแล้วแตะที่ไพ่เพื่อหาคำตอบ</span>
                                 </motion.p>
 
                                 {/* Selected Category Card - CLICKABLE & Larger on Desktop */}
@@ -376,9 +347,10 @@ function OraclePageContent() {
                                 {/* Card Container with explicit dimensions */}
                                 <motion.div
                                     style={{
-                                        width: '280px',
-                                        height: '373px',
+                                        width: '320px',
+                                        height: '480px',
                                         margin: '0 auto',
+                                        maxWidth: '90vw',
                                     }}
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={{ opacity: 1, scale: 1 }}
@@ -395,12 +367,13 @@ function OraclePageContent() {
                                 {/* Reflection Text */}
                                 <motion.p
                                     style={{
-                                        marginTop: '32px',
+                                        marginTop: '64px',
                                         textAlign: 'center',
                                         fontSize: '14px',
                                         color: 'rgba(68, 64, 60, 0.6)',
                                         fontWeight: 300,
                                         maxWidth: '320px',
+                                        lineHeight: '1.8',
                                     }}
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
@@ -412,14 +385,17 @@ function OraclePageContent() {
                                     </span>
                                 </motion.p>
 
-                                {/* Action Buttons */}
+                                {/* Large CTA Buttons */}
                                 <motion.div
                                     style={{
-                                        marginTop: '32px',
+                                        marginTop: '48px',
                                         display: 'flex',
-                                        flexDirection: 'column',
+                                        flexDirection: 'row',
                                         alignItems: 'center',
-                                        gap: '12px',
+                                        gap: '16px',
+                                        flexWrap: 'wrap',
+                                        justifyContent: 'center',
+                                        maxWidth: '600px',
                                     }}
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
@@ -428,14 +404,17 @@ function OraclePageContent() {
                                     <button
                                         onClick={reset}
                                         style={{
-                                            padding: '12px 24px',
-                                            fontSize: '14px',
-                                            fontWeight: 500,
+                                            padding: '16px 40px',
+                                            fontSize: '16px',
+                                            fontWeight: 600,
                                             color: 'white',
                                             backgroundColor: '#0D7377',
-                                            borderRadius: '9999px',
+                                            borderRadius: '16px',
                                             border: 'none',
                                             cursor: 'pointer',
+                                            flex: '1',
+                                            minWidth: '200px',
+                                            boxShadow: '0 4px 12px rgba(13, 115, 119, 0.2)',
                                         }}
                                     >
                                         ✨ เปิดไพ่ใบใหม่
@@ -444,9 +423,17 @@ function OraclePageContent() {
                                     <Link
                                         href="/blog"
                                         style={{
-                                            fontSize: '12px',
-                                            color: 'rgba(68, 64, 60, 0.4)',
+                                            padding: '16px 40px',
+                                            fontSize: '16px',
+                                            fontWeight: 600,
+                                            color: '#0D7377',
+                                            backgroundColor: 'rgba(13, 115, 119, 0.1)',
+                                            borderRadius: '16px',
                                             textDecoration: 'none',
+                                            flex: '1',
+                                            minWidth: '200px',
+                                            textAlign: 'center',
+                                            border: '1px solid rgba(13, 115, 119, 0.2)',
                                         }}
                                     >
                                         📖 อ่านบทความเพิ่มเติม
@@ -457,9 +444,6 @@ function OraclePageContent() {
                     )}
                 </AnimatePresence>
             </main>
-
-            {/* Floating Navigation */}
-            <FloatingNav />
 
         </div>
     );

@@ -5,7 +5,19 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(dir /s /b)",
+      "Bash(dir /B /S)",
+      "Bash(cat:*)",
+      "Bash(npm run dev:*)",
+      "Bash(taskkill:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(powershell -Command \"Stop-Process -Id 75700 -Force\")",
+      "Bash(git restore:*)",
+      "Bash(tasklist:*)",
+      "Bash(powershell -Command \"if (Test-Path .next) { Remove-Item -Recurse -Force .next }\")",
+      "Bash(powershell -Command \"if (Test-Path .next) { Remove-Item -Recurse -Force .next }; Write-Host ''Cache cleared''\")"
     ],
     "deny": [],
     "ask": []

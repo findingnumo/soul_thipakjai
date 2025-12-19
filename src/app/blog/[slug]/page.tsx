@@ -151,7 +151,7 @@ export default async function BlogPostPage({ params }: Props) {
             </header>
 
             {/* Article */}
-            <article className="pt-24 pb-8 px-4 relative z-10">
+            <article className="px-4 relative z-10" style={{ paddingTop: '90px', paddingBottom: '90px' }}>
                 <div className="max-w-2xl mx-auto">
                     {/* Breadcrumb */}
                     <nav className="mb-6">

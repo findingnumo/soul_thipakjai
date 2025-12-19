@@ -185,6 +185,7 @@ export function CategoryCardPreview({ category, icon, name, onClick }: CategoryC
 export function FloatingCard({ children }: { children: React.ReactNode }) {
     return (
         <motion.div
+            className="w-full max-w-sm mx-auto"
             animate={{
                 y: [0, -10, 0],
             }}

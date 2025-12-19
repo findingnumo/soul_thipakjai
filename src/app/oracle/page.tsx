@@ -2,7 +2,6 @@
 
 import { useOracle } from '@/hooks/useOracle';
 import { OracleCard, FloatingCard } from '@/components/OracleCard';
-import { LinkButton } from '@/components/LinkButton';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import { useEffect, Suspense } from 'react';
@@ -227,7 +226,7 @@ function OraclePageContent() {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                         >
-                            <div className="text-center w-full max-w-md mx-auto px-6 relative z-10">
+                            <div className="text-center w-full max-w-lg mx-auto px-6 relative z-10 flex flex-col items-center justify-center">
                                 {categoryInfo && (
                                     <motion.div
                                         className="mb-10"
@@ -251,30 +250,36 @@ function OraclePageContent() {
                                 </motion.h2>
 
                                 <motion.p
-                                    className="text-[#44403C]/60 mb-8 text-lg leading-relaxed font-light"
+                                    className="text-[#44403C]/60 mb-10 text-lg leading-relaxed font-light"
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ delay: 0.4 }}
                                 >
-                                    ปล่อยให้ความคิดเบาลง<br />
-                                    นึกถึงสิ่งที่อยากถามใจ
+                                    ปล่อยให้ความคิดเบาลง นึกถึงสิ่งที่อยากถามใจ<br />
+                                    <span className="text-[#0D7377]">ลืมตาแล้วกดลงที่ไพ่เพื่อหาคำตอบ</span>
                                 </motion.p>
 
-                                {/* Selected Category Card - Floating Animation */}
-                                <motion.div
-                                    className="relative mb-10 flex items-center justify-center"
+                                {/* Selected Category Card - CLICKABLE & Larger on Desktop */}
+                                <motion.button
+                                    onClick={() => {
+                                        drawCard();
+                                        setTimeout(() => revealCard(), 500);
+                                    }}
+                                    className="relative flex items-center justify-center cursor-pointer group"
                                     initial={{ opacity: 0, scale: 0.9, y: 20 }}
                                     animate={{ opacity: 1, scale: 1, y: 0 }}
                                     transition={{ delay: 0.5, duration: 0.6 }}
+                                    whileHover={{ scale: 1.02 }}
+                                    whileTap={{ scale: 0.98 }}
                                 >
-                                    {/* The Card */}
+                                    {/* The Card - Larger on Desktop */}
                                     <motion.div
-                                        className="w-[180px] sm:w-[220px] aspect-[2/3] relative rounded-3xl"
+                                        className="w-[200px] sm:w-[260px] md:w-[280px] lg:w-[320px] aspect-[2/3] relative rounded-3xl"
                                         animate={{ y: [0, -10, 0] }}
                                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                                     >
                                         {/* Card Body */}
-                                        <div className="absolute inset-0 bg-[#FDFBF7] rounded-3xl shadow-xl overflow-hidden border border-white/60">
+                                        <div className="absolute inset-0 bg-[#FDFBF7] rounded-3xl shadow-xl overflow-hidden border border-white/60 group-hover:shadow-2xl transition-shadow duration-300">
                                             {/* Aura Image */}
                                             <div className="absolute inset-0 flex items-center justify-center p-4">
                                                 <motion.img
@@ -299,6 +304,11 @@ function OraclePageContent() {
                                                     background: 'radial-gradient(circle, rgba(13,115,119,0.15) 0%, transparent 70%)',
                                                 }}
                                             />
+
+                                            {/* Tap Hint */}
+                                            <div className="absolute bottom-4 left-0 right-0 text-center">
+                                                <span className="text-xs text-[#0D7377]/60 font-medium tracking-wide">แตะเพื่อเปิดไพ่</span>
+                                            </div>
                                         </div>
 
                                         {/* Card Shadow */}
@@ -308,27 +318,12 @@ function OraclePageContent() {
                                             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                                         />
                                     </motion.div>
-                                </motion.div>
-
-                                <motion.button
-                                    onClick={() => {
-                                        drawCard();
-                                        setTimeout(() => revealCard(), 500);
-                                    }}
-                                    className="group relative inline-flex items-center justify-center px-8 py-4 font-medium text-white transition-all duration-200 bg-[#0D7377] rounded-full hover:bg-[#0a5f62] hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0D7377]"
-                                    initial={{ y: 20, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ delay: 0.6 }}
-                                    whileHover={{ scale: 1.02 }}
-                                    whileTap={{ scale: 0.98 }}
-                                >
-                                    <span className="mr-2">✨</span>
-                                    พร้อมรับคำตอบแล้ว
                                 </motion.button>
 
+                                {/* Cancel Button Only */}
                                 <motion.button
                                     onClick={reset}
-                                    className="mt-6 text-sm text-[#44403C]/50 hover:text-[#44403C] transition-colors"
+                                    className="mt-10 text-sm text-[#44403C]/50 hover:text-[#44403C] transition-colors"
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.8 }}
@@ -344,59 +339,118 @@ function OraclePageContent() {
                 <AnimatePresence>
                     {(state === 'revealing' || state === 'revealed') && currentCard && selectedCategory && (
                         <motion.div
-                            className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto py-8 bg-[#FDFBF7]"
+                            style={{
+                                position: 'fixed',
+                                inset: 0,
+                                zIndex: 50,
+                                backgroundColor: '#FDFBF7',
+                                overflowY: 'auto',
+                            }}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                         >
-                            <div className="w-full max-w-lg mx-auto px-6">
+                            {/* Centered Container */}
+                            <div
+                                style={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    minHeight: '100vh',
+                                    padding: '24px 16px 160px 16px',
+                                }}
+                            >
                                 {/* Category Badge */}
                                 {categoryInfo && (
                                     <motion.div
-                                        className="text-center mb-6"
-                                        initial={{ opacity: 0, y: -20 }}
+                                        style={{ textAlign: 'center', marginBottom: '16px' }}
+                                        initial={{ opacity: 0, y: -10 }}
                                         animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.5 }}
                                     >
-                                        <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/80 border border-white/60 shadow-sm">
-                                            <span className="font-medium text-[#0D7377]">{categoryInfo.name_th}</span>
-                                        </div>
+                                        <span style={{ fontSize: '14px', fontWeight: 500, color: '#0D7377' }}>
+                                            {categoryInfo.name_th}
+                                        </span>
                                     </motion.div>
                                 )}
 
-                                {/* The Oracle Card with Flip Animation */}
-                                <FloatingCard>
+                                {/* Card Container with explicit dimensions */}
+                                <motion.div
+                                    style={{
+                                        width: '280px',
+                                        height: '373px',
+                                        margin: '0 auto',
+                                    }}
+                                    initial={{ opacity: 0, scale: 0.95 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ delay: 0.2 }}
+                                >
                                     <OracleCard
                                         card={currentCard}
                                         category={selectedCategory}
                                         isRevealed={state === 'revealed'}
                                         onReveal={revealCard}
                                     />
-                                </FloatingCard>
+                                </motion.div>
 
-                                {/* CTA Buttons */}
-                                <motion.div
-                                    className="mt-10 space-y-4 text-center"
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 1.5, duration: 0.5 }}
+                                {/* Reflection Text */}
+                                <motion.p
+                                    style={{
+                                        marginTop: '32px',
+                                        textAlign: 'center',
+                                        fontSize: '14px',
+                                        color: 'rgba(68, 64, 60, 0.6)',
+                                        fontWeight: 300,
+                                        maxWidth: '320px',
+                                    }}
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ delay: 1.0 }}
                                 >
-                                    <LinkButton
-                                        href={currentCard.product_mapping.target_url}
-                                        category={currentCard.category}
-                                        medium="oracle_card"
-                                        variant="primary"
-                                        className="w-full text-lg"
-                                    >
-                                        {currentCard.product_mapping.cta_text}
-                                    </LinkButton>
+                                    ลองหายใจลึกๆ แล้วคิดตามข้อความนี้สักครู่...<br />
+                                    <span style={{ color: '#0D7377', fontWeight: 500 }}>
+                                        บางทีคำตอบก็อยู่ในใจเราเองแล้ว
+                                    </span>
+                                </motion.p>
 
+                                {/* Action Buttons */}
+                                <motion.div
+                                    style={{
+                                        marginTop: '32px',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        gap: '12px',
+                                    }}
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ delay: 1.2 }}
+                                >
                                     <button
                                         onClick={reset}
-                                        className="w-full py-3 text-[#44403C]/60 hover:text-[#0D7377] transition-colors"
+                                        style={{
+                                            padding: '12px 24px',
+                                            fontSize: '14px',
+                                            fontWeight: 500,
+                                            color: 'white',
+                                            backgroundColor: '#0D7377',
+                                            borderRadius: '9999px',
+                                            border: 'none',
+                                            cursor: 'pointer',
+                                        }}
                                     >
                                         ✨ เปิดไพ่ใบใหม่
                                     </button>
+
+                                    <Link
+                                        href="/blog"
+                                        style={{
+                                            fontSize: '12px',
+                                            color: 'rgba(68, 64, 60, 0.4)',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        📖 อ่านบทความเพิ่มเติม
+                                    </Link>
                                 </motion.div>
                             </div>
                         </motion.div>

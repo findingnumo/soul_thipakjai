@@ -1,0 +1,2872 @@
+{
+  "health": [
+    {
+      "id": "health_001",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ฟังเสียงร่างกาย",
+      "message_body": "ร่างกายของคุณกำลังส่งสัญญาณบางอย่าง ลองหยุดฟังดูสักครู่ การพักผ่อนไม่ใช่ความขี้เกียจ แต่เป็นการเติมเต็มพลังงาน",
+      "product_mapping": {
+        "cta_text": "ดูแลใจไปพร้อมกาย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_002",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การเริ่มต้นใหม่",
+      "message_body": "ทุกการเปลี่ยนแปลงเริ่มจากก้าวเล็กๆ ไม่ต้องเปลี่ยนทุกอย่างพร้อมกัน แค่เริ่มจากสิ่งเล็กๆ ที่ทำได้วันนี้",
+      "product_mapping": {
+        "cta_text": "เริ่มต้นดูแลตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_003",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ความสมดุล",
+      "message_body": "ชีวิตที่ดีไม่ใช่การวิ่งไปข้างหน้าตลอด แต่คือการรู้จักหยุดพัก รู้จักสมดุลระหว่างการทำงานและการพักผ่อน",
+      "product_mapping": {
+        "cta_text": "ค้นหาความสมดุลให้ชีวิต →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_004",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ยอมรับตัวเอง",
+      "message_body": "ร่างกายของคุณทำงานหนักมาตลอด ขอบคุณมันบ้าง แม้จะไม่สมบูรณ์แบบ แต่มันพาคุณมาถึงวันนี้ได้",
+      "product_mapping": {
+        "cta_text": "รักตัวเองมากขึ้น →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_005",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ค่อยๆ ดีขึ้น",
+      "message_body": "การฟื้นฟูต้องใช้เวลา ไม่มีใครหายดีข้ามคืน ให้เวลาตัวเองบ้าง คุณกำลังดีขึ้นทุกวัน แม้จะยังไม่เห็นผล",
+      "product_mapping": {
+        "cta_text": "เครื่องมือฮีลใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_006",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "พลังงานใหม่",
+      "message_body": "พลังงานที่หายไปกำลังจะกลับมา บางครั้งเราแค่ต้องการเวลาชาร์จแบต เหมือนมือถือที่ต้องเสียบชาร์จบ้าง",
+      "product_mapping": {
+        "cta_text": "เติมพลังให้ตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_007",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ความเข้มแข็งที่ซ่อนอยู่",
+      "message_body": "คุณเข้มแข็งกว่าที่คิด ดูสิว่าคุณผ่านอะไรมาบ้าง แม้จะเหนื่อย แต่คุณก็ยังอยู่ที่นี่",
+      "product_mapping": {
+        "cta_text": "ค้นพบความแข็งแกร่งในตัวคุณ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_008",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การนอนหลับ",
+      "message_body": "การนอนหลับที่ดีคือยาวิเศษ ถ้าพักผ่อนไม่พอ ทุกอย่างจะหนักขึ้น ลองจัดลำดับความสำคัญให้การนอนบ้าง",
+      "product_mapping": {
+        "cta_text": "นอนหลับพักผ่อนให้ดีขึ้น →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_009",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "อาหารใจ",
+      "message_body": "นอกจากอาหารกาย ใจก็ต้องการอาหารเช่นกัน ลองหาสิ่งที่เติมเต็มจิตใจคุณบ้าง ไม่ว่าจะเป็นหนังสือ ดนตรี หรือธรรมชาติ",
+      "product_mapping": {
+        "cta_text": "เติมอาหารใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_010",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การเคลื่อนไหว",
+      "message_body": "ร่างกายถูกออกแบบมาให้เคลื่อนไหว ไม่ต้องออกกำลังกายหนัก แค่เดินเล่นเบาๆ ก็ช่วยให้ใจเบาลงได้",
+      "product_mapping": {
+        "cta_text": "เริ่มขยับร่างกาย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_011",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ลมหายใจ",
+      "message_body": "เมื่อรู้สึกหนัก ลองหายใจลึกๆ ช้าๆ ลมหายใจคือเครื่องมือฮีลใจที่อยู่กับคุณตลอดเวลา ไม่ต้องซื้อหามาจากไหน",
+      "product_mapping": {
+        "cta_text": "เรียนรู้การหายใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_012",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ความเจ็บปวด",
+      "message_body": "ความเจ็บปวดเป็นส่วนหนึ่งของชีวิต แต่มันจะไม่อยู่ตลอดไป ทุกอย่างผ่านไปได้ รวมถึงความเจ็บปวดนี้ด้วย",
+      "product_mapping": {
+        "cta_text": "ผ่านพ้นความเจ็บปวด →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_013",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การดูแลตัวเอง",
+      "message_body": "การดูแลตัวเองไม่ใช่ความเห็นแก่ตัว แต่เป็นสิ่งจำเป็น คุณดูแลคนอื่นไม่ได้ ถ้าตัวเองป่วย",
+      "product_mapping": {
+        "cta_text": "Self-care สำหรับคุณ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_014",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "น้ำ",
+      "message_body": "บางครั้งสิ่งที่เราต้องการก็เรียบง่าย เช่น ดื่มน้ำสักแก้ว ร่างกายต้องการความชุ่มชื้นเพื่อทำงานได้ดี",
+      "product_mapping": {
+        "cta_text": "กลับสู่พื้นฐาน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_015",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "แสงแดด",
+      "message_body": "แสงแดดยามเช้าช่วยปรับนาฬิกาชีวิต ลองออกไปรับแสงแดดสักครู่ จะรู้สึกสดใสขึ้น",
+      "product_mapping": {
+        "cta_text": "รับพลังจากธรรมชาติ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_016",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ความกังวลเรื่องสุขภาพ",
+      "message_body": "ถ้ากังวลเรื่องสุขภาพ อย่าเก็บไว้คนเดียว ปรึกษาผู้เชี่ยวชาญได้ การรู้เท่าทันดีกว่ากังว",
+      "product_mapping": {
+        "cta_text": "คลายความกังวล →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_017",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การฟื้นตัว",
+      "message_body": "ร่างกายมีพลังในการเยียวยาตัวเอง ให้เวลามันทำงาน คุณจะค่อยๆ ดีขึ้น",
+      "product_mapping": {
+        "cta_text": "สนับสนุนการฟื้นตัว →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_018",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ความอดทน",
+      "message_body": "การเปลี่ยนแปลงสุขภาพต้องใช้ความอดทน ไม่ใช่แค่วันสองวัน แต่เป็นการสร้างนิสัยใหม่",
+      "product_mapping": {
+        "cta_text": "สร้างนิสัยดีๆ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_019",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ขอบเขต",
+      "message_body": "การรู้จักปฏิเสธเป็นส่วนหนึ่งของการดูแลสุขภาพ บางครั้งต้องพูดว่า \"ไม่\" เพื่อรักษาพลังงานไว้",
+      "product_mapping": {
+        "cta_text": "เรียนรู้การตั้งขอบเขต →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_020",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ความเครียด",
+      "message_body": "ความเครียดสะสมส่งผลต่อร่างกาย ลองหาทางระบายออกบ้าง ไม่ว่าจะเขียน พูดคุย หรือออกกำลังกาย",
+      "product_mapping": {
+        "cta_text": "ระบายความเครียด →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_021",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "สัญญาณเตือน",
+      "message_body": "อย่าเพิกเฉยสัญญาณเตือนจากร่างกาย มันกำลังบอกอะไรคุณบางอย่าง ลองหยุดฟังดู",
+      "product_mapping": {
+        "cta_text": "ฟังร่างกาย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_022",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การพักผ่อน",
+      "message_body": "พักผ่อนไม่ใช่รางวัล แต่เป็นสิ่งจำเป็น เหมือนการชาร์จแบตเตอรี่ ไม่ชาร์จก็ใช้งานไม่ได้",
+      "product_mapping": {
+        "cta_text": "วิธีพักผ่อนที่ดี →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_023",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "โรคประจำตัว",
+      "message_body": "การมีโรคประจำตัวไม่ได้หมายความว่าชีวิตจะไม่ดี แค่ต้องปรับตัวและดูแลตัวเองมากขึ้น",
+      "product_mapping": {
+        "cta_text": "อยู่กับโรคอย่างมีความสุข →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_024",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "อายุ",
+      "message_body": "อายุเป็นแค่ตัวเลข สิ่งสำคัญคือคุณรู้สึกอย่างไร ดูแลตัวเองดี คุณจะรู้สึกมีพลังได้ทุกวัย",
+      "product_mapping": {
+        "cta_text": "สุขภาพดีทุกวัย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_025",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การเปรียบเทียบ",
+      "message_body": "อย่าเปรียบเทียบสุขภาพของตัวเองกับคนอื่น ร่างกายแต่ละคนแตกต่างกัน โฟกัสที่ตัวเอง",
+      "product_mapping": {
+        "cta_text": "รักตัวเองแบบคุณ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_026",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "กิจวัตร",
+      "message_body": "กิจวัตรที่ดีช่วยสร้างสุขภาพที่ดี ลองสร้างกิจวัตรเช้าหรือก่อนนอนที่ทำให้รู้สึกดี",
+      "product_mapping": {
+        "cta_text": "สร้างกิจวัตรดีๆ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_027",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "อาหาร",
+      "message_body": "อาหารที่กินเข้าไปส่งผลต่อความรู้สึก ลองสังเกตว่ากินอะไรแล้วรู้สึกดี กินอะไรแล้วเหนื่อยล้า",
+      "product_mapping": {
+        "cta_text": "กินดี สุขภาพดี →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_028",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การออกกำลังกาย",
+      "message_body": "ไม่ต้องออกกำลังกายหนัก แค่ขยับร่างกายทุกวัน ร่างกายจะขอบคุณ",
+      "product_mapping": {
+        "cta_text": "เริ่มขยับวันนี้ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_029",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "สุขภาพจิต",
+      "message_body": "สุขภาพจิตสำคัญเท่าสุขภาพกาย อย่าละเลย ถ้ารู้สึกไม่โอเค ขอความช่วยเหลือได้",
+      "product_mapping": {
+        "cta_text": "ดูแลใจของคุณ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_030",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "พลังงานต่ำ",
+      "message_body": "ถ้ารู้สึกพลังงานต่ำ อาจเป็นสัญญาณว่าต้องพักผ่อนมากขึ้น หรือปรับรูปแบบการใช้ชีวิต",
+      "product_mapping": {
+        "cta_text": "เติมพลังงาน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_031",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ภูมิคุ้มกัน",
+      "message_body": "ภูมิคุ้มกันที่ดีมาจากการใช้ชีวิตที่สมดุล นอนหลับพอ กินดี และลดความเครียด",
+      "product_mapping": {
+        "cta_text": "เสริมภูมิคุ้มกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_032",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "หมอ",
+      "message_body": "การไปหาหมอไม่ใช่เรื่องน่ากลัว แต่เป็นการดูแลตัวเอง ตรวจสุขภาพเป็นประจำเถอะ",
+      "product_mapping": {
+        "cta_text": "ดูแลสุขภาพเชิงป้องกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_033",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "อาการปวด",
+      "message_body": "ความปวดเป็นภาษาของร่างกาย มันกำลังบอกว่ามีบางอย่างต้องดูแล อย่าเพิกเฉย",
+      "product_mapping": {
+        "cta_text": "ฟังสัญญาณร่างกาย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_034",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ความเหนื่อยล้า",
+      "message_body": "ความเหนื่อยล้าที่สะสมต้องการเวลาพักมากกว่าปกติ ให้ตัวเองได้พักอย่างเต็มที่สักครั้ง",
+      "product_mapping": {
+        "cta_text": "พักผ่อนอย่างลึก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_035",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ท่าทาง",
+      "message_body": "ท่าทางที่ถูกต้องช่วยลดอาการปวดและให้พลังงาน ลองปรับท่านั่งท่ายืนดูบ้าง",
+      "product_mapping": {
+        "cta_text": "ปรับท่าทาง เปลี่ยนชีวิต →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_036",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "หน้าจอ",
+      "message_body": "ดวงตาต้องการพักจากหน้าจอบ้าง ลองใช้กฎ 20-20-20 ทุก 20 นาทีมองไกล 20 ฟุต เป็นเวลา 20 วินาที",
+      "product_mapping": {
+        "cta_text": "ดูแลดวงตา →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_037",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "สารอาหาร",
+      "message_body": "บางครั้งความเหนื่อยล้ามาจากการขาดสารอาหารบางอย่าง ลองตรวจสอบดูว่าได้รับสารอาหารครบไหม",
+      "product_mapping": {
+        "cta_text": "โภชนาการที่ดี →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_038",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ฮอร์โมน",
+      "message_body": "ฮอร์โมนส่งผลต่ออารมณ์และร่างกายมากกว่าที่คิด ถ้ารู้สึกผิดปกติ ลองปรึกษาผู้เชี่ยวชาญ",
+      "product_mapping": {
+        "cta_text": "เข้าใจร่างกายมากขึ้น →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_039",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การหายใจ",
+      "message_body": "เราหายใจตื้นๆ โดยไม่รู้ตัว ลองหายใจลึกๆ จากท้อง จะรู้สึกผ่อนคลายขึ้นทันที",
+      "product_mapping": {
+        "cta_text": "เทคนิคหายใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_040",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "น้ำหนัก",
+      "message_body": "น้ำหนักเป็นแค่ตัวเลข สิ่งสำคัญกว่าคือคุณรู้สึกอย่างไรกับร่างกายตัวเอง",
+      "product_mapping": {
+        "cta_text": "รักร่างกายของคุณ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_041",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การเดิน",
+      "message_body": "การเดินเป็นยาดีที่สุดอย่างหนึ่ง ลองเดินเล่นสัก 15 นาทีวันนี้ จะรู้สึกดีขึ้น",
+      "product_mapping": {
+        "cta_text": "ออกไปเดินเล่น →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_042",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การยืด",
+      "message_body": "ร่างกายต้องการการยืดเหยียด โดยเฉพาะถ้านั่งทำงานทั้งวัน ลองยืดตัวสักนิดทุกชั่วโมง",
+      "product_mapping": {
+        "cta_text": "ยืดเหยียดร่างกาย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_043",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ผิวหนัง",
+      "message_body": "ผิวหนังสะท้อนสุขภาพภายใน ดูแลตัวเองจากภายในด้วยนะ ไม่ใช่แค่ภายนอก",
+      "product_mapping": {
+        "cta_text": "สุขภาพจากภายใน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_044",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ระบบย่อย",
+      "message_body": "ลำไส้เป็นสมองที่สอง ถ้าท้องไม่สบาย จิตใจก็จะไม่สบายด้วย ดูแลระบบย่อยอาหารด้วยนะ",
+      "product_mapping": {
+        "cta_text": "สุขภาพลำไส้ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_045",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "การผ่อนคลาย",
+      "message_body": "ร่างกายต้องการเวลาผ่อนคลายเพื่อซ่อมแซมตัวเอง ลองทำกิจกรรมที่ผ่อนคลายบ้าง",
+      "product_mapping": {
+        "cta_text": "เทคนิคผ่อนคลาย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_046",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "นิสัย",
+      "message_body": "นิสัยเล็กๆ ที่ทำทุกวันสำคัญกว่าการเปลี่ยนแปลงใหญ่ที่ทำแค่ครั้งเดียว เริ่มจากสิ่งเล็กๆ",
+      "product_mapping": {
+        "cta_text": "สร้างนิสัยใหม่ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_047",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "อากาศ",
+      "message_body": "อากาศบริสุทธิ์ช่วยให้สมองทำงานดีขึ้น ลองเปิดหน้าต่าง หรือออกไปสูดอากาศบ้าง",
+      "product_mapping": {
+        "cta_text": "สูดอากาศบริสุทธิ์ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_048",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ต้นไม้",
+      "message_body": "การอยู่ใกล้ธรรมชาติช่วยลดความเครียด แม้จะแค่ปลูกต้นไม้เล็กๆ ในห้องก็ช่วยได้",
+      "product_mapping": {
+        "cta_text": "ธรรมชาติบำบัด →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_049",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "เสียงเพลง",
+      "message_body": "เสียงเพลงมีพลังในการเยียวยา ลองเปิดเพลงที่ทำให้รู้สึกดี ให้มันช่วยปรับอารมณ์",
+      "product_mapping": {
+        "cta_text": "ดนตรีบำบัด →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_050",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "สัมผัส",
+      "message_body": "การสัมผัสมีพลังเยียวยา กอดคนที่รัก ลูบแมว หรือแม้แต่กอดตัวเอง ก็ช่วยได้",
+      "product_mapping": {
+        "cta_text": "พลังแห่งการสัมผัส →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_051",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "ความหวัง",
+      "message_body": "แม้ตอนนี้จะรู้สึกไม่ดี แต่สุขภาพสามารถดีขึ้นได้ อย่าละทิ้งความหวัง",
+      "product_mapping": {
+        "cta_text": "มีหวังเสมอ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "health_052",
+      "category": "health",
+      "gradient_theme": "gradient-health",
+      "message_title": "คุณทำได้ดีแล้ว",
+      "message_body": "ไม่ว่าวันนี้จะเป็นอย่างไร คุณก็ยังอยู่ที่นี่ ผ่านมาได้ นั่นคือความสำเร็จ ขอบคุณที่ยังสู้ต่อ",
+      "product_mapping": {
+        "cta_text": "เฉลิมฉลองความสำเร็จ →",
+        "target_url": "/shop"
+      }
+    }
+  ],
+  "love": [
+    {
+      "id": "love_001",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความรักที่แท้จริง",
+      "message_body": "ความรักที่แท้จริงเริ่มจากการรักตัวเอง เมื่อคุณเต็มแล้ว คุณถึงจะมีให้คนอื่นได้",
+      "product_mapping": {
+        "cta_text": "เรียนรู้การรักตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_002",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การรอคอย",
+      "message_body": "บางครั้งสิ่งที่ดีที่สุดต้องใช้เวลา ความรักที่เหมาะสมจะมาถึงในเวลาที่ใช่",
+      "product_mapping": {
+        "cta_text": "รอคอยอย่างมีความหวัง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_003",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความกล้าหาญ",
+      "message_body": "ความรักต้องการความกล้า กล้าที่จะเปิดใจ กล้าที่จะเสี่ยง กล้าที่จะเจ็บปวด",
+      "product_mapping": {
+        "cta_text": "กล้ารักอีกครั้ง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_004",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การปล่อยวาง",
+      "message_body": "บางครั้งการรักคือการปล่อยวาง ไม่ใช่ทุกคนที่มาจะอยู่ แต่ทุกคนมีบทเรียนให้",
+      "product_mapping": {
+        "cta_text": "ปล่อยวางเพื่อก้าวต่อ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_005",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความอดทน",
+      "message_body": "ความรักที่ดีต้องมีความอดทน ทั้งต่อตัวเองและต่อคนที่รัก ไม่มีใครสมบูรณ์แบบ",
+      "product_mapping": {
+        "cta_text": "เรียนรู้ความอดทน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_006",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การให้อภัย",
+      "message_body": "การให้อภัยไม่ได้หมายความว่าสิ่งที่เกิดขึ้นโอเค แต่หมายความว่าคุณเลือกที่จะเดินหน้าต่อ",
+      "product_mapping": {
+        "cta_text": "เรียนรู้การให้อภัย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_007",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การสื่อสาร",
+      "message_body": "ความรักต้องการการสื่อสาร พูดในสิ่งที่รู้สึก ฟังในสิ่งที่อีกฝ่ายต้องการบอก",
+      "product_mapping": {
+        "cta_text": "สื่อสารจากใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_008",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความไว้วางใจ",
+      "message_body": "ความไว้วางใจต้องใช้เวลาสร้าง แต่พังได้ในพริบตา ค่อยๆ สร้างมันด้วยความจริงใจ",
+      "product_mapping": {
+        "cta_text": "สร้างความไว้วางใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_009",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การเติบโตด้วยกัน",
+      "message_body": "ความรักที่ดีคือการเติบโตไปด้วยกัน ไม่ใช่การพึ่งพาอีกฝ่ายจนลืมตัวเอง",
+      "product_mapping": {
+        "cta_text": "เติบโตไปด้วยกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_010",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความเข้าใจ",
+      "message_body": "ความเข้าใจลึกซึ้งกว่าความรัก บางครั้งแค่มีคนเข้าใจก็เพียงพอแล้ว",
+      "product_mapping": {
+        "cta_text": "หาความเข้าใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_011",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "เวลา",
+      "message_body": "เวลาคือของขวัญที่มีค่าที่สุดที่มอบให้กัน ไม่ใช่สิ่งของหรือเงินทอง",
+      "product_mapping": {
+        "cta_text": "มอบเวลาให้กัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_012",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความใกล้ชิด",
+      "message_body": "ความใกล้ชิดไม่ได้วัดจากระยะทาง แต่วัดจากความเชื่อมโยงของหัวใจ",
+      "product_mapping": {
+        "cta_text": "เชื่อมต่อหัวใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_013",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การยอมรับ",
+      "message_body": "รักใครคือยอมรับเขาอย่างที่เป็น ไม่ใช่อย่างที่อยากให้เป็น",
+      "product_mapping": {
+        "cta_text": "ยอมรับความแตกต่าง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_014",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "หัวใจที่บาดเจ็บ",
+      "message_body": "หัวใจที่บาดเจ็บสามารถรักษาได้ ให้เวลาตัวเอง แผลจะกลายเป็นรอยแผลเป็น และคุณจะแข็งแกร่งขึ้น",
+      "product_mapping": {
+        "cta_text": "เยียวยาหัวใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_015",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความโรแมนติก",
+      "message_body": "ความโรแมนติกอยู่ในสิ่งเล็กๆ การจำรสกาแฟที่ชอบ การถามว่ากินข้าวหรือยัง",
+      "product_mapping": {
+        "cta_text": "สร้างความโรแมนติก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_016",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "มิตรภาพ",
+      "message_body": "ความรักที่ดีที่สุดมักเริ่มจากมิตรภาพ การเป็นเพื่อนที่ดีต่อกันคือรากฐานที่แข็งแรง",
+      "product_mapping": {
+        "cta_text": "เป็นเพื่อนที่ดี →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_017",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความเหงา",
+      "message_body": "ความเหงาเป็นส่วนหนึ่งของชีวิต ไม่ต้องรีบหนีมัน บางครั้งมันสอนให้รู้ว่าต้องการอะไร",
+      "product_mapping": {
+        "cta_text": "เข้าใจความเหงา →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_018",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การแอบรัก",
+      "message_body": "การแอบรักเป็นเรื่องสวยงาม แต่ถ้าพร้อม ลองกล้าที่จะบอก ผลลัพธ์อาจเซอร์ไพรส์",
+      "product_mapping": {
+        "cta_text": "กล้าที่จะบอก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_019",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การเลิกรา",
+      "message_body": "การเลิกราไม่ได้หมายความว่าล้มเหลว มันหมายความว่าทั้งสองฝ่ายเติบโตไปคนละทาง",
+      "product_mapping": {
+        "cta_text": "ก้าวผ่านการเลิกรา →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_020",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "รักตัวเอง",
+      "message_body": "ก่อนจะรักใครได้ ต้องรักตัวเองก่อน ไม่ใช่เพราะเห็นแก่ตัว แต่เพราะมีให้ไม่ได้ถ้าไม่มี",
+      "product_mapping": {
+        "cta_text": "รักตัวเองก่อน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_021",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "หัวใจเปิดกว้าง",
+      "message_body": "เปิดใจให้กว้าง ความรักอาจมาในรูปแบบที่ไม่คาดคิด จากคนที่ไม่เคยสังเกต",
+      "product_mapping": {
+        "cta_text": "เปิดใจรับความรัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_022",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความผูกพัน",
+      "message_body": "ความผูกพันที่ดีทำให้รู้สึกปลอดภัย ไม่ใช่รู้สึกถูกจำกัด",
+      "product_mapping": {
+        "cta_text": "สร้างความผูกพันที่ดี →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_023",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การดูแล",
+      "message_body": "ความรักแสดงออกผ่านการดูแล เอาใจใส่สิ่งเล็กๆ ที่ทำให้อีกฝ่ายมีความสุข",
+      "product_mapping": {
+        "cta_text": "ดูแลคนที่รัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_024",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความซื่อสัตย์",
+      "message_body": "ความซื่อสัตย์คือรากฐานของความรัก ไม่มีความรักที่แท้จริงบนพื้นฐานของคำโกหก",
+      "product_mapping": {
+        "cta_text": "ซื่อสัตย์ต่อกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_025",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความขัดแย้ง",
+      "message_body": "ความขัดแย้งเป็นเรื่องปกติ สำคัญคือวิธีจัดการ ไม่ใช่หลีกเลี่ยงแต่เรียนรู้ที่จะผ่านไปด้วยกัน",
+      "product_mapping": {
+        "cta_text": "จัดการความขัดแย้ง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_026",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "คนที่ใช่",
+      "message_body": "คนที่ใช่จะทำให้คุณรู้สึกเป็นตัวเอง ไม่ต้องพยายามเป็นคนอื่นเพื่อให้ถูกรัก",
+      "product_mapping": {
+        "cta_text": "รอคอยคนที่ใช่ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_027",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความทรงจำ",
+      "message_body": "ความทรงจำดีๆ ที่มีด้วยกันจะอยู่ตลอดไป แม้เส้นทางจะแยกจากกัน",
+      "product_mapping": {
+        "cta_text": "เก็บความทรงจำดีๆ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_028",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การโอบกอด",
+      "message_body": "บางครั้งการโอบกอดหนึ่งครั้งพูดได้มากกว่าคำพันคำ",
+      "product_mapping": {
+        "cta_text": "กอดคนที่รัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_029",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความห่างเหิน",
+      "message_body": "ความห่าง distanceไม่ได้ทำลายความรัก แต่ทดสอบมัน ถ้าผ่านได้ จะยิ่งแข็งแกร่ง",
+      "product_mapping": {
+        "cta_text": "รักข้ามระยะทาง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_030",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การยืนข้างกัน",
+      "message_body": "ความรักที่แท้จริงคือการยืนข้างกัน ไม่ใช่เฉพาะวันที่ดี แต่รวมถึงวันที่ยากลำบาก",
+      "product_mapping": {
+        "cta_text": "อยู่เคียงข้างกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_031",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความงดงาม",
+      "message_body": "ความรักทำให้โลกดูงดงามขึ้น แม้จะเป็นความรักแบบไหนก็ตาม",
+      "product_mapping": {
+        "cta_text": "มองโลกด้วยความรัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_032",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การเสียสละ",
+      "message_body": "ความรักมีการเสียสละ แต่ไม่ควรเป็นการเสียสละตัวเองจนหมด",
+      "product_mapping": {
+        "cta_text": "รักอย่างสมดุล →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_033",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความหึงหวง",
+      "message_body": "นิดหน่อยอาจหมายถึงห่วงใย แต่มากไปอาจกลายเป็นพิษ รู้จักควบคุมมัน",
+      "product_mapping": {
+        "cta_text": "รักอย่างมั่นคง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_034",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การขอโทษ",
+      "message_body": "การขอโทษไม่ได้หมายความว่าแพ้ แต่หมายความว่ารักกันมากพอที่จะรักษาความสัมพันธ์",
+      "product_mapping": {
+        "cta_text": "กล้าที่จะขอโทษ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_035",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความมั่นคง",
+      "message_body": "ความรักที่มั่นคงไม่ใช่ความรักที่ไม่มีปัญหา แต่คือความรักที่เลือกจะอยู่ผ่านปัญหา",
+      "product_mapping": {
+        "cta_text": "สร้างความมั่นคง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_036",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความสัมพันธ์",
+      "message_body": "ความสัมพันธ์ที่ดีต้องการการดูแล เหมือนต้นไม้ที่ต้องรดน้ำ",
+      "product_mapping": {
+        "cta_text": "ดูแลความสัมพันธ์ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_037",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความคาดหวัง",
+      "message_body": "ปล่อยวางความคาดหวังบ้าง รักคนอย่างที่เขาเป็น ไม่ใช่อย่างที่คิดว่าควรเป็น",
+      "product_mapping": {
+        "cta_text": "ลดความคาดหวัง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_038",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การเริ่มต้นใหม่",
+      "message_body": "หลังจากความเจ็บปวด หัวใจสามารถเริ่มต้นใหม่ได้ ให้เวลาตัวเอง คุณพร้อมจะรักอีกครั้ง",
+      "product_mapping": {
+        "cta_text": "เริ่มต้นใหม่ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_039",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความรักตัวเอง",
+      "message_body": "คุณสมควรได้รับความรักที่คุณมอบให้คนอื่น อย่าลืมรักตัวเองด้วยนะ",
+      "product_mapping": {
+        "cta_text": "รักตัวเองมากขึ้น →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_040",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การแบ่งปัน",
+      "message_body": "ความรักคือการแบ่งปัน ทั้งความสุข ความทุกข์ และทุกช่วงเวลาของชีวิต",
+      "product_mapping": {
+        "cta_text": "แบ่งปันความรัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_041",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การฟัง",
+      "message_body": "บางครั้งสิ่งที่คนรักต้องการคือคนฟัง ไม่ใช่คนแก้ปัญหา",
+      "product_mapping": {
+        "cta_text": "ฟังด้วยหัวใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_042",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความทุ่มเท",
+      "message_body": "ความรักที่ดีต้องการความทุ่มเท ไม่ใช่แค่ความรู้สึก",
+      "product_mapping": {
+        "cta_text": "ทุ่มเทให้ความรัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_043",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การให้พื้นที่",
+      "message_body": "ความรักที่ดีต้องมีพื้นที่ให้แต่ละคนได้เป็นตัวเอง ไม่ใช่การควบคุม",
+      "product_mapping": {
+        "cta_text": "ให้พื้นที่ซึ่งกันและกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_044",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความอบอุ่น",
+      "message_body": "ความรักคือความอบอุ่น คือที่พักใจ คือบ้านที่กลับมาพักได้เสมอ",
+      "product_mapping": {
+        "cta_text": "สร้างความอบอุ่น →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_045",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การให้กำลังใจ",
+      "message_body": "คนรักที่ดีคือกำลังใจที่ดีที่สุด เป็นคนที่เชื่อในตัวเราเมื่อเราไม่เชื่อตัวเอง",
+      "product_mapping": {
+        "cta_text": "เป็นกำลังใจให้กัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_046",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความรักที่หลากหลาย",
+      "message_body": "ความรักมีหลายรูปแบบ ไม่ว่าจะเป็นแบบไหน ถ้าให้ความสุข ก็คือความรักที่งดงาม",
+      "product_mapping": {
+        "cta_text": "เฉลิมฉลองความรัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_047",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การเคารพ",
+      "message_body": "ความรักที่ไม่มีความเคารพไม่ใช่ความรัก เคารพกันและกันคือพื้นฐาน",
+      "product_mapping": {
+        "cta_text": "เคารพซึ่งกันและกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_048",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความสุข",
+      "message_body": "ความรักควรนำมาซึ่งความสุข ไม่ใช่ความทุกข์ตลอดเวลา ถ้าไม่ใช่ ลองทบทวนดู",
+      "product_mapping": {
+        "cta_text": "ค้นหาความสุขในความรัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_049",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การเติบโต",
+      "message_body": "ความรักที่ทำให้เติบโตคือความรักที่ดี ความรักที่ทำให้เล็กลงไม่ใช่ความรักที่ควรเก็บ",
+      "product_mapping": {
+        "cta_text": "เติบโตในความรัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_050",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "ความทรงจำ",
+      "message_body": "สร้างความทรงจำดีๆ ด้วยกัน เพราะสุดท้ายสิ่งที่เหลือคือความทรงจำ",
+      "product_mapping": {
+        "cta_text": "สร้างความทรงจำ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_051",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "การขอบคุณ",
+      "message_body": "อย่าลืมขอบคุณคนที่รัก แม้จะเป็นสิ่งเล็กๆ น้อยๆ คำขอบคุณมีพลังมาก",
+      "product_mapping": {
+        "cta_text": "ขอบคุณคนที่รัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "love_052",
+      "category": "love",
+      "gradient_theme": "gradient-love",
+      "message_title": "คุณสมควรได้รับความรัก",
+      "message_body": "ไม่ว่าจะเกิดอะไรขึ้น คุณสมควรได้รับความรักที่ดี อย่าลดคุณค่าตัวเอง",
+      "product_mapping": {
+        "cta_text": "รู้คุณค่าของตัวเอง →",
+        "target_url": "/shop"
+      }
+    }
+  ],
+  "work": [
+    {
+      "id": "work_001",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความสำเร็จ",
+      "message_body": "ความสำเร็จไม่ได้วัดจากตำแหน่งหรือเงินเดือน แต่วัดจากความสุขและความพอใจในตัวเอง",
+      "product_mapping": {
+        "cta_text": "นิยามความสำเร็จใหม่ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_002",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การพักผ่อน",
+      "message_body": "การพักผ่อนไม่ใช่รางวัลหลังทำงานหนัก แต่เป็นส่วนหนึ่งของการทำงานที่มีประสิทธิภาพ",
+      "product_mapping": {
+        "cta_text": "พักผ่อนอย่างมีคุณภาพ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_003",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "Burnout",
+      "message_body": "ถ้ารู้สึกหมดไฟ อย่าฝืน นั่นคือสัญญาณจากร่างกายว่าต้องการพัก ไม่ใช่ความอ่อนแอ",
+      "product_mapping": {
+        "cta_text": "ฟื้นฟูจาก Burnout →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_004",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความผิดพลาด",
+      "message_body": "ความผิดพลาดคือครู ไม่มีใครเก่งตั้งแต่เริ่มต้น อนุญาตให้ตัวเองล้ม แล้วลุกขึ้นมาใหม่",
+      "product_mapping": {
+        "cta_text": "เรียนรู้จากความผิดพลาด →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_005",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ขีดจำกัด",
+      "message_body": "รู้จักขีดจำกัดของตัวเอง ไม่ใช่ทุกงานต้องรับ ไม่ใช่ทุกคนต้องพอใจ",
+      "product_mapping": {
+        "cta_text": "ตั้งขอบเขตในที่ทำงาน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_006",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การเปรียบเทียบ",
+      "message_body": "อย่าเปรียบเทียบการเติบโตของตัวเองกับคนอื่น แต่ละคนมีเส้นทางของตัวเอง",
+      "product_mapping": {
+        "cta_text": "โฟกัสที่ตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_007",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การเปลี่ยนแปลง",
+      "message_body": "การเปลี่ยนงานหรือเปลี่ยนทิศทางไม่ใช่การล้มเหลว แต่คือการเติบโตและค้นหาตัวเอง",
+      "product_mapping": {
+        "cta_text": "กล้าเปลี่ยนแปลง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_008",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความมั่นใจ",
+      "message_body": "ความมั่นใจสร้างได้ เริ่มจากยอมรับว่าตัวเองทำได้บางอย่าง แล้วค่อยๆ ต่อยอด",
+      "product_mapping": {
+        "cta_text": "สร้างความมั่นใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_009",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "เจ้านาย",
+      "message_body": "เจ้านายที่ดีหายาก เจ้านายที่ไม่ดีไม่ได้กำหนดคุณค่าของคุณ",
+      "product_mapping": {
+        "cta_text": "รักษาคุณค่าตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_010",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "เพื่อนร่วมงาน",
+      "message_body": "ไม่ต้องให้ทุกคนชอบคุณ แค่ทำงานของตัวเองให้ดี และเป็นคนดีเท่าที่เป็นได้",
+      "product_mapping": {
+        "cta_text": "อยู่ร่วมกับคนอื่น →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_011",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความกดดัน",
+      "message_body": "ความกดดันที่พอเหมาะทำให้เติบโต ความกดดันที่มากเกินจะทำลาย รู้จักแยกแยะ",
+      "product_mapping": {
+        "cta_text": "จัดการความกดดัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_012",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "เป้าหมาย",
+      "message_body": "ตั้งเป้าหมายที่เป็นจริงได้ ไม่ต้องใหญ่โตเสมอไป บางทีก้าวเล็กๆ ก็พาไปได้ไกล",
+      "product_mapping": {
+        "cta_text": "ตั้งเป้าหมายที่ดี →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_013",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "Work-Life Balance",
+      "message_body": "ชีวิตไม่ได้มีแค่การทำงาน อย่าลืมใช้เวลากับสิ่งอื่นที่สำคัญด้วย",
+      "product_mapping": {
+        "cta_text": "สร้างสมดุลชีวิต →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_014",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความเครียด",
+      "message_body": "เครียดจากงานเป็นเรื่องปกติ แต่ถ้าเครียดจนกระทบชีวิต ถึงเวลาต้องหาทางออก",
+      "product_mapping": {
+        "cta_text": "ลดความเครียดจากงาน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_015",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การตัดสินใจ",
+      "message_body": "ไม่มีการตัดสินใจที่สมบูรณ์แบบ ตัดสินใจด้วยข้อมูลที่มี แล้วพร้อมปรับตัว",
+      "product_mapping": {
+        "cta_text": "ตัดสินใจได้ดีขึ้น →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_016",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความคิดสร้างสรรค์",
+      "message_body": "ความคิดสร้างสรรค์ต้องการพื้นที่ว่าง ถ้ายุ่งตลอดเวลา ไอเดียดีๆ จะหายไป",
+      "product_mapping": {
+        "cta_text": "ปลดปล่อยความคิดสร้างสรรค์ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_017",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การเรียนรู้",
+      "message_body": "ไม่มีใครรู้ทุกเรื่อง การยอมรับว่าไม่รู้คือก้าวแรกของการเรียนรู้",
+      "product_mapping": {
+        "cta_text": "เรียนรู้ตลอดชีวิต →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_018",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การนำเสนอ",
+      "message_body": "ไอเดียดีแค่ไหน ถ้านำเสนอไม่ดีก็อาจไม่มีใครเห็น ฝึกฝนการสื่อสารด้วย",
+      "product_mapping": {
+        "cta_text": "สื่อสารได้ดีขึ้น →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_019",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การปฏิเสธ",
+      "message_body": "การถูกปฏิเสธเจ็บปวด แต่ไม่ได้หมายความว่าคุณไม่ดี แค่ยังไม่ใช่ที่ที่ใช่",
+      "product_mapping": {
+        "cta_text": "ก้าวผ่านการถูกปฏิเสธ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_020",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การเริ่มต้น",
+      "message_body": "งานใหม่อาจน่ากลัว แต่ทุกคนเคยเป็นมือใหม่ ให้เวลาตัวเองปรับตัว",
+      "product_mapping": {
+        "cta_text": "เริ่มต้นใหม่อย่างมั่นใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_021",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความภูมิใจ",
+      "message_body": "ฉลองความสำเร็จเล็กๆ บ้าง อย่ารอให้ถึงเป้าหมายใหญ่ถึงจะภูมิใจ",
+      "product_mapping": {
+        "cta_text": "ฉลองความสำเร็จ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_022",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การรับ Feedback",
+      "message_body": "Feedback คือของขวัญ แม้จะเจ็บ แต่ช่วยให้เติบโต เปิดใจรับฟังบ้าง",
+      "product_mapping": {
+        "cta_text": "เรียนรู้จาก Feedback →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_023",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความทะเยอทะยาน",
+      "message_body": "มีความทะเยอทะยานได้ แต่อย่าลืมว่าความสุขไม่ได้อยู่ที่ปลายทางเท่านั้น",
+      "product_mapping": {
+        "cta_text": "ทะเยอทะยานอย่างมีความสุข →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_024",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "เงินเดือน",
+      "message_body": "คุณมีค่ามากกว่าตัวเลขในสลิปเงินเดือน อย่าให้มันกำหนดคุณค่าของคุณ",
+      "product_mapping": {
+        "cta_text": "รู้คุณค่าตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_025",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การทำงานเป็นทีม",
+      "message_body": "หนึ่งคนไปได้เร็ว แต่หลายคนไปได้ไกล เรียนรู้ที่จะทำงานร่วมกับคนอื่น",
+      "product_mapping": {
+        "cta_text": "ทำงานเป็นทีม →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_026",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "เวลา",
+      "message_body": "เวลามีจำกัด ใช้มันกับสิ่งที่สำคัญจริงๆ ไม่ใช่ทุกอย่างที่เร่งด่วน",
+      "product_mapping": {
+        "cta_text": "จัดการเวลา →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_027",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การประชุม",
+      "message_body": "ไม่ใช่ทุกประชุมที่จำเป็น ถ้าเป็นไปได้ ขอเป็นอีเมลได้ไหม",
+      "product_mapping": {
+        "cta_text": "ประชุมอย่างมีประสิทธิภาพ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_028",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ลาพักร้อน",
+      "message_body": "วันลาพักร้อนมีไว้ใช้ ไม่ใช่เก็บไว้จนหมดอายุ ไปพักผ่อนเถอะ",
+      "product_mapping": {
+        "cta_text": "วางแผนพักผ่อน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_029",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การขึ้นเงิน",
+      "message_body": "ถ้าคุณทำงานดี มีค่า อย่ากลัวที่จะขอ แค่เตรียมตัวให้พร้อม",
+      "product_mapping": {
+        "cta_text": "เจรจาเรื่องเงิน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_030",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การลาออก",
+      "message_body": "ถ้าที่นี่ไม่ใช่ที่ของคุณ ไม่เป็นไรที่จะไป บางครั้งการลาออกคือการก้าวขึ้น",
+      "product_mapping": {
+        "cta_text": "กล้าที่จะไป →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_031",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความกลัว",
+      "message_body": "กลัวเป็นเรื่องปกติ ไม่ต้องหายกลัวก่อนค่อยทำ ทำไปพร้อมกับความกลัวได้",
+      "product_mapping": {
+        "cta_text": "ก้าวข้ามความกลัว →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_032",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "Imposter Syndrome",
+      "message_body": "ถ้ารู้สึกว่าตัวเองไม่เก่งพอ รู้ไว้ว่าคนเก่งๆ หลายคนก็รู้สึกแบบนี้ คุณไม่ได้อยู่คนเดียว",
+      "product_mapping": {
+        "cta_text": "เอาชนะ Imposter Syndrome →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_033",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความอิจฉา",
+      "message_body": "อิจฉาคนอื่นไม่ทำให้เราเก่งขึ้น เปลี่ยนแรงอิจฉาเป็นแรงบันดาลใจแทน",
+      "product_mapping": {
+        "cta_text": "เปลี่ยนอิจฉาเป็นแรงบันดาลใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_034",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความล้มเหลว",
+      "message_body": "ล้มเหลวไม่ได้หมายความว่าคุณเป็นคนล้มเหลว มันแค่หมายความว่ายังไม่ใช่ทางนี้",
+      "product_mapping": {
+        "cta_text": "ก้าวข้ามความล้มเหลว →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_035",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความสมบูรณ์แบบ",
+      "message_body": "อย่ารอให้สมบูรณ์แบบค่อยทำ บางครั้ง Done is better than perfect",
+      "product_mapping": {
+        "cta_text": "ปล่อยวางความสมบูรณ์แบบ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_036",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การโปรโมท",
+      "message_body": "การโปรโมทไม่ได้วัดทุกอย่าง บางครั้งเส้นทางอื่นก็มีค่าไม่แพ้กัน",
+      "product_mapping": {
+        "cta_text": "หาเส้นทางของตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_037",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความเบื่อ",
+      "message_body": "ถ้าเบื่องานที่ทำ ลองหาอะไรใหม่ๆ ในงานเดิม หรือบางทีก็ถึงเวลาหาสิ่งใหม่",
+      "product_mapping": {
+        "cta_text": "ค้นหาแรงบันดาลใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_038",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความรับผิดชอบ",
+      "message_body": "รับผิดชอบงานของตัวเอง แต่อย่ารับทุกอย่างจนเกินไป รู้จักขอความช่วยเหลือ",
+      "product_mapping": {
+        "cta_text": "แบ่งภาระความรับผิดชอบ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_039",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การทำงานจากที่บ้าน",
+      "message_body": "Work from home ต้องมีขอบเขต อย่าให้งานรุกล้ำเข้ามาในบ้านจนเกินไป",
+      "product_mapping": {
+        "cta_text": "แยกงานกับชีวิตส่วนตัว →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_040",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "อีเมล",
+      "message_body": "อีเมลไม่จำเป็นต้องตอบทันที ตั้งเวลาเช็คอีเมล อย่าให้มันควบคุมวันของคุณ",
+      "product_mapping": {
+        "cta_text": "จัดการอีเมล →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_041",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การนำเสนอตัวเอง",
+      "message_body": "การทำงานดีอย่างเดียวไม่พอ ต้องให้คนอื่นเห็นด้วย อย่ากลัวที่จะโชว์ผลงาน",
+      "product_mapping": {
+        "cta_text": "โชว์ผลงาน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_042",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "Mentor",
+      "message_body": "หา Mentor ที่สามารถให้คำแนะนำได้ เส้นทางจะง่ายขึ้นถ้ามีคนชี้ทาง",
+      "product_mapping": {
+        "cta_text": "หา Mentor →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_043",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การเมืองในที่ทำงาน",
+      "message_body": "การเมืองในที่ทำงานมีอยู่ทุกที่ รู้เท่าทัน แต่ไม่จำเป็นต้องเล่นเสมอไป",
+      "product_mapping": {
+        "cta_text": "เข้าใจการเมืองในออฟฟิศ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_044",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความเชี่ยวชาญ",
+      "message_body": "ไม่ต้องเก่งทุกเรื่อง โฟกัสสิ่งที่ถนัด แล้วทำให้ดีที่สุด",
+      "product_mapping": {
+        "cta_text": "พัฒนาจุดแข็ง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_045",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การเปลี่ยนสายงาน",
+      "message_body": "ไม่สายเกินไปที่จะเปลี่ยนสายงาน ถ้าสิ่งที่ทำไม่ใช่ กล้าที่จะลอง",
+      "product_mapping": {
+        "cta_text": "กล้าเปลี่ยนสายงาน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_046",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ฟรีแลนซ์",
+      "message_body": "อิสระมาพร้อมความรับผิดชอบ ถ้าเลือกทางนี้ เตรียมตัวให้พร้อม",
+      "product_mapping": {
+        "cta_text": "เส้นทางฟรีแลนซ์ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_047",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "การเริ่มธุรกิจ",
+      "message_body": "การเริ่มธุรกิจไม่ง่าย แต่ถ้าใจอยากทำ ลองดู อย่าให้ความกลัวหยุดคุณ",
+      "product_mapping": {
+        "cta_text": "เริ่มต้นธุรกิจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_048",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความยืดหยุ่น",
+      "message_body": "โลกของงานเปลี่ยนไปเร็ว ความยืดหยุ่นและการปรับตัวสำคัญกว่าความรู้เฉพาะทาง",
+      "product_mapping": {
+        "cta_text": "พัฒนาความยืดหยุ่น →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_049",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "เครือข่าย",
+      "message_body": "สร้างความสัมพันธ์กับคนในวงการ โอกาสดีๆ มักมาจากคนที่รู้จัก",
+      "product_mapping": {
+        "cta_text": "สร้างเครือข่าย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_050",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความหมาย",
+      "message_body": "งานที่มีความหมายทำให้มีแรงตื่นขึ้นมาทุกเช้า หางานที่ให้ความหมายกับคุณ",
+      "product_mapping": {
+        "cta_text": "ค้นหาความหมาย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_051",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "ความขอบคุณ",
+      "message_body": "ท่ามกลางความเหนื่อยล้า อย่าลืมขอบคุณสิ่งดีๆ ในงาน มันช่วยให้ผ่านวันได้",
+      "product_mapping": {
+        "cta_text": "ขอบคุณสิ่งดีๆ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "work_052",
+      "category": "work",
+      "gradient_theme": "gradient-work",
+      "message_title": "คุณทำได้ดีแล้ว",
+      "message_body": "ไม่ว่าวันนี้จะเป็นอย่างไร คุณก็ยังทำมาได้ถึงตรงนี้ นั่นคือความสำเร็จแล้ว",
+      "product_mapping": {
+        "cta_text": "ภูมิใจในตัวเอง →",
+        "target_url": "/shop"
+      }
+    }
+  ],
+  "finance": [
+    {
+      "id": "finance_001",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความมั่งคั่ง",
+      "message_body": "ความมั่งคั่งไม่ได้วัดจากจำนวนเงินในบัญชี แต่วัดจากความพอใจในสิ่งที่มี",
+      "product_mapping": {
+        "cta_text": "นิยามความมั่งคั่งใหม่ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_002",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความกังวลเรื่องเงิน",
+      "message_body": "กังวลเรื่องเงินเป็นเรื่องปกติ แต่อย่าให้มันควบคุมชีวิต ค้นหาทางออกทีละขั้น",
+      "product_mapping": {
+        "cta_text": "คลายความกังวล →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_003",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "การออม",
+      "message_body": "การออมเริ่มจากจำนวนเล็กๆ ได้ สำคัญไม่ใช่จำนวน แต่คือนิสัย",
+      "product_mapping": {
+        "cta_text": "เริ่มต้นออมเงิน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_004",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "หนี้สิน",
+      "message_body": "มีหนี้ไม่ได้หมายความว่าล้มเหลว สิ่งสำคัญคือมีแผนจัดการ ค่อยๆ ไป",
+      "product_mapping": {
+        "cta_text": "จัดการหนี้สิน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_005",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "รายได้",
+      "message_body": "รายได้ไม่ได้กำหนดคุณค่าของคุณ มันแค่เป็นเครื่องมือหนึ่งในการใช้ชีวิต",
+      "product_mapping": {
+        "cta_text": "รู้คุณค่าตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_006",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "การเปรียบเทียบ",
+      "message_body": "อย่าเปรียบเทียบกระเป๋าตังค์ของตัวเองกับคนอื่น แต่ละคนมีเรื่องราวต่างกัน",
+      "product_mapping": {
+        "cta_text": "โฟกัสที่ตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_007",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "การลงทุน",
+      "message_body": "การลงทุนที่ดีที่สุดคือการลงทุนในตัวเอง ความรู้และทักษะไม่มีใครเอาไปได้",
+      "product_mapping": {
+        "cta_text": "ลงทุนในตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_008",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "เงินฉุกเฉิน",
+      "message_body": "มีเงินสำรองไว้บ้าง ถึงจะจำนวนน้อย ก็ช่วยให้นอนหลับสบายใจขึ้น",
+      "product_mapping": {
+        "cta_text": "สร้างกองทุนฉุกเฉิน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_009",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความโลภ",
+      "message_body": "อยากได้มากขึ้นเป็นเรื่องปกติ แต่อย่าลืมพอใจในสิ่งที่มีด้วย",
+      "product_mapping": {
+        "cta_text": "หาความพอใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_010",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "รายจ่าย",
+      "message_body": "รู้ว่าเงินไปไหนบ้าง การตระหนักรู้คือก้าวแรกของการจัดการเงิน",
+      "product_mapping": {
+        "cta_text": "ติดตามรายจ่าย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_011",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "การให้",
+      "message_body": "เงินที่ใช้ซื้อความสุขให้คนอื่นมักให้ความสุขกลับมามากกว่า",
+      "product_mapping": {
+        "cta_text": "ความสุขจากการให้ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_012",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "งบประมาณ",
+      "message_body": "การทำงบประมาณไม่ใช่การจำกัดตัวเอง แต่คือการให้อิสระตัวเองโดยรู้ว่ามีอะไรบ้าง",
+      "product_mapping": {
+        "cta_text": "วางแผนงบประมาณ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_013",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความมั่นคง",
+      "message_body": "ความมั่นคงทางการเงินสร้างได้ทีละขั้น ไม่ต้องรีบ",
+      "product_mapping": {
+        "cta_text": "สร้างความมั่นคง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_014",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "เป้าหมาย",
+      "message_body": "ตั้งเป้าหมายทางการเงินที่ชัดเจน จะช่วยให้รู้ว่าต้องทำอะไร",
+      "product_mapping": {
+        "cta_text": "ตั้งเป้าหมายการเงิน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_015",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความผิดพลาด",
+      "message_body": "ผิดพลาดเรื่องเงินใครก็เคยเป็น สำคัญคือเรียนรู้และไม่ทำซ้ำ",
+      "product_mapping": {
+        "cta_text": "เรียนรู้จากความผิดพลาด →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_016",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "การซื้อของ",
+      "message_body": "ก่อนซื้อของ ถามตัวเองว่าต้องการจริงหรือแค่อยากได้ รอสัก 24 ชั่วโมง",
+      "product_mapping": {
+        "cta_text": "ซื้อของอย่างมีสติ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_017",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "สิ่งของ",
+      "message_body": "สิ่งของไม่ได้นำมาซึ่งความสุขถาวร แต่ประสบการณ์และความสัมพันธ์นำมา",
+      "product_mapping": {
+        "cta_text": "ลงทุนในประสบการณ์ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_018",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ข้อผูกมัด",
+      "message_body": "ระวังข้อผูกมัดทางการเงินระยะยาว คิดให้รอบคอบก่อนเซ็นสัญญา",
+      "product_mapping": {
+        "cta_text": "ตัดสินใจอย่างรอบคอบ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_019",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความช่วยเหลือ",
+      "message_body": "ถ้าลำบากเรื่องเงิน อย่าอายที่จะขอความช่วยเหลือ มีทางออกเสมอ",
+      "product_mapping": {
+        "cta_text": "ขอความช่วยเหลือ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_020",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความพอเพียง",
+      "message_body": "ความพอเพียงไม่ได้หมายความว่าต้องมีแค่นิดเดียว แต่คือการรู้ว่าพอแค่ไหนสำหรับตัวเอง",
+      "product_mapping": {
+        "cta_text": "หาความพอเพียง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_021",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "อนาคต",
+      "message_body": "วางแผนเพื่ออนาคต แต่อย่าลืมใช้ชีวิตในปัจจุบันด้วย",
+      "product_mapping": {
+        "cta_text": "สมดุลปัจจุบันและอนาคต →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_022",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความเครียด",
+      "message_body": "เครียดเรื่องเงินส่งผลต่อสุขภาพ หาทางจัดการความเครียดด้วยนะ",
+      "product_mapping": {
+        "cta_text": "จัดการความเครียดเรื่องเงิน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_023",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความสุข",
+      "message_body": "เงินซื้อความสุขได้ในระดับหนึ่ง หลังจากนั้นขึ้นอยู่กับเรื่องอื่น",
+      "product_mapping": {
+        "cta_text": "ค้นหาความสุขที่แท้จริง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_024",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "การเจรจา",
+      "message_body": "อย่ากลัวที่จะเจรจา ไม่ว่าจะเรื่องเงินเดือนหรือค่าใช้จ่าย",
+      "product_mapping": {
+        "cta_text": "เรียนรู้การเจรจา →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_025",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "รายได้เสริม",
+      "message_body": "มีหลายทางหารายได้ ถ้าสนใจ ลองหาช่องทางที่เหมาะกับตัวเอง",
+      "product_mapping": {
+        "cta_text": "สร้างรายได้เสริม →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_026",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "การเกษียณ",
+      "message_body": "ไม่สายเกินไปที่จะเริ่มวางแผนเกษียณ แม้จะเพียงเล็กน้อย",
+      "product_mapping": {
+        "cta_text": "วางแผนเกษียณ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_027",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ประกัน",
+      "message_body": "การมีประกันไม่ใช่การบอกว่าจะเกิดเรื่องร้าย แต่คือการเตรียมพร้อมอย่างฉลาด",
+      "product_mapping": {
+        "cta_text": "เตรียมพร้อมอย่างฉลาด →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_028",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความรู้ทางการเงิน",
+      "message_body": "เรียนรู้เรื่องเงินได้ทุกเมื่อ ความรู้ทางการเงินช่วยให้ตัดสินใจได้ดีขึ้น",
+      "product_mapping": {
+        "cta_text": "เรียนรู้เรื่องเงิน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_029",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "บัตรเครดิต",
+      "message_body": "บัตรเครดิตเป็นเครื่องมือ ไม่ใช่เนรมิต ใช้อย่างมีสติ",
+      "product_mapping": {
+        "cta_text": "ใช้บัตรเครดิตอย่างฉลาด →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_030",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "การเสี่ยงโชค",
+      "message_body": "โชคไม่ใช่แผนการเงิน ถ้าอยากรวย ต้องวางแผนไม่ใช่รอโชค",
+      "product_mapping": {
+        "cta_text": "สร้างความมั่งคั่งอย่างมั่นคง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_031",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ครอบครัว",
+      "message_body": "คุยเรื่องเงินกับครอบครัวอาจยาก แต่จำเป็น การวางแผนร่วมกันช่วยได้",
+      "product_mapping": {
+        "cta_text": "คุยเรื่องเงินกับครอบครัว →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_032",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความละอาย",
+      "message_body": "อย่าละอายเรื่องสถานะการเงิน ทุกคนมีจุดเริ่มต้นต่างกัน",
+      "product_mapping": {
+        "cta_text": "ปล่อยวางความละอาย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_033",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "เพื่อน",
+      "message_body": "เพื่อนแท้ไม่ได้วัดจากเงินที่มี รักษาความสัมพันธ์ที่ดีไว้",
+      "product_mapping": {
+        "cta_text": "รักษามิตรภาพ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_034",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความคาดหวัง",
+      "message_body": "ลดความคาดหวังเรื่องฐานะลง ความสุขจะเพิ่มขึ้น",
+      "product_mapping": {
+        "cta_text": "หาความสุขในสิ่งที่มี →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_035",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "การแบ่งปัน",
+      "message_body": "แม้มีน้อย ก็แบ่งปันได้ การให้ไม่ได้วัดจากจำนวน",
+      "product_mapping": {
+        "cta_text": "แบ่งปันตามกำลัง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_036",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "คุณค่า",
+      "message_body": "ใช้เงินกับสิ่งที่มีคุณค่าสำหรับคุณ ไม่ใช่สิ่งที่คนอื่นคิดว่ามีค่า",
+      "product_mapping": {
+        "cta_text": "ค้นหาคุณค่าของตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_037",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "เงินเดือน",
+      "message_body": "ไม่ว่าเงินเดือนจะเท่าไหร่ สิ่งสำคัญคือจัดการมันให้ดี",
+      "product_mapping": {
+        "cta_text": "จัดการเงินเดือน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_038",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความอิจฉา",
+      "message_body": "เห็นคนอื่นรวยอาจอิจฉา แต่คุณไม่รู้เบื้องหลังของเขา โฟกัสที่ทางของตัวเอง",
+      "product_mapping": {
+        "cta_text": "โฟกัสที่เส้นทางตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_039",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "วิกฤต",
+      "message_body": "วิกฤตเศรษฐกิจมาแล้วก็ไป ความยืดหยุ่นทางการเงินช่วยให้ผ่านไปได้",
+      "product_mapping": {
+        "cta_text": "เตรียมพร้อมรับวิกฤต →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_040",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความปลอดภัย",
+      "message_body": "รู้สึกมั่นคงทางการเงินไม่จำเป็นต้องรวย แค่มีแผนและเงินสำรอง",
+      "product_mapping": {
+        "cta_text": "สร้างความปลอดภัยทางการเงิน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_041",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "เวลา",
+      "message_body": "เวลามีค่ามากกว่าเงิน ใช้เงินซื้อเวลาได้ถ้าเป็นไปได้",
+      "product_mapping": {
+        "cta_text": "รู้คุณค่าของเวลา →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_042",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "การพักผ่อน",
+      "message_body": "การพักผ่อนไม่ใช่การเสียเงิน แต่เป็นการลงทุนในสุขภาพและความสุข",
+      "product_mapping": {
+        "cta_text": "พักผ่อนอย่างมีคุณค่า →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_043",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความฝัน",
+      "message_body": "เงินเป็นเครื่องมือทำความฝัน ไม่ใช่ความฝันในตัวมันเอง",
+      "product_mapping": {
+        "cta_text": "ค้นหาความฝันของคุณ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_044",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ภาระ",
+      "message_body": "บางครั้งต้องแบกภาระทางการเงินของครอบครัว ขอให้มีกำลังใจนะ",
+      "product_mapping": {
+        "cta_text": "กำลังใจสำหรับคุณ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_045",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความเสี่ยง",
+      "message_body": "การลงทุนมีความเสี่ยง เรียนรู้ให้ดีก่อนตัดสินใจ",
+      "product_mapping": {
+        "cta_text": "เรียนรู้ก่อนลงทุน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_046",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความอดทน",
+      "message_body": "ความมั่งคั่งใช้เวลาสร้าง อย่ารีบร้อน ค่อยๆ สะสม",
+      "product_mapping": {
+        "cta_text": "สะสมอย่างอดทน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_047",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "การเริ่มต้น",
+      "message_body": "ไม่สายที่จะเริ่มจัดการเงิน ไม่ว่าจะอายุเท่าไหร่",
+      "product_mapping": {
+        "cta_text": "เริ่มต้นวันนี้ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_048",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความฉลาด",
+      "message_body": "ไม่ต้องรวยถึงจะฉลาดเรื่องเงิน การจัดการเงินดีคือความฉลาด",
+      "product_mapping": {
+        "cta_text": "ฉลาดเรื่องเงิน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_049",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความอิสระ",
+      "message_body": "เป้าหมายที่แท้จริงคือความอิสระ ไม่ใช่ตัวเลขในบัญชี",
+      "product_mapping": {
+        "cta_text": "สู่อิสรภาพทางการเงิน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_050",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความขอบคุณ",
+      "message_body": "ขอบคุณสิ่งที่มี ไม่ว่าจะมากหรือน้อย จะรู้สึกมั่งคั่งขึ้น",
+      "product_mapping": {
+        "cta_text": "ขอบคุณสิ่งที่มี →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_051",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "ความหวัง",
+      "message_body": "ไม่ว่าสถานการณ์จะเป็นอย่างไร มีหวังเสมอ สิ่งต่างๆ จะดีขึ้นได้",
+      "product_mapping": {
+        "cta_text": "มีหวังเสมอ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "finance_052",
+      "category": "finance",
+      "gradient_theme": "gradient-finance",
+      "message_title": "คุณทำได้ดีแล้ว",
+      "message_body": "ไม่ว่าสถานะการเงินจะเป็นอย่างไร คุณกำลังพยายามอยู่ นั่นก็เพียงพอแล้ว",
+      "product_mapping": {
+        "cta_text": "ภูมิใจในตัวเอง →",
+        "target_url": "/shop"
+      }
+    }
+  ],
+  "family": [
+    {
+      "id": "family_001",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความรักของครอบครัว",
+      "message_body": "ครอบครัวอาจไม่สมบูรณ์แบบ แต่ความรักที่มีให้กันนั้นแท้จริง",
+      "product_mapping": {
+        "cta_text": "เฉลิมฉลองความรัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_002",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความสัมพันธ์",
+      "message_body": "ความสัมพันธ์ในครอบครัวต้องการการดูแล เหมือนต้นไม้ที่ต้องรดน้ำ",
+      "product_mapping": {
+        "cta_text": "ดูแลความสัมพันธ์ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_003",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "พ่อแม่",
+      "message_body": "พ่อแม่ทำดีที่สุดเท่าที่รู้ แม้บางครั้งอาจไม่ตรงกับที่เราต้องการ ลองเข้าใจมุมของเขาบ้าง",
+      "product_mapping": {
+        "cta_text": "เข้าใจพ่อแม่ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_004",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "พี่น้อง",
+      "message_body": "พี่น้องอาจทะเลาะกันบ้าง แต่เมื่อต้องการ พวกเขาจะอยู่เคียงข้าง",
+      "product_mapping": {
+        "cta_text": "รักษาความสัมพันธ์ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_005",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความคาดหวัง",
+      "message_body": "ความคาดหวังของครอบครัวอาจหนัก แต่คุณมีสิทธิ์ใช้ชีวิตในแบบของตัวเอง",
+      "product_mapping": {
+        "cta_text": "หาเส้นทางของตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_006",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การให้อภัย",
+      "message_body": "การให้อภัยครอบครัวอาจยาก แต่มันช่วยปลดปล่อยใจคุณ",
+      "product_mapping": {
+        "cta_text": "เรียนรู้การให้อภัย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_007",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "บ้าน",
+      "message_body": "บ้านไม่ใช่แค่สถานที่ แต่คือความรู้สึกอบอุ่นและปลอดภัย",
+      "product_mapping": {
+        "cta_text": "สร้างบ้านแห่งความสุข →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_008",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความห่างเหิน",
+      "message_body": "บางครั้งครอบครัวอาจห่างเหิน แต่ไม่เคยสายที่จะกลับมาใกล้ชิดกัน",
+      "product_mapping": {
+        "cta_text": "กลับมาใกล้ชิด →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_009",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ลูก",
+      "message_body": "เลี้ยงลูกไม่มีคู่มือที่สมบูรณ์ แค่ทำด้วยความรักและความตั้งใจก็เพียงพอ",
+      "product_mapping": {
+        "cta_text": "เลี้ยงลูกด้วยรัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_010",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การสื่อสาร",
+      "message_body": "หลายปัญหาในครอบครัวเกิดจากการไม่สื่อสาร ลองเปิดใจคุยกัน",
+      "product_mapping": {
+        "cta_text": "สื่อสารในครอบครัว →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_011",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "เวลา",
+      "message_body": "เวลาที่ใช้ด้วยกันมีค่ากว่าของขวัญใดๆ หาเวลาให้ครอบครัวบ้าง",
+      "product_mapping": {
+        "cta_text": "สร้างเวลาด้วยกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_012",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความทรงจำ",
+      "message_body": "สร้างความทรงจำดีๆ ร่วมกัน มันจะอยู่ในใจตลอดไป",
+      "product_mapping": {
+        "cta_text": "สร้างความทรงจำ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_013",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การสนับสนุน",
+      "message_body": "ครอบครัวควรเป็นที่สนับสนุน ไม่ใช่ที่ตัดสิน",
+      "product_mapping": {
+        "cta_text": "สนับสนุนกันและกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_014",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ขอบเขต",
+      "message_body": "แม้จะเป็นครอบครัว ก็ต้องมีขอบเขต การมีขอบเขตไม่ได้หมายความว่าไม่รัก",
+      "product_mapping": {
+        "cta_text": "ตั้งขอบเขตที่ดี →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_015",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความขัดแย้ง",
+      "message_body": "ความขัดแย้งในครอบครัวเป็นเรื่องปกติ สำคัญคือวิธีจัดการ",
+      "product_mapping": {
+        "cta_text": "จัดการความขัดแย้ง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_016",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ปู่ย่าตายาย",
+      "message_body": "ใช้เวลากับผู้ใหญ่ในครอบครัวบ้าง พวกเขามีภูมิปัญญาให้แบ่งปัน",
+      "product_mapping": {
+        "cta_text": "เรียนรู้จากผู้ใหญ่ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_017",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การสูญเสีย",
+      "message_body": "การสูญเสียคนในครอบครัวเจ็บปวดมาก ให้เวลาตัวเองเศร้า มันเป็นเรื่องปกติ",
+      "product_mapping": {
+        "cta_text": "ผ่านพ้นความสูญเสีย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_018",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ครอบครัวใหม่",
+      "message_body": "ครอบครัวไม่จำเป็นต้องเป็นสายเลือด คนที่รักและดูแลกันก็เป็นครอบครัวได้",
+      "product_mapping": {
+        "cta_text": "ครอบครัวที่เลือกเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_019",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความแตกต่าง",
+      "message_body": "คนในครอบครัวแต่ละคนแตกต่างกัน ยอมรับความแตกต่างนั้น",
+      "product_mapping": {
+        "cta_text": "ยอมรับความแตกต่าง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_020",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความลับ",
+      "message_body": "ทุกครอบครัวมีความลับ ไม่ต้องสมบูรณ์แบบ แค่มีความรักก็พอ",
+      "product_mapping": {
+        "cta_text": "ยอมรับความไม่สมบูรณ์ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_021",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การเลี้ยงดู",
+      "message_body": "ลืมบาดแผลจากการเลี้ยงดูได้ยาก แต่คุณสามารถเลือกที่จะไม่ส่งต่อมันได้",
+      "product_mapping": {
+        "cta_text": "หยุดวงจรความเจ็บปวด →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_022",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความกตัญญู",
+      "message_body": "แสดงความกตัญญูไม่จำเป็นต้องเสียสละตัวเองทั้งหมด หาสมดุลที่เหมาะสม",
+      "product_mapping": {
+        "cta_text": "กตัญญูอย่างสมดุล →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_023",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความเป็นส่วนตัว",
+      "message_body": "แม้เป็นครอบครัว ก็ต้องเคารพความเป็นส่วนตัวของกันและกัน",
+      "product_mapping": {
+        "cta_text": "เคารพความเป็นส่วนตัว →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_024",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การดูแลผู้ป่วย",
+      "message_body": "การดูแลคนป่วยในครอบครัวเหนื่อย อย่าลืมดูแลตัวเองด้วยนะ",
+      "product_mapping": {
+        "cta_text": "ดูแลตัวเองด้วย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_025",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "งานบ้าน",
+      "message_body": "งานบ้านเป็นความรับผิดชอบร่วมกัน ไม่ใช่ของคนใดคนหนึ่ง",
+      "product_mapping": {
+        "cta_text": "แบ่งความรับผิดชอบ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_026",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "วันหยุด",
+      "message_body": "ใช้วันหยุดด้วยกันบ้าง ไม่ต้องไปไกล แค่ใช้เวลาด้วยกันก็พอ",
+      "product_mapping": {
+        "cta_text": "วางแผนวันหยุดร่วมกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_027",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ประเพณี",
+      "message_body": "ประเพณีครอบครัวสร้างความผูกพัน ลองสร้างประเพณีของตัวเองบ้าง",
+      "product_mapping": {
+        "cta_text": "สร้างประเพณีครอบครัว →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_028",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "อาหาร",
+      "message_body": "มื้ออาหารร่วมกันเป็นเวลาที่มีค่า หาเวลากินข้าวด้วยกันบ้าง",
+      "product_mapping": {
+        "cta_text": "กินข้าวด้วยกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_029",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การขอโทษ",
+      "message_body": "การขอโทษคนในครอบครัวอาจยาก แต่มันช่วยเยียวยาความสัมพันธ์",
+      "product_mapping": {
+        "cta_text": "กล้าที่จะขอโทษ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_030",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การยอมรับ",
+      "message_body": "ยอมรับคนในครอบครัวอย่างที่เป็น ไม่ใช่อย่างที่อยากให้เป็น",
+      "product_mapping": {
+        "cta_text": "ยอมรับโดยไม่มีเงื่อนไข →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_031",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ระยะห่าง",
+      "message_body": "บางครั้งระยะห่างช่วยให้ความสัมพันธ์ดีขึ้น ไม่เป็นไรที่จะถอยบ้าง",
+      "product_mapping": {
+        "cta_text": "หาระยะห่างที่เหมาะสม →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_032",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การหนีหาย",
+      "message_body": "ถ้าครอบครัวเป็นพิษ ไม่เป็นไรที่จะรักษาระยะห่าง ปกป้องใจตัวเองได้",
+      "product_mapping": {
+        "cta_text": "ปกป้องใจตัวเอง →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_033",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความซื่อสัตย์",
+      "message_body": "ซื่อสัตย์กับคนในครอบครัว แม้ความจริงจะเจ็บปวด",
+      "product_mapping": {
+        "cta_text": "ซื่อสัตย์ต่อกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_034",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การฟัง",
+      "message_body": "ฟังคนในครอบครัวจริงๆ ไม่ใช่แค่รอพูด",
+      "product_mapping": {
+        "cta_text": "ฟังด้วยหัวใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_035",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความช่วยเหลือ",
+      "message_body": "ขอความช่วยเหลือจากครอบครัวได้ แต่อย่าพึ่งพาจนเกินไป",
+      "product_mapping": {
+        "cta_text": "หาสมดุลในการพึ่งพา →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_036",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "เงิน",
+      "message_body": "เรื่องเงินมักเป็นปัญหาในครอบครัว คุยกันอย่างเปิดเผย",
+      "product_mapping": {
+        "cta_text": "คุยเรื่องเงินอย่างเปิดเผย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_037",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "หน้าที่",
+      "message_body": "หน้าที่ต่อครอบครัวสำคัญ แต่อย่าลืมหน้าที่ต่อตัวเอง",
+      "product_mapping": {
+        "cta_text": "สมดุลหน้าที่ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_038",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความเข้าใจ",
+      "message_body": "พยายามเข้าใจมุมมองของคนในครอบครัว แม้จะไม่เห็นด้วย",
+      "product_mapping": {
+        "cta_text": "เข้าใจมุมมองอื่น →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_039",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การเติบโต",
+      "message_body": "ทุกคนในครอบครัวกำลังเติบโต รวมถึงคุณด้วย ให้พื้นที่กันเปลี่ยนแปลง",
+      "product_mapping": {
+        "cta_text": "เติบโตไปด้วยกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_040",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "มรดก",
+      "message_body": "มรดกที่สำคัญที่สุดไม่ใช่เงินทอง แต่คือความรักและความทรงจำ",
+      "product_mapping": {
+        "cta_text": "สร้างมรดกความรัก →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_041",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความอิสระ",
+      "message_body": "รักครอบครัวได้โดยไม่ต้องเสียอิสระ หาจุดสมดุลที่เหมาะสม",
+      "product_mapping": {
+        "cta_text": "รักอย่างมีอิสระ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_042",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความปลอดภัย",
+      "message_body": "ครอบครัวควรเป็นที่ปลอดภัย ถ้าไม่ใช่ มีสิทธิ์หาที่ปลอดภัยใหม่ได้",
+      "product_mapping": {
+        "cta_text": "สร้างที่ปลอดภัย →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_043",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความรับผิดชอบ",
+      "message_body": "รับผิดชอบส่วนของตัวเองในครอบครัว ไม่ต้องแบกทุกอย่างคนเดียว",
+      "product_mapping": {
+        "cta_text": "แบ่งความรับผิดชอบ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_044",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การเฉลิมฉลอง",
+      "message_body": "ฉลองความสำเร็จของคนในครอบครัว ไม่ว่าจะเล็กหรือใหญ่",
+      "product_mapping": {
+        "cta_text": "เฉลิมฉลองด้วยกัน →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_045",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การให้กำลังใจ",
+      "message_body": "เป็นกำลังใจให้คนในครอบครัว โดยเฉพาะในช่วงเวลาที่ยาก",
+      "product_mapping": {
+        "cta_text": "เป็นกำลังใจ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_046",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความทรงจำร่วม",
+      "message_body": "สร้างความทรงจำที่ดีร่วมกัน มันจะเป็นสมบัติของครอบครัว",
+      "product_mapping": {
+        "cta_text": "สร้างความทรงจำ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_047",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การโทรหา",
+      "message_body": "โทรหาครอบครัวบ้าง แม้จะแค่ไถ่ถาม มันมีความหมายมาก",
+      "product_mapping": {
+        "cta_text": "โทรหาครอบครัว →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_048",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การบอกรัก",
+      "message_body": "บอกรักคนในครอบครัวบ้าง อย่ารอจนสายเกินไป",
+      "product_mapping": {
+        "cta_text": "บอกรักวันนี้ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_049",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "การขอบคุณ",
+      "message_body": "ขอบคุณคนในครอบครัวบ้าง แม้จะเป็นสิ่งเล็กน้อย",
+      "product_mapping": {
+        "cta_text": "ขอบคุณครอบครัว →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_050",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความหวัง",
+      "message_body": "ไม่ว่าครอบครัวจะเป็นอย่างไร มีหวังเสมอว่าจะดีขึ้นได้",
+      "product_mapping": {
+        "cta_text": "มีหวังเสมอ →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_051",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "ความรัก",
+      "message_body": "ท้ายที่สุด ความรักคือสิ่งที่สำคัญที่สุดในครอบครัว",
+      "product_mapping": {
+        "cta_text": "รักครอบครัว →",
+        "target_url": "/shop"
+      }
+    },
+    {
+      "id": "family_052",
+      "category": "family",
+      "gradient_theme": "gradient-family",
+      "message_title": "คุณทำได้ดีแล้ว",
+      "message_body": "ไม่ว่าครอบครัวจะเป็นอย่างไร คุณก็ยังพยายามอยู่ นั่นก็เพียงพอแล้ว",
+      "product_mapping": {
+        "cta_text": "ภูมิใจในตัวเอง →",
+        "target_url": "/shop"
+      }
+    }
+  ]
+}

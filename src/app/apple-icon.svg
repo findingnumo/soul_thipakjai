@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="#FDFBF7"/>
+  <!-- Main 4-point sparkle star -->
+  <path d="M90 25L97 70L142 90L97 110L90 155L83 110L38 90L83 70L90 25Z" fill="#0D7377"/>
+  <!-- Small accent sparkle -->
+  <path d="M130 40L133 52L145 55L133 58L130 70L127 58L115 55L127 52L130 40Z" fill="#0D7377" opacity="0.5"/>
+</svg>

@@ -51,7 +51,7 @@
             "cornerstone"
         ],
         "featured": true,
-        "relatedOracleCategory": "life"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "cornerstone-self-care",
@@ -69,7 +69,7 @@
             "cornerstone"
         ],
         "featured": true,
-        "relatedOracleCategory": "self"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "burnout-recovery-guide",
@@ -104,7 +104,7 @@
             "personal-growth"
         ],
         "featured": true,
-        "relatedOracleCategory": "self"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "anxiety-management-tips",
@@ -121,7 +121,7 @@
             "coping-skills"
         ],
         "featured": false,
-        "relatedOracleCategory": "life"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "work-life-balance-myth",
@@ -172,7 +172,7 @@
             "habits"
         ],
         "featured": false,
-        "relatedOracleCategory": "self"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "toxic-relationship-signs",
@@ -206,7 +206,7 @@
             "money-management"
         ],
         "featured": false,
-        "relatedOracleCategory": "life"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "mindfulness-beginners",
@@ -223,7 +223,7 @@
             "mental-health"
         ],
         "featured": false,
-        "relatedOracleCategory": "life"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "family-boundaries",
@@ -274,7 +274,7 @@
             "health"
         ],
         "featured": false,
-        "relatedOracleCategory": "self"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "gratitude-practice",
@@ -291,7 +291,7 @@
             "happiness"
         ],
         "featured": false,
-        "relatedOracleCategory": "self"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "letting-go-past",
@@ -308,7 +308,7 @@
             "personal-growth"
         ],
         "featured": false,
-        "relatedOracleCategory": "life"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "loneliness-guide",
@@ -376,7 +376,7 @@
             "mental-health"
         ],
         "featured": false,
-        "relatedOracleCategory": "life"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "self-compassion",
@@ -393,7 +393,7 @@
             "mental-health"
         ],
         "featured": false,
-        "relatedOracleCategory": "self"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "career-change-guide",
@@ -444,7 +444,7 @@
             "quick-tips"
         ],
         "featured": false,
-        "relatedOracleCategory": "self"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "parent-child-relationship",
@@ -512,7 +512,7 @@
             "digital-wellness"
         ],
         "featured": false,
-        "relatedOracleCategory": "life"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "grief-and-loss",
@@ -546,7 +546,7 @@
             "new-year"
         ],
         "featured": false,
-        "relatedOracleCategory": "life"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "self-reflection",
@@ -563,7 +563,7 @@
             "personal-growth"
         ],
         "featured": false,
-        "relatedOracleCategory": "self"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "new-year-no-pressure",
@@ -580,7 +580,7 @@
             "no-pressure"
         ],
         "featured": false,
-        "relatedOracleCategory": "life"
+        "relatedOracleCategory": "health"
     },
     {
         "slug": "mental-health-checkup",
@@ -597,6 +597,6 @@
             "wellness"
         ],
         "featured": false,
-        "relatedOracleCategory": "self"
+        "relatedOracleCategory": "health"
     }
 ]

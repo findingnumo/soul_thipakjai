@@ -65,18 +65,70 @@ function formatDate(dateString: string) {
     });
 }
 
+// Parse inline markdown: **bold** and *italic*
+function parseInlineMarkdown(text: string): React.ReactNode[] {
+    const parts: React.ReactNode[] = [];
+    let remaining = text;
+    let keyIndex = 0;
+
+    while (remaining.length > 0) {
+        // Match **bold** first (before *italic*)
+        const boldMatch = remaining.match(/\*\*(.+?)\*\*/);
+        // Match *italic* (but not **)
+        const italicMatch = remaining.match(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/);
+
+        let firstMatch: { type: 'bold' | 'italic'; match: RegExpMatchArray } | null = null;
+
+        if (boldMatch && italicMatch) {
+            firstMatch = (boldMatch.index! <= italicMatch.index!)
+                ? { type: 'bold', match: boldMatch }
+                : { type: 'italic', match: italicMatch };
+        } else if (boldMatch) {
+            firstMatch = { type: 'bold', match: boldMatch };
+        } else if (italicMatch) {
+            firstMatch = { type: 'italic', match: italicMatch };
+        }
+
+        if (firstMatch) {
+            const { type, match } = firstMatch;
+            const index = match.index!;
+
+            // Add text before the match
+            if (index > 0) {
+                parts.push(remaining.slice(0, index));
+            }
+
+            // Add the formatted element
+            if (type === 'bold') {
+                parts.push(<strong key={keyIndex++}>{match[1]}</strong>);
+            } else {
+                parts.push(<em key={keyIndex++}>{match[1]}</em>);
+            }
+
+            remaining = remaining.slice(index + match[0].length);
+        } else {
+            // No more matches, add remaining text
+            parts.push(remaining);
+            break;
+        }
+    }
+
+    return parts.length > 0 ? parts : [text];
+}
+
 // Clean content renderer with proper spacing
 function renderContent(content: string) {
     const lines = content.split('\n');
     const elements: React.ReactNode[] = [];
-    let currentList: string[] = [];
+    let currentBulletList: React.ReactNode[][] = [];
+    let currentNumberedList: React.ReactNode[][] = [];
     let listKey = 0;
 
-    const flushList = () => {
-        if (currentList.length > 0) {
+    const flushBulletList = () => {
+        if (currentBulletList.length > 0) {
             elements.push(
-                <ul key={`list-${listKey++}`} style={{ margin: '24px 0', paddingLeft: '24px' }}>
-                    {currentList.map((item, i) => (
+                <ul key={`ul-${listKey++}`} style={{ margin: '24px 0', paddingLeft: '24px' }}>
+                    {currentBulletList.map((item, i) => (
                         <li
                             key={i}
                             className="text-gray-700"
@@ -91,15 +143,43 @@ function renderContent(content: string) {
                     ))}
                 </ul>
             );
-            currentList = [];
+            currentBulletList = [];
         }
+    };
+
+    const flushNumberedList = () => {
+        if (currentNumberedList.length > 0) {
+            elements.push(
+                <ol key={`ol-${listKey++}`} style={{ margin: '24px 0', paddingLeft: '24px', listStyleType: 'decimal' }}>
+                    {currentNumberedList.map((item, i) => (
+                        <li
+                            key={i}
+                            className="text-gray-700"
+                            style={{
+                                marginBottom: '16px',
+                                lineHeight: '1.9',
+                                fontSize: '16px'
+                            }}
+                        >
+                            {item}
+                        </li>
+                    ))}
+                </ol>
+            );
+            currentNumberedList = [];
+        }
+    };
+
+    const flushAllLists = () => {
+        flushBulletList();
+        flushNumberedList();
     };
 
     lines.forEach((line, i) => {
         const trimmed = line.trim();
 
         if (trimmed.startsWith('## ')) {
-            flushList();
+            flushAllLists();
             elements.push(
                 <h2
                     key={i}
@@ -111,11 +191,11 @@ function renderContent(content: string) {
                         lineHeight: '1.4'
                     }}
                 >
-                    {trimmed.replace('## ', '')}
+                    {parseInlineMarkdown(trimmed.replace('## ', ''))}
                 </h2>
             );
         } else if (trimmed.startsWith('### ')) {
-            flushList();
+            flushAllLists();
             elements.push(
                 <h3
                     key={i}
@@ -127,15 +207,19 @@ function renderContent(content: string) {
                         lineHeight: '1.4'
                     }}
                 >
-                    {trimmed.replace('### ', '')}
+                    {parseInlineMarkdown(trimmed.replace('### ', ''))}
                 </h3>
             );
         } else if (trimmed.startsWith('- ')) {
-            currentList.push(trimmed.replace('- ', ''));
+            flushNumberedList();
+            currentBulletList.push(parseInlineMarkdown(trimmed.replace('- ', '')));
+        } else if (/^\d+\.\s/.test(trimmed)) {
+            flushBulletList();
+            currentNumberedList.push(parseInlineMarkdown(trimmed.replace(/^\d+\.\s/, '')));
         } else if (trimmed === '') {
-            flushList();
+            flushAllLists();
         } else {
-            flushList();
+            flushAllLists();
             elements.push(
                 <p
                     key={i}
@@ -146,13 +230,13 @@ function renderContent(content: string) {
                         marginBottom: '24px'
                     }}
                 >
-                    {trimmed}
+                    {parseInlineMarkdown(trimmed)}
                 </p>
             );
         }
     });
 
-    flushList();
+    flushAllLists();
     return elements;
 }
 
@@ -168,9 +252,18 @@ export default async function BlogPostPage({ params }: Props) {
     }
 
     const categoryInfo = getCategoryInfo(post.category);
-    const relatedCategory = post.relatedOracleCategory
-        ? CATEGORIES.find(c => c.id === post.relatedOracleCategory)
-        : null;
+
+    const oracleCategoryMap: Record<string, string> = {
+        'life-balance': 'health',
+        'self-care': 'health',
+        'love-relations': 'love',
+        'work-growth': 'work',
+        'finance': 'finance',
+        'family': 'family'
+    };
+
+    const targetOracleId = post.relatedOracleCategory || oracleCategoryMap[post.category] || 'health';
+    const relatedCategory = CATEGORIES.find(c => c.id === targetOracleId);
 
     // Get related posts (only published ones, sorted by newest first)
     const relatedPosts = allPosts
@@ -255,8 +348,6 @@ export default async function BlogPostPage({ params }: Props) {
                                     flexWrap: 'wrap'
                                 }}
                             >
-                                <span>{formatDate(post.publishDate)}</span>
-                                <span>·</span>
                                 <span>อ่าน {post.readingTime} นาที</span>
                             </div>
                         </header>
@@ -328,7 +419,7 @@ export default async function BlogPostPage({ params }: Props) {
                                     ถ้าอ่านแล้วรู้สึกว่า &quot;นี่มันฉันเลย!&quot; ลองไปเช็คอาการและรับวิธีดูแลใจเบื้องต้นกันไหม?
                                 </p>
                                 <Link
-                                    href={`/oracle/${relatedCategory.id}`}
+                                    href={`/oracle?category=${relatedCategory.id}`}
                                     className="inline-block bg-teal-600 text-white font-medium hover:bg-teal-700 transition-colors"
                                     style={{
                                         padding: '12px 24px',

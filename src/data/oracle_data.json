@@ -611,8 +611,8 @@
       "id": "love_004",
       "category": "love",
       "gradient_theme": "gradient-love",
-      "message_title": "การปล่อยวาง",
-      "message_body": "บางครั้งการรักคือการปล่อยวาง ไม่ใช่ทุกคนที่มาจะอยู่ แต่ทุกคนมีบทเรียนให้",
+      "message_title": "การต้อนรับสิ่งใหม่",
+      "message_body": "บางครั้งการปล่อยวาง คือการเปิดพื้นที่ว่างในหัวใจ เพื่อต้อนรับสิ่งใหม่ที่เหมาะสมกับคุณยิ่งกว่า",
       "product_mapping": {
         "cta_text": "ปล่อยวางเพื่อก้าวต่อ →",
         "target_url": "/shop"
@@ -930,8 +930,8 @@
       "id": "love_033",
       "category": "love",
       "gradient_theme": "gradient-love",
-      "message_title": "ความหึงหวง",
-      "message_body": "นิดหน่อยอาจหมายถึงห่วงใย แต่มากไปอาจกลายเป็นพิษ รู้จักควบคุมมัน",
+      "message_title": "ความวางใจ",
+      "message_body": "เปลี่ยนความกังวลใจให้เป็นความเชื่อใจ และใช้เวลาที่มีค่าสร้างความทรงจำดีๆ ร่วมกัน",
       "product_mapping": {
         "cta_text": "รักอย่างมั่นคง →",
         "target_url": "/shop"
@@ -1504,8 +1504,8 @@
       "id": "work_033",
       "category": "work",
       "gradient_theme": "gradient-work",
-      "message_title": "ความอิจฉา",
-      "message_body": "อิจฉาคนอื่นไม่ทำให้เราเก่งขึ้น เปลี่ยนแรงอิจฉาเป็นแรงบันดาลใจแทน",
+      "message_title": "แรงบันดาลใจ",
+      "message_body": "เมื่อเห็นความสำเร็จของผู้อื่น ให้รับพลังงานนั้นมาเป็นแรงบันดาลใจ เชื่อมั่นว่าคุณก็ทำได้ในแบบของคุณ",
       "product_mapping": {
         "cta_text": "เปลี่ยนอิจฉาเป็นแรงบันดาลใจ →",
         "target_url": "/shop"
@@ -1814,8 +1814,8 @@
       "id": "finance_009",
       "category": "finance",
       "gradient_theme": "gradient-finance",
-      "message_title": "ความโลภ",
-      "message_body": "อยากได้มากขึ้นเป็นเรื่องปกติ แต่อย่าลืมพอใจในสิ่งที่มีด้วย",
+      "message_title": "ความพอดี",
+      "message_body": "การเติบโตทางการเงินเป็นเรื่องดี และความสุขที่แท้จริงเกิดขึ้นเมื่อเราพอใจในระหว่างทาง",
       "product_mapping": {
         "cta_text": "หาความพอใจ →",
         "target_url": "/shop"
@@ -2133,8 +2133,8 @@
       "id": "finance_038",
       "category": "finance",
       "gradient_theme": "gradient-finance",
-      "message_title": "ความอิจฉา",
-      "message_body": "เห็นคนอื่นรวยอาจอิจฉา แต่คุณไม่รู้เบื้องหลังของเขา โฟกัสที่ทางของตัวเอง",
+      "message_title": "เส้นทางของคุณ",
+      "message_body": "ดอกไม้แต่ละดอกบานในเวลาที่ต่างกัน โฟกัสที่การเติบโตของคุณ แล้วคุณจะเบ่งบานอย่างงดงาม",
       "product_mapping": {
         "cta_text": "โฟกัสที่เส้นทางตัวเอง →",
         "target_url": "/shop"
@@ -2520,8 +2520,8 @@
       "id": "family_021",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การเลี้ยงดู",
-      "message_body": "ลืมบาดแผลจากการเลี้ยงดูได้ยาก แต่คุณสามารถเลือกที่จะไม่ส่งต่อมันได้",
+      "message_title": "พลังใจในมือคุณ",
+      "message_body": "อดีตอาจหล่อหลอมเรา แต่ปัจจุบันคุณมีพลังที่จะเลือกสร้างอนาคตและครอบครัวในแบบที่คุณต้องการ",
       "product_mapping": {
         "cta_text": "หยุดวงจรความเจ็บปวด →",
         "target_url": "/shop"
@@ -2641,8 +2641,8 @@
       "id": "family_032",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การหนีหาย",
-      "message_body": "ถ้าครอบครัวเป็นพิษ ไม่เป็นไรที่จะรักษาระยะห่าง ปกป้องใจตัวเองได้",
+      "message_title": "พื้นที่พักใจ",
+      "message_body": "การดูแลหัวใจตัวเองเป็นสิ่งสำคัญ การมีพื้นที่ส่วนตัวหรือระยะห่างที่พอดี จะช่วยรักษาความสัมพันธ์ให้ยั่งยืน",
       "product_mapping": {
         "cta_text": "ปกป้องใจตัวเอง →",
         "target_url": "/shop"

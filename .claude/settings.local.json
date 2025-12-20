@@ -22,7 +22,8 @@
       "Bash(powershell -Command \"Get-Content ''C:\\Users\\anek_\\.claude\\plans\\effervescent-forging-prism.md'' -Head 272 | Set-Content ''C:\\Users\\anek_\\.claude\\plans\\effervescent-forging-prism.md''\")",
       "Bash(timeout /t 2)",
       "Bash(powershell -Command \"Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force\")",
-      "Bash(git -C \"C:\\Users\\anek_\\OneDrive\\Desktop\\Mutelu.Thipakjai\" log --oneline --all)"
+      "Bash(git -C \"C:\\Users\\anek_\\OneDrive\\Desktop\\Mutelu.Thipakjai\" log --oneline --all)",
+      "Bash(dir:*)"
     ],
     "deny": [],
     "ask": []

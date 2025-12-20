@@ -22,7 +22,7 @@ export function AppLayout({
   return (
     <div className="min-h-screen flex flex-col bg-[#FDFBF7]">
       {/* Main Content - Flex grow, uses body scroll */}
-      <main className="flex-1 w-full max-w-[100vw] overflow-x-hidden">
+      <main className="flex-1 w-full max-w-[100vw] overflow-x-hidden pt-20">
         {children}
       </main>
 

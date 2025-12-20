@@ -135,7 +135,7 @@ function OraclePageContent() {
             <AnimatePresence mode="wait">
                 {state === 'idle' && (
                     <motion.div
-                        className="w-full h-full flex flex-col items-center justify-center px-4 font-sans text-[#44403C] selection:bg-[#0D7377]/10"
+                        className="w-full min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center px-4 py-8 font-sans text-[#44403C] selection:bg-[#0D7377]/10"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -186,12 +186,12 @@ function OraclePageContent() {
             <AnimatePresence>
                 {(state === 'ritual' || state === 'selecting') && (
                     <motion.div
-                        className="fixed inset-0 z-40 flex items-center justify-center bg-[#FDFBF7]/98 backdrop-blur-xl pt-20"
+                        className="fixed left-0 right-0 top-20 bottom-0 w-full z-40 flex flex-col items-center justify-start bg-[#FDFBF7]/98 backdrop-blur-xl pt-8 pb-8 overflow-y-auto"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                     >
-                        <div className="text-center w-full max-w-lg mx-auto px-6 relative z-10 flex flex-col items-center justify-center">
+                        <div className="text-center w-full max-w-lg mx-auto px-6 relative z-10 flex flex-col items-center mt-8">
                             {categoryInfo && (
                                 <motion.div
                                     className="mb-10"

@@ -19,12 +19,12 @@ function SoulCard({
     delay: number;
 }) {
     return (
-        <Link href={href} className="group relative z-10 block flex-shrink-0 snap-center">
+        <Link href={href} className="group relative z-10 block">
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: delay, ease: [0.21, 0.47, 0.32, 0.98] }}
-                className="w-[200px] sm:w-[240px] aspect-[2/3] relative rounded-3xl cursor-pointer"
+                className="w-full md:w-[200px] lg:w-[240px] aspect-[2/3] relative rounded-3xl cursor-pointer"
                 style={{
                     perspective: '1000px',
                 }}
@@ -87,7 +87,7 @@ export default function Home() {
             <div className="relative z-10 w-full h-full flex flex-col items-center justify-center font-sans text-[#44403C] selection:bg-[#0D7377]/10">
 
                 {/* Header Section - reduced margin */}
-                <div className="text-center max-w-3xl mx-auto mb-12 px-4">
+                <div className="text-center max-w-3xl mx-auto mb-6 md:mb-12 px-4">
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -117,7 +117,7 @@ export default function Home() {
                 </div>
 
                 {/* Card Deck - Carousel on Mobile, Grid on Desktop */}
-                <div className="w-full max-w-[1200px] flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory px-8 pb-4 md:flex-wrap md:justify-center md:gap-8 md:overflow-visible md:pb-0 md:px-0">
+                <div className="w-full max-w-[1200px] grid grid-cols-2 gap-3 px-4 md:flex md:flex-wrap md:justify-center md:gap-8 md:px-0">
                     <SoulCard
                         href="/oracle?category=love"
                         title="ความรัก"

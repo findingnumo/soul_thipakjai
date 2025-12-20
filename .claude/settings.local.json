@@ -23,7 +23,8 @@
       "Bash(timeout /t 2)",
       "Bash(powershell -Command \"Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force\")",
       "Bash(git -C \"C:\\Users\\anek_\\OneDrive\\Desktop\\Mutelu.Thipakjai\" log --oneline --all)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(powershell -Command:*)"
     ],
     "deny": [],
     "ask": []

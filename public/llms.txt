@@ -1,0 +1,52 @@
+# thipakjai.com - ที่พักใจ (Heart's Haven)
+
+> A Thai mental wellness blog providing guidance, encouragement, and inspiration for everyday life.
+
+## About This Site
+
+ที่พักใจ (thipakjai.com) is a mental wellness and self-care platform in Thai language. We provide articles, guidance, and tools to help people navigate life's challenges with kindness and self-compassion.
+
+## Main Content Categories
+
+1. **Love & Relations (เรื่องหัวใจและความสัมพันธ์)** - Relationships, family, communication, boundaries
+2. **Work & Growth (การงานและการเติบโต)** - Career, personal growth, professional development
+3. **Life & Balance (จังหวะชีวิตและความสมดุล)** - Life balance, mindfulness, stress management
+4. **Self Care (การดูแลใจและรักตัวเอง)** - Self-love, mental health, healing
+
+## Key Features
+
+- **Oracle Cards**: Interactive card drawing for daily reflection
+- **Blog Articles**: 35+ articles on mental wellness topics
+- **Cornerstone Content**: In-depth pillar articles for each category
+
+## Cornerstone (Pillar) Articles
+
+- "ความสัมพันธ์ที่ดีเริ่มต้นจากตัวเรา" (Good relationships start with ourselves)
+- "เติบโตอย่างยั่งยืน ไม่ต้องเร่งรีบ" (Sustainable growth, no need to rush)
+- "สมดุลคือศิลปะ ไม่ใช่สูตรสำเร็จ" (Balance is an art, not a formula)
+- "รักตัวเองไม่ใช่ความเห็นแก่ตัว" (Self-love is not selfishness)
+
+## Target Audience
+
+Thai-speaking individuals seeking:
+- Mental wellness guidance
+- Relationship advice
+- Career and growth tips
+- Self-care practices
+- Stress and anxiety management
+
+## Content Approach
+
+- Warm, empathetic tone
+- Practical, actionable advice
+- Thai cultural context
+- Non-judgmental support
+
+## Contact
+
+Website: https://thipakjai.com
+Blog: https://thipakjai.com/blog
+
+---
+
+This file follows the llms.txt standard for providing context to AI systems about website content.

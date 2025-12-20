@@ -8,27 +8,23 @@ import { AppLayout } from '@/components/AppLayout';
 
 // Category label mapper
 const getCategoryLabel = (post: BlogPost): string => {
-    if (post.category === 'relationships') return 'เรื่องหัวใจ';
-    if (post.category === 'career') return 'Work Life';
-    if (post.category === 'life-advice') return 'จังหวะชีวิต';
-    if (post.category === 'mental-health') return 'Mental Health';
-    if (post.category === 'self-care') return 'Self Care';
-    if (post.category === 'mindfulness') return 'ดูแลใจ';
-    return 'Work Life';
+    if (post.category === 'love-relations') return '❤️ เรื่องหัวใจ';
+    if (post.category === 'work-growth') return '💼 การงาน';
+    if (post.category === 'life-balance') return '⚖️ สมดุลชีวิต';
+    if (post.category === 'self-care') return '💚 ดูแลใจ';
+    return '💚 ดูแลใจ';
 };
 
 // Category type definition
-type CategoryFilter = 'all' | 'mental-health' | 'self-care' | 'relationships' | 'career' | 'life-advice' | 'mindfulness';
+type CategoryFilter = 'all' | 'love-relations' | 'work-growth' | 'life-balance' | 'self-care';
 
 // Filter button categories
 const CATEGORIES: { value: CategoryFilter; label: string }[] = [
     { value: 'all', label: 'ทั้งหมด' },
-    { value: 'mental-health', label: 'Mental Health' },
-    { value: 'self-care', label: 'Self Care' },
-    { value: 'relationships', label: 'เรื่องหัวใจ' },
-    { value: 'career', label: 'Work Life' },
-    { value: 'life-advice', label: 'จังหวะชีวิต' },
-    { value: 'mindfulness', label: 'ดูแลใจ' },
+    { value: 'love-relations', label: '❤️ เรื่องหัวใจ' },
+    { value: 'work-growth', label: '💼 การงาน' },
+    { value: 'life-balance', label: '⚖️ สมดุลชีวิต' },
+    { value: 'self-care', label: '💚 ดูแลใจ' },
 ];
 
 // Card Component - Based on Reference Image
@@ -133,11 +129,10 @@ function BlogContent() {
                         <button
                             key={category.value}
                             onClick={() => setSelectedCategory(category.value)}
-                            className={`transition-all duration-200 ${
-                                selectedCategory === category.value
+                            className={`transition-all duration-200 ${selectedCategory === category.value
                                     ? 'bg-teal-600 text-white shadow-md'
                                     : 'bg-white text-gray-700 border border-gray-200 hover:border-teal-400'
-                            }`}
+                                }`}
                             style={{
                                 padding: '10px 20px',
                                 borderRadius: '50px',

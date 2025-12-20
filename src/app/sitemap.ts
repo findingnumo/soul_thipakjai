@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next';
 import blogPosts from '@/data/blog_posts.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://soul.thipakjai.com';
+    const baseUrl = 'https://thipakjai.com';
 
-    // Homepage
+    // Homepage and main pages
     const routes: MetadataRoute.Sitemap = [
         {
             url: baseUrl,
@@ -16,17 +16,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${baseUrl}/blog`,
             lastModified: new Date(),
             changeFrequency: 'daily',
-            priority: 0.8,
+            priority: 0.9,
         },
     ];
 
-    // Blog posts
-    const blogRoutes = blogPosts.map((post) => ({
-        url: `${baseUrl}/blog/${post.slug}`,
-        lastModified: new Date(post.publishDate),
-        changeFrequency: 'weekly' as const,
-        priority: 0.6,
-    }));
+    // Blog posts with higher priority for cornerstone content
+    const blogRoutes = blogPosts.map((post) => {
+        const isCornerstone = post.slug.startsWith('cornerstone-') || post.featured;
+        return {
+            url: `${baseUrl}/blog/${post.slug}`,
+            lastModified: new Date(post.publishDate),
+            changeFrequency: 'weekly' as const,
+            priority: isCornerstone ? 0.9 : 0.6,
+        };
+    });
 
     return [...routes, ...blogRoutes];
 }

@@ -6,6 +6,7 @@ import { BlogPost } from '@/types/blog';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import { CATEGORIES } from '@/types/oracle';
 import { AppLayout } from '@/components/AppLayout';
+import { generateBlogPostPageSchema } from '@/lib/schema-utils';
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -39,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             title: post.title,
             description: post.description,
             type: 'article',
-            url: `https://soul.thipakjai.com/blog/${post.slug}`,
+            url: `https://thipakjai.com/blog/${post.slug}`,
             publishedTime: post.publishDate,
             authors: [post.author],
         },
@@ -184,6 +185,14 @@ export default async function BlogPostPage({ params }: Props) {
     return (
         <AppLayout showFooter={true}>
             <div className="min-h-screen bg-[#F8F8F8]">
+                {/* JSON-LD Structured Data */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(generateBlogPostPageSchema(post))
+                    }}
+                />
+
                 {/* Article */}
                 <article style={{ padding: '60px 24px' }}>
                     <div style={{ maxWidth: '720px', margin: '0 auto' }}>
@@ -349,7 +358,7 @@ export default async function BlogPostPage({ params }: Props) {
                                 gridTemplateColumns: 'repeat(2, 1fr)',
                                 gap: '20px'
                             }}
-                            className="max-sm:grid-cols-1"
+                                className="max-sm:grid-cols-1"
                             >
                                 {relatedPosts.map(relatedPost => (
                                     <Link

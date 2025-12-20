@@ -10,16 +10,14 @@ export interface BlogPost {
     readingTime: number;
     tags: string[];
     featured?: boolean;
-    relatedOracleCategory?: 'health' | 'love' | 'work' | 'finance' | 'family';
+    relatedOracleCategory?: 'love' | 'work' | 'life' | 'self';
 }
 
 export type BlogCategory =
-    | 'mental-health'
-    | 'self-care'
-    | 'relationships'
-    | 'career'
-    | 'life-advice'
-    | 'mindfulness';
+    | 'love-relations'
+    | 'work-growth'
+    | 'life-balance'
+    | 'self-care';
 
 export interface BlogCategoryInfo {
     id: BlogCategory;
@@ -27,49 +25,40 @@ export interface BlogCategoryInfo {
     name_en: string;
     description: string;
     color: string;
+    icon: string;
 }
 
 export const BLOG_CATEGORIES: BlogCategoryInfo[] = [
     {
-        id: 'mental-health',
-        name_th: 'สุขภาพจิต',
-        name_en: 'Mental Health',
-        description: 'บทความเกี่ยวกับการดูแลสุขภาพจิต ความเครียด และการฟื้นฟู',
-        color: 'text-emerald-600'
+        id: 'love-relations',
+        name_th: 'เรื่องหัวใจและความสัมพันธ์',
+        name_en: 'Love & Relations',
+        description: 'ความรัก ครอบครัว มิตรภาพ และการสื่อสาร',
+        color: 'text-rose-500',
+        icon: '❤️'
+    },
+    {
+        id: 'work-growth',
+        name_th: 'การงานและการเติบโต',
+        name_en: 'Work & Growth',
+        description: 'อาชีพ การพัฒนาตัวเอง และความสำเร็จที่ยั่งยืน',
+        color: 'text-blue-600',
+        icon: '💼'
+    },
+    {
+        id: 'life-balance',
+        name_th: 'จังหวะชีวิตและความสมดุล',
+        name_en: 'Life & Balance',
+        description: 'การใช้ชีวิตอย่างมีสติ สมดุล และยืดหยุ่น',
+        color: 'text-purple-600',
+        icon: '⚖️'
     },
     {
         id: 'self-care',
-        name_th: 'ดูแลตัวเอง',
+        name_th: 'การดูแลใจและรักตัวเอง',
         name_en: 'Self Care',
-        description: 'เคล็ดลับในการดูแลตัวเองทั้งกายและใจ',
-        color: 'text-pink-500'
-    },
-    {
-        id: 'relationships',
-        name_th: 'ความสัมพันธ์',
-        name_en: 'Relationships',
-        description: 'บทความเกี่ยวกับความรัก ครอบครัว และมิตรภาพ',
-        color: 'text-rose-500'
-    },
-    {
-        id: 'career',
-        name_th: 'การทำงาน',
-        name_en: 'Career',
-        description: 'เคล็ดลับสำหรับชีวิตการทำงานและความสำเร็จ',
-        color: 'text-blue-600'
-    },
-    {
-        id: 'life-advice',
-        name_th: 'คำแนะนำชีวิต',
-        name_en: 'Life Advice',
-        description: 'บทความให้กำลังใจและคำแนะนำในการใช้ชีวิต',
-        color: 'text-purple-600'
-    },
-    {
-        id: 'mindfulness',
-        name_th: 'สติและสมาธิ',
-        name_en: 'Mindfulness',
-        description: 'เทคนิคการฝึกสติและการมีสมาธิ',
-        color: 'text-teal-600'
+        description: 'การดูแลจิตใจ รักตัวเอง และฮีลใจ',
+        color: 'text-emerald-600',
+        icon: '💚'
     }
 ];

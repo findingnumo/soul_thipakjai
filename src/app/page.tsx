@@ -24,7 +24,7 @@ function SoulCard({
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: delay, ease: [0.21, 0.47, 0.32, 0.98] }}
-                className="w-full md:w-[200px] lg:w-[240px] aspect-[2/3] relative rounded-3xl cursor-pointer"
+                className="w-full md:w-[200px] lg:w-[240px] aspect-[4/5] md:aspect-[2/3] relative rounded-xl md:rounded-3xl cursor-pointer"
                 style={{
                     perspective: '1000px',
                 }}
@@ -35,9 +35,9 @@ function SoulCard({
                     style={{ transformStyle: 'preserve-3d' }}
                 >
                     {/* Card Body - WARM CREAM BACKGROUND */}
-                    <div className="absolute inset-0 bg-[#FDFBF7] rounded-3xl shadow-xl overflow-hidden border border-white/60">
+                    <div className="absolute inset-0 bg-[#FDFBF7] rounded-xl md:rounded-3xl shadow-lg md:shadow-xl overflow-hidden border border-white/60">
                         {/* Aura Image - AGGRESSIVE MASKING */}
-                        <div className="absolute inset-0 flex items-center justify-center p-4">
+                        <div className="absolute inset-0 flex items-center justify-center p-2 md:p-4">
                             <motion.img
                                 src={imagePath}
                                 alt={title}
@@ -53,8 +53,8 @@ function SoulCard({
                         </div>
 
                         {/* Title Label (Bottom) */}
-                        <div className="absolute bottom-6 left-0 right-0 text-center">
-                            <h3 className="text-xl text-[#44403C] font-light tracking-wide">{title}</h3>
+                        <div className="absolute bottom-2 md:bottom-6 left-0 right-0 text-center">
+                            <h3 className="text-sm md:text-xl text-[#44403C] font-light tracking-wide">{title}</h3>
                         </div>
 
                         {/* Shine Effect */}
@@ -63,7 +63,7 @@ function SoulCard({
                 </motion.div>
 
                 {/* Soft Shadow Base */}
-                <div className="absolute -bottom-4 left-4 right-4 h-4 bg-black/5 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute -bottom-2 md:-bottom-4 left-4 right-4 h-2 md:h-4 bg-black/5 blur-lg md:blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
         </Link>
     );
@@ -86,13 +86,13 @@ export default function Home() {
             {/* Main Content - now h-full and centered */}
             <div className="relative z-10 w-full h-full flex flex-col items-center justify-center font-sans text-[#44403C] selection:bg-[#0D7377]/10">
 
-                {/* Header Section - reduced margin */}
-                <div className="text-center max-w-3xl mx-auto mb-6 md:mb-12 px-4">
+                {/* Header Section - compact on mobile */}
+                <div className="text-center max-w-3xl mx-auto mb-3 md:mb-12 px-4">
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1 }}
-                        className="text-[#0D7377] text-xs md:text-sm tracking-[0.25em] uppercase mb-4 opacity-70"
+                        className="text-[#0D7377] text-[10px] md:text-sm tracking-[0.25em] uppercase mb-2 md:mb-4 opacity-70"
                     >
                         Soul Spectrum
                     </motion.p>
@@ -101,7 +101,7 @@ export default function Home() {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-3xl md:text-5xl lg:text-6xl font-normal leading-tight mb-8 text-[#2A2826]"
+                        className="text-2xl md:text-5xl lg:text-6xl font-normal leading-tight mb-3 md:mb-8 text-[#2A2826]"
                     >
                         วันนี้... ใจของเธอเป็นสีอะไร?
                     </motion.h1>
@@ -110,14 +110,14 @@ export default function Home() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="text-[#44403C]/60 text-base md:text-lg font-light leading-relaxed"
+                        className="text-[#44403C]/60 text-sm md:text-lg font-light leading-relaxed"
                     >
                         ตอนนี้เรื่องไหนที่เธออยากจะหาคำตอบ
                     </motion.p>
                 </div>
 
-                {/* Card Deck - Carousel on Mobile, Grid on Desktop */}
-                <div className="w-full max-w-[1200px] grid grid-cols-2 gap-3 px-4 md:flex md:flex-wrap md:justify-center md:gap-8 md:px-0">
+                {/* Card Deck - Compact grid on Mobile, spread on Desktop */}
+                <div className="w-full max-w-[1200px] grid grid-cols-2 gap-2 px-3 md:flex md:flex-wrap md:justify-center md:gap-8 md:px-0">
                     <SoulCard
                         href="/oracle?category=love"
                         title="ความรัก"

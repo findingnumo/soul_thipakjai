@@ -63,7 +63,7 @@
   --holographic-4: #D299C2;
 
   /* Spacing */
-  --header-height: 64px;
+  --header-height: 64px; /* 4rem - matches mobile h-16 */
 
   /* Fonts - Thai Friendly */
   --font-body: var(--font-body), 'IBM Plex Sans Thai', sans-serif;

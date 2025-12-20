@@ -24,7 +24,8 @@
       "Bash(powershell -Command \"Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force\")",
       "Bash(git -C \"C:\\Users\\anek_\\OneDrive\\Desktop\\Mutelu.Thipakjai\" log --oneline --all)",
       "Bash(dir:*)",
-      "Bash(powershell -Command:*)"
+      "Bash(powershell -Command:*)",
+      "Bash(del srcappfavicon.ico)"
     ],
     "deny": [],
     "ask": []

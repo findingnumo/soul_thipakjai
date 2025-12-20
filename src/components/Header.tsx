@@ -21,27 +21,39 @@ export function Header() {
                 </Link>
 
                 {/* Navigation - Library Pill Style */}
-                <nav className="flex items-center justify-end gap-6 md:gap-8">
+                <nav className="flex items-center justify-end gap-4 md:gap-6">
                     <Link
                         href="/oracle"
-                        className={`inline-flex items-center justify-center !px-8 !py-2 rounded-full text-base font-medium tracking-wide transition-all duration-200 ${pathname?.startsWith('/oracle')
+                        className={`inline-flex items-center justify-center rounded-full text-base font-medium tracking-wide transition-all duration-200 ${pathname?.startsWith('/oracle')
                             ? 'bg-[#134E4A] text-white shadow-md'
-                            : 'text-gray-600 hover:bg-white hover:text-[#134E4A] hover:shadow-sm'
+                            : 'text-[#44403C] hover:bg-[#F0FDFA] hover:text-[#0D7377]'
                             }`}
-                        style={{ fontFamily: 'var(--font-sans)', padding: '10px 32px' }}
+                        style={{ fontFamily: 'var(--font-sans)', padding: '10px 28px' }}
                     >
                         ทำนาย
                     </Link>
                     <Link
                         href="/blog"
-                        className={`inline-flex items-center justify-center !px-8 !py-2 rounded-full text-base font-medium tracking-wide transition-all duration-200 ${pathname?.startsWith('/blog')
+                        className={`inline-flex items-center justify-center rounded-full text-base font-medium tracking-wide transition-all duration-200 ${pathname?.startsWith('/blog')
                             ? 'bg-[#134E4A] text-white shadow-md'
-                            : 'text-gray-600 hover:bg-white hover:text-[#134E4A] hover:shadow-sm'
+                            : 'text-[#44403C] hover:bg-[#F0FDFA] hover:text-[#0D7377]'
                             }`}
-                        style={{ fontFamily: 'var(--font-sans)', padding: '10px 32px' }}
+                        style={{ fontFamily: 'var(--font-sans)', padding: '10px 28px' }}
                     >
                         อ่านเล่น
                     </Link>
+                    <a
+                        href="https://www.thipakjai.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center text-base font-medium tracking-wide text-[#44403C]/70 hover:text-[#0D7377] transition-all duration-200"
+                        style={{ fontFamily: 'var(--font-sans)', padding: '10px 16px' }}
+                    >
+                        กลับสู่ที่พักใจ
+                        <svg className="ml-1.5 w-4 h-4 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                    </a>
                 </nav>
             </div>
         </header>

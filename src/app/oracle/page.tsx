@@ -89,6 +89,26 @@ const categories = [
     { id: 'family', title: 'ใจตัวเอง', imagePath: '/assets/auras/Family.png' },
 ];
 
+// Lead Magnet CTA mapping by category
+const categoryCtaMap: Record<string, { text: string; url: string }> = {
+    work: {
+        text: 'รับฟรี Wallpaper มงคล',
+        url: 'https://www.thipakjai.com/resources/wallpaper-set-1-work-calm-in-the-storm'
+    },
+    finance: {
+        text: 'รับฟรี Wallpaper มงคล',
+        url: 'https://www.thipakjai.com/resources/wallpaper-set-3-life-the-inner-glow'
+    },
+    love: {
+        text: 'รับฟรี Wallpaper มงคล',
+        url: 'https://www.thipakjai.com/resources/wallpaper-set-2-love-the-art-of-self-love'
+    },
+    family: {
+        text: 'รับฟรี Wallpaper มงคล',
+        url: 'https://www.thipakjai.com/resources/wallpaper-set-4-self-the-sanctuary-within'
+    }
+};
+
 function OraclePageContent() {
     const searchParams = useSearchParams();
     const initialCategory = searchParams.get('category');
@@ -382,10 +402,12 @@ function OraclePageContent() {
                                     </button>
 
                                     <Link
-                                        href="/blog"
+                                        href={selectedCategory ? categoryCtaMap[selectedCategory]?.url || '/blog' : '/blog'}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="w-full h-12 bg-white text-[#0D7377] text-base font-semibold rounded-2xl border border-[#0D7377]/20 hover:bg-[#0D7377]/5 transition-all flex items-center justify-center gap-2"
                                     >
-                                        📖 อ่านบทความ
+                                        🎁 {selectedCategory ? categoryCtaMap[selectedCategory]?.text || 'รับของขวัญฟรี' : 'รับของขวัญฟรี'}
                                     </Link>
                                 </motion.div>
                             </div>

@@ -2300,10 +2300,10 @@
       "id": "family_001",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความรักของครอบครัว",
-      "message_body": "ครอบครัวอาจไม่สมบูรณ์แบบ แต่ความรักที่มีให้กันนั้นแท้จริง",
+      "message_title": "การอ่อนแอไม่ใช่ความผิด",
+      "message_body": "การยอมรับว่าเราอ่อนแอได้ คือจุดเริ่มต้นของความเข้มแข็งที่แท้จริง",
       "product_mapping": {
-        "cta_text": "เฉลิมฉลองความรัก →",
+        "cta_text": "ยอมรับตัวเอง →",
         "target_url": "/shop"
       }
     },
@@ -2311,10 +2311,10 @@
       "id": "family_002",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความสัมพันธ์",
-      "message_body": "ความสัมพันธ์ในครอบครัวต้องการการดูแล เหมือนต้นไม้ที่ต้องรดน้ำ",
+      "message_title": "ไม่ต้องเก่งตลอดเวลา",
+      "message_body": "บางวันแค่อยู่รอดก็เพียงพอแล้ว ไม่ต้องกดดันตัวเองให้มากเกินไป",
       "product_mapping": {
-        "cta_text": "ดูแลความสัมพันธ์ →",
+        "cta_text": "ปล่อยวางความกดดัน →",
         "target_url": "/shop"
       }
     },
@@ -2322,10 +2322,10 @@
       "id": "family_003",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "พ่อแม่",
-      "message_body": "พ่อแม่ทำดีที่สุดเท่าที่รู้ แม้บางครั้งอาจไม่ตรงกับที่เราต้องการ ลองเข้าใจมุมของเขาบ้าง",
+      "message_title": "น้ำตาคือการปลดปล่อย",
+      "message_body": "ร้องไห้ได้ มันช่วยให้ใจเบาลง อย่าเก็บกดอารมณ์ไว้คนเดียว",
       "product_mapping": {
-        "cta_text": "เข้าใจพ่อแม่ →",
+        "cta_text": "ปลดปล่อยอารมณ์ →",
         "target_url": "/shop"
       }
     },
@@ -2333,10 +2333,10 @@
       "id": "family_004",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "พี่น้อง",
-      "message_body": "พี่น้องอาจทะเลาะกันบ้าง แต่เมื่อต้องการ พวกเขาจะอยู่เคียงข้าง",
+      "message_title": "ขอความช่วยเหลือได้",
+      "message_body": "การขอความช่วยเหลือไม่ได้หมายความว่าคุณอ่อนแอ แต่หมายความว่าคุณฉลาดพอที่จะรู้ว่าไม่ต้องแบกทุกอย่างคนเดียว",
       "product_mapping": {
-        "cta_text": "รักษาความสัมพันธ์ →",
+        "cta_text": "ขอความช่วยเหลือ →",
         "target_url": "/shop"
       }
     },
@@ -2344,10 +2344,10 @@
       "id": "family_005",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความคาดหวัง",
-      "message_body": "ความคาดหวังของครอบครัวอาจหนัก แต่คุณมีสิทธิ์ใช้ชีวิตในแบบของตัวเอง",
+      "message_title": "ความไม่สมบูรณ์แบบ",
+      "message_body": "คุณไม่จำเป็นต้องสมบูรณ์แบบ ความไม่สมบูรณ์แบบคือสิ่งที่ทำให้คุณเป็นมนุษย์",
       "product_mapping": {
-        "cta_text": "หาเส้นทางของตัวเอง →",
+        "cta_text": "ยอมรับความไม่สมบูรณ์ →",
         "target_url": "/shop"
       }
     },
@@ -2355,10 +2355,10 @@
       "id": "family_006",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การให้อภัย",
-      "message_body": "การให้อภัยครอบครัวอาจยาก แต่มันช่วยปลดปล่อยใจคุณ",
+      "message_title": "หยุดพักได้",
+      "message_body": "เมื่อไหร่ที่รู้สึกหนักเกินไป หยุดพักได้ การพักไม่ใช่การยอมแพ้",
       "product_mapping": {
-        "cta_text": "เรียนรู้การให้อภัย →",
+        "cta_text": "ให้เวลาตัวเอง →",
         "target_url": "/shop"
       }
     },
@@ -2366,10 +2366,10 @@
       "id": "family_007",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "บ้าน",
-      "message_body": "บ้านไม่ใช่แค่สถานที่ แต่คือความรู้สึกอบอุ่นและปลอดภัย",
+      "message_title": "ความกลัวเป็นเรื่องปกติ",
+      "message_body": "กลัวได้ ไม่ต้องแกล้งทำเป็นกล้า ยอมรับความกลัวแล้วค่อยก้าวข้ามไป",
       "product_mapping": {
-        "cta_text": "สร้างบ้านแห่งความสุข →",
+        "cta_text": "เผชิญความกลัว →",
         "target_url": "/shop"
       }
     },
@@ -2377,10 +2377,10 @@
       "id": "family_008",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความห่างเหิน",
-      "message_body": "บางครั้งครอบครัวอาจห่างเหิน แต่ไม่เคยสายที่จะกลับมาใกล้ชิดกัน",
+      "message_title": "ผิดพลาดได้",
+      "message_body": "ทุกคนผิดพลาด มันเป็นส่วนหนึ่งของการเรียนรู้ อย่าตัดสินตัวเองรุนแรงเกินไป",
       "product_mapping": {
-        "cta_text": "กลับมาใกล้ชิด →",
+        "cta_text": "ให้อภัยตัวเอง →",
         "target_url": "/shop"
       }
     },
@@ -2388,10 +2388,10 @@
       "id": "family_009",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ลูก",
-      "message_body": "เลี้ยงลูกไม่มีคู่มือที่สมบูรณ์ แค่ทำด้วยความรักและความตั้งใจก็เพียงพอ",
+      "message_title": "ไม่รู้ก็ได้",
+      "message_body": "ไม่จำเป็นต้องมีคำตอบทุกอย่าง บางครั้งการยอมรับว่าไม่รู้คือความกล้าหาญ",
       "product_mapping": {
-        "cta_text": "เลี้ยงลูกด้วยรัก →",
+        "cta_text": "ยอมรับความไม่รู้ →",
         "target_url": "/shop"
       }
     },
@@ -2399,10 +2399,10 @@
       "id": "family_010",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การสื่อสาร",
-      "message_body": "หลายปัญหาในครอบครัวเกิดจากการไม่สื่อสาร ลองเปิดใจคุยกัน",
+      "message_title": "เหนื่อยได้",
+      "message_body": "รู้สึกเหนื่อยได้ ไม่ต้องทำเป็นสดใสตลอดเวลา ให้เกียรติความรู้สึกของตัวเอง",
       "product_mapping": {
-        "cta_text": "สื่อสารในครอบครัว →",
+        "cta_text": "ดูแลความเหนื่อยล้า →",
         "target_url": "/shop"
       }
     },
@@ -2410,10 +2410,10 @@
       "id": "family_011",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "เวลา",
-      "message_body": "เวลาที่ใช้ด้วยกันมีค่ากว่าของขวัญใดๆ หาเวลาให้ครอบครัวบ้าง",
+      "message_title": "บอกความรู้สึก",
+      "message_body": "บอกความรู้สึกออกมาได้ การเก็บทุกอย่างไว้ในใจไม่ได้ทำให้แข็งแกร่งขึ้น",
       "product_mapping": {
-        "cta_text": "สร้างเวลาด้วยกัน →",
+        "cta_text": "สื่อสารความรู้สึก →",
         "target_url": "/shop"
       }
     },
@@ -2421,10 +2421,10 @@
       "id": "family_012",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความทรงจำ",
-      "message_body": "สร้างความทรงจำดีๆ ร่วมกัน มันจะอยู่ในใจตลอดไป",
+      "message_title": "ยอมแพ้บ้างก็ได้",
+      "message_body": "บางครั้งการยอมแพ้ในบางเรื่องคือการเลือกสู้ในเรื่องที่สำคัญกว่า",
       "product_mapping": {
-        "cta_text": "สร้างความทรงจำ →",
+        "cta_text": "เลือกการต่อสู้ →",
         "target_url": "/shop"
       }
     },
@@ -2432,10 +2432,10 @@
       "id": "family_013",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การสนับสนุน",
-      "message_body": "ครอบครัวควรเป็นที่สนับสนุน ไม่ใช่ที่ตัดสิน",
+      "message_title": "ความอ่อนโยนกับตัวเอง",
+      "message_body": "พูดกับตัวเองอย่างอ่อนโยน เหมือนที่คุณพูดกับคนที่คุณรัก",
       "product_mapping": {
-        "cta_text": "สนับสนุนกันและกัน →",
+        "cta_text": "ฝึกความอ่อนโยน →",
         "target_url": "/shop"
       }
     },
@@ -2443,10 +2443,10 @@
       "id": "family_014",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ขอบเขต",
-      "message_body": "แม้จะเป็นครอบครัว ก็ต้องมีขอบเขต การมีขอบเขตไม่ได้หมายความว่าไม่รัก",
+      "message_title": "เด็กน้อยในใจ",
+      "message_body": "เด็กคนนั้นที่เคยถูกละเลยหรือไม่ได้รับความรักยังอยู่ในตัวคุณ รอการปลอบโยน",
       "product_mapping": {
-        "cta_text": "ตั้งขอบเขตที่ดี →",
+        "cta_text": "ปลอบโยน Inner Child →",
         "target_url": "/shop"
       }
     },
@@ -2454,10 +2454,10 @@
       "id": "family_015",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความขัดแย้ง",
-      "message_body": "ความขัดแย้งในครอบครัวเป็นเรื่องปกติ สำคัญคือวิธีจัดการ",
+      "message_title": "เล่นบ้างก็ได้",
+      "message_body": "ไม่ต้องซีเรียสตลอดเวลา ให้เวลาตัวเองสนุกและเล่นอย่างไร้กังวล",
       "product_mapping": {
-        "cta_text": "จัดการความขัดแย้ง →",
+        "cta_text": "ค้นหาความสนุก →",
         "target_url": "/shop"
       }
     },
@@ -2465,10 +2465,10 @@
       "id": "family_016",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ปู่ย่าตายาย",
-      "message_body": "ใช้เวลากับผู้ใหญ่ในครอบครัวบ้าง พวกเขามีภูมิปัญญาให้แบ่งปัน",
+      "message_title": "คุณสมควรได้รับความรัก",
+      "message_body": "ตั้งแต่เด็ก คุณก็สมควรได้รับความรักแล้ว ไม่ต้องทำอะไรเพื่อพิสูจน์",
       "product_mapping": {
-        "cta_text": "เรียนรู้จากผู้ใหญ่ →",
+        "cta_text": "รับรู้คุณค่าตัวเอง →",
         "target_url": "/shop"
       }
     },
@@ -2476,10 +2476,10 @@
       "id": "family_017",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การสูญเสีย",
-      "message_body": "การสูญเสียคนในครอบครัวเจ็บปวดมาก ให้เวลาตัวเองเศร้า มันเป็นเรื่องปกติ",
+      "message_title": "อารมณ์เป็นเรื่องปกติ",
+      "message_body": "อารมณ์ทุกอย่างมีที่มา ไม่ว่าจะโกรธ เศร้า หรือกลัว ล้วนสะท้อนความต้องการบางอย่าง",
       "product_mapping": {
-        "cta_text": "ผ่านพ้นความสูญเสีย →",
+        "cta_text": "เข้าใจอารมณ์ →",
         "target_url": "/shop"
       }
     },
@@ -2487,10 +2487,10 @@
       "id": "family_018",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ครอบครัวใหม่",
-      "message_body": "ครอบครัวไม่จำเป็นต้องเป็นสายเลือด คนที่รักและดูแลกันก็เป็นครอบครัวได้",
+      "message_title": "ความอยากรู้อยากเห็น",
+      "message_body": "ปลุกความอยากรู้อยากเห็นแบบเด็กๆ กลับมา โลกยังมีอะไรให้ค้นพบอีกมาก",
       "product_mapping": {
-        "cta_text": "ครอบครัวที่เลือกเอง →",
+        "cta_text": "ค้นพบสิ่งใหม่ →",
         "target_url": "/shop"
       }
     },
@@ -2498,10 +2498,10 @@
       "id": "family_019",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความแตกต่าง",
-      "message_body": "คนในครอบครัวแต่ละคนแตกต่างกัน ยอมรับความแตกต่างนั้น",
+      "message_title": "ความฝันวัยเด็ก",
+      "message_body": "มีความฝันอะไรที่คุณทิ้งไว้ตั้งแต่เด็ก? บางทีถึงเวลาหยิบมันกลับมาแล้ว",
       "product_mapping": {
-        "cta_text": "ยอมรับความแตกต่าง →",
+        "cta_text": "หยิบความฝันกลับมา →",
         "target_url": "/shop"
       }
     },
@@ -2509,10 +2509,10 @@
       "id": "family_020",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความลับ",
-      "message_body": "ทุกครอบครัวมีความลับ ไม่ต้องสมบูรณ์แบบ แค่มีความรักก็พอ",
+      "message_title": "การยอมรับตัวเองในอดีต",
+      "message_body": "ขอบคุณเด็กคนนั้นที่อดทนมาจนถึงวันนี้ เขาทำได้ดีที่สุดแล้วในตอนนั้น",
       "product_mapping": {
-        "cta_text": "ยอมรับความไม่สมบูรณ์ →",
+        "cta_text": "ขอบคุณตัวเองในอดีต →",
         "target_url": "/shop"
       }
     },
@@ -2520,10 +2520,10 @@
       "id": "family_021",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "พลังใจในมือคุณ",
-      "message_body": "อดีตอาจหล่อหลอมเรา แต่ปัจจุบันคุณมีพลังที่จะเลือกสร้างอนาคตและครอบครัวในแบบที่คุณต้องการ",
+      "message_title": "ความต้องการพื้นฐาน",
+      "message_body": "ความต้องการถูกรัก ถูกเห็น ถูกยอมรับ เป็นเรื่องพื้นฐานของมนุษย์ ไม่ใช่ความอ่อนแอ",
       "product_mapping": {
-        "cta_text": "หยุดวงจรความเจ็บปวด →",
+        "cta_text": "ยอมรับความต้องการ →",
         "target_url": "/shop"
       }
     },
@@ -2531,10 +2531,10 @@
       "id": "family_022",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความกตัญญู",
-      "message_body": "แสดงความกตัญญูไม่จำเป็นต้องเสียสละตัวเองทั้งหมด หาสมดุลที่เหมาะสม",
+      "message_title": "การรักษาบาดแผล",
+      "message_body": "บาดแผลในอดีตสามารถรักษาได้ เมื่อเราพร้อมที่จะเผชิญและดูแลมัน",
       "product_mapping": {
-        "cta_text": "กตัญญูอย่างสมดุล →",
+        "cta_text": "เริ่มเยียวยา →",
         "target_url": "/shop"
       }
     },
@@ -2542,10 +2542,10 @@
       "id": "family_023",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความเป็นส่วนตัว",
-      "message_body": "แม้เป็นครอบครัว ก็ต้องเคารพความเป็นส่วนตัวของกันและกัน",
+      "message_title": "ความสุขเล็กๆ",
+      "message_body": "หาความสุขจากสิ่งเล็กๆ แบบที่เด็กๆ ทำได้ ไอศกรีม ฝน ดอกไม้ สายรุ้ง",
       "product_mapping": {
-        "cta_text": "เคารพความเป็นส่วนตัว →",
+        "cta_text": "ค้นหาความสุขเล็กๆ →",
         "target_url": "/shop"
       }
     },
@@ -2553,10 +2553,10 @@
       "id": "family_024",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การดูแลผู้ป่วย",
-      "message_body": "การดูแลคนป่วยในครอบครัวเหนื่อย อย่าลืมดูแลตัวเองด้วยนะ",
+      "message_title": "ความคิดสร้างสรรค์",
+      "message_body": "ปลดปล่อยความคิดสร้างสรรค์ วาด เขียน ร้อง เล่น โดยไม่ต้องกังวลว่าจะดีหรือไม่",
       "product_mapping": {
-        "cta_text": "ดูแลตัวเองด้วย →",
+        "cta_text": "ปลดปล่อยความคิด →",
         "target_url": "/shop"
       }
     },
@@ -2564,10 +2564,10 @@
       "id": "family_025",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "งานบ้าน",
-      "message_body": "งานบ้านเป็นความรับผิดชอบร่วมกัน ไม่ใช่ของคนใดคนหนึ่ง",
+      "message_title": "การปลอบโยนตัวเอง",
+      "message_body": "กอดตัวเองบ้าง บอกตัวเองว่า 'ทุกอย่างจะดี' เหมือนที่คุณอยากให้ใครบอกคุณตอนเด็ก",
       "product_mapping": {
-        "cta_text": "แบ่งความรับผิดชอบ →",
+        "cta_text": "กอดตัวเอง →",
         "target_url": "/shop"
       }
     },
@@ -2575,10 +2575,10 @@
       "id": "family_026",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "วันหยุด",
-      "message_body": "ใช้วันหยุดด้วยกันบ้าง ไม่ต้องไปไกล แค่ใช้เวลาด้วยกันก็พอ",
+      "message_title": "ความไร้เดียงสา",
+      "message_body": "บางครั้งการมองโลกด้วยความไร้เดียงสาแบบเด็กๆ ช่วยให้เห็นความงามที่ผู้ใหญ่มองข้าม",
       "product_mapping": {
-        "cta_text": "วางแผนวันหยุดร่วมกัน →",
+        "cta_text": "มองโลกใหม่ →",
         "target_url": "/shop"
       }
     },
@@ -2586,10 +2586,10 @@
       "id": "family_027",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ประเพณี",
-      "message_body": "ประเพณีครอบครัวสร้างความผูกพัน ลองสร้างประเพณีของตัวเองบ้าง",
+      "message_title": "ความคาดหวังของใคร",
+      "message_body": "คุณไม่ต้องเป็นตามที่คนอื่นวาดฝันไว้ ชีวิตคุณ คุณเลือกเอง",
       "product_mapping": {
-        "cta_text": "สร้างประเพณีครอบครัว →",
+        "cta_text": "เลือกเส้นทางตัวเอง →",
         "target_url": "/shop"
       }
     },
@@ -2597,10 +2597,10 @@
       "id": "family_028",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "อาหาร",
-      "message_body": "มื้ออาหารร่วมกันเป็นเวลาที่มีค่า หาเวลากินข้าวด้วยกันบ้าง",
+      "message_title": "ปล่อยมือ",
+      "message_body": "บางภาระไม่ใช่ของคุณ วางมันลงได้ ไม่ต้องแบกความคาดหวังของทุกคน",
       "product_mapping": {
-        "cta_text": "กินข้าวด้วยกัน →",
+        "cta_text": "วางภาระลง →",
         "target_url": "/shop"
       }
     },
@@ -2608,10 +2608,10 @@
       "id": "family_029",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การขอโทษ",
-      "message_body": "การขอโทษคนในครอบครัวอาจยาก แต่มันช่วยเยียวยาความสัมพันธ์",
+      "message_title": "เส้นทางของคุณ",
+      "message_body": "คนอื่นมีแผนที่ของพวกเขา คุณมีของคุณเอง เดินตามจังหวะที่เหมาะกับคุณ",
       "product_mapping": {
-        "cta_text": "กล้าที่จะขอโทษ →",
+        "cta_text": "เดินทางของคุณ →",
         "target_url": "/shop"
       }
     },
@@ -2619,10 +2619,10 @@
       "id": "family_030",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การยอมรับ",
-      "message_body": "ยอมรับคนในครอบครัวอย่างที่เป็น ไม่ใช่อย่างที่อยากให้เป็น",
+      "message_title": "ไม่ต้องพิสูจน์ตัวเอง",
+      "message_body": "คุณไม่ต้องพิสูจน์คุณค่าตัวเองให้ใครเห็น คุณมีค่าอยู่แล้วโดยที่ไม่ต้องทำอะไร",
       "product_mapping": {
-        "cta_text": "ยอมรับโดยไม่มีเงื่อนไข →",
+        "cta_text": "รับรู้คุณค่า →",
         "target_url": "/shop"
       }
     },
@@ -2630,10 +2630,10 @@
       "id": "family_031",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ระยะห่าง",
-      "message_body": "บางครั้งระยะห่างช่วยให้ความสัมพันธ์ดีขึ้น ไม่เป็นไรที่จะถอยบ้าง",
+      "message_title": "เสียงในหัว",
+      "message_body": "เสียงวิจารณ์ในหัวอาจไม่ใช่ของคุณ บางครั้งมันเป็นเสียงของคนอื่นที่คุณรับมา",
       "product_mapping": {
-        "cta_text": "หาระยะห่างที่เหมาะสม →",
+        "cta_text": "สังเกตเสียงในหัว →",
         "target_url": "/shop"
       }
     },
@@ -2641,10 +2641,10 @@
       "id": "family_032",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "พื้นที่พักใจ",
-      "message_body": "การดูแลหัวใจตัวเองเป็นสิ่งสำคัญ การมีพื้นที่ส่วนตัวหรือระยะห่างที่พอดี จะช่วยรักษาความสัมพันธ์ให้ยั่งยืน",
+      "message_title": "เปรียบเทียบกับใคร",
+      "message_body": "การเปรียบเทียบตัวเองกับคนอื่นคือการทำร้ายตัวเอง คุณมีเส้นทางของตัวเอง",
       "product_mapping": {
-        "cta_text": "ปกป้องใจตัวเอง →",
+        "cta_text": "หยุดเปรียบเทียบ →",
         "target_url": "/shop"
       }
     },
@@ -2652,10 +2652,10 @@
       "id": "family_033",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความซื่อสัตย์",
-      "message_body": "ซื่อสัตย์กับคนในครอบครัว แม้ความจริงจะเจ็บปวด",
+      "message_title": "ความสำเร็จแบบไหน",
+      "message_body": "นิยามความสำเร็จใหม่ ตามที่คุณต้องการ ไม่ใช่ตามที่สังคมบอก",
       "product_mapping": {
-        "cta_text": "ซื่อสัตย์ต่อกัน →",
+        "cta_text": "นิยามความสำเร็จ →",
         "target_url": "/shop"
       }
     },
@@ -2663,10 +2663,10 @@
       "id": "family_034",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การฟัง",
-      "message_body": "ฟังคนในครอบครัวจริงๆ ไม่ใช่แค่รอพูด",
+      "message_title": "ความรับผิดชอบของใคร",
+      "message_body": "คุณรับผิดชอบชีวิตตัวเอง แต่ไม่ได้รับผิดชอบชีวิตทุกคน รู้จักแบ่งแยก",
       "product_mapping": {
-        "cta_text": "ฟังด้วยหัวใจ →",
+        "cta_text": "กำหนดความรับผิดชอบ →",
         "target_url": "/shop"
       }
     },
@@ -2674,10 +2674,10 @@
       "id": "family_035",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความช่วยเหลือ",
-      "message_body": "ขอความช่วยเหลือจากครอบครัวได้ แต่อย่าพึ่งพาจนเกินไป",
+      "message_title": "ปฏิเสธความคาดหวัง",
+      "message_body": "การปฏิเสธความคาดหวังที่ไม่ใช่ของคุณ ไม่ได้หมายความว่าคุณเห็นแก่ตัว",
       "product_mapping": {
-        "cta_text": "หาสมดุลในการพึ่งพา →",
+        "cta_text": "ฝึกปฏิเสธ →",
         "target_url": "/shop"
       }
     },
@@ -2685,10 +2685,10 @@
       "id": "family_036",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "เงิน",
-      "message_body": "เรื่องเงินมักเป็นปัญหาในครอบครัว คุยกันอย่างเปิดเผย",
+      "message_title": "ความกลัวทำให้ผิดหวัง",
+      "message_body": "บางครั้งเราทำสิ่งต่างๆ เพราะกลัวทำให้คนอื่นผิดหวัง ลองถามตัวเองว่าอยากทำจริงไหม",
       "product_mapping": {
-        "cta_text": "คุยเรื่องเงินอย่างเปิดเผย →",
+        "cta_text": "ถามใจตัวเอง →",
         "target_url": "/shop"
       }
     },
@@ -2696,10 +2696,10 @@
       "id": "family_037",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "หน้าที่",
-      "message_body": "หน้าที่ต่อครอบครัวสำคัญ แต่อย่าลืมหน้าที่ต่อตัวเอง",
+      "message_title": "ครอบครัวกับความคาดหวัง",
+      "message_body": "รักครอบครัวได้โดยไม่ต้องเป็นตามที่พวกเขาต้องการ สองสิ่งนี้แยกจากกันได้",
       "product_mapping": {
-        "cta_text": "สมดุลหน้าที่ →",
+        "cta_text": "รักโดยไม่แบกภาระ →",
         "target_url": "/shop"
       }
     },
@@ -2707,10 +2707,10 @@
       "id": "family_038",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความเข้าใจ",
-      "message_body": "พยายามเข้าใจมุมมองของคนในครอบครัว แม้จะไม่เห็นด้วย",
+      "message_title": "ใช้ชีวิตของใคร",
+      "message_body": "นี่คือชีวิตของคุณ ไม่ใช่ของพ่อแม่ เพื่อน หรือสังคม มีสิทธิ์เลือกเอง",
       "product_mapping": {
-        "cta_text": "เข้าใจมุมมองอื่น →",
+        "cta_text": "เลือกชีวิตตัวเอง →",
         "target_url": "/shop"
       }
     },
@@ -2718,10 +2718,10 @@
       "id": "family_039",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การเติบโต",
-      "message_body": "ทุกคนในครอบครัวกำลังเติบโต รวมถึงคุณด้วย ให้พื้นที่กันเปลี่ยนแปลง",
+      "message_title": "ขอบเขตที่ชัดเจน",
+      "message_body": "การตั้งขอบเขตไม่ใช่การไม่รัก แต่เป็นการดูแลทั้งตัวเองและความสัมพันธ์",
       "product_mapping": {
-        "cta_text": "เติบโตไปด้วยกัน →",
+        "cta_text": "ตั้งขอบเขต →",
         "target_url": "/shop"
       }
     },
@@ -2729,10 +2729,10 @@
       "id": "family_040",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "มรดก",
-      "message_body": "มรดกที่สำคัญที่สุดไม่ใช่เงินทอง แต่คือความรักและความทรงจำ",
+      "message_title": "พื้นที่ปลอดภัย",
+      "message_body": "สร้างที่ที่ใจได้พัก ไม่ต้องปกป้องตัวเอง ไม่ต้องระวังใคร",
       "product_mapping": {
-        "cta_text": "สร้างมรดกความรัก →",
+        "cta_text": "สร้างพื้นที่ปลอดภัย →",
         "target_url": "/shop"
       }
     },
@@ -2740,10 +2740,10 @@
       "id": "family_041",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความอิสระ",
-      "message_body": "รักครอบครัวได้โดยไม่ต้องเสียอิสระ หาจุดสมดุลที่เหมาะสม",
+      "message_title": "ปฏิเสธได้",
+      "message_body": "การพูดว่า 'ไม่' คือการดูแลตัวเอง ไม่ใช่การเห็นแก่ตัว",
       "product_mapping": {
-        "cta_text": "รักอย่างมีอิสระ →",
+        "cta_text": "ฝึกพูดว่าไม่ →",
         "target_url": "/shop"
       }
     },
@@ -2751,10 +2751,10 @@
       "id": "family_042",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความปลอดภัย",
-      "message_body": "ครอบครัวควรเป็นที่ปลอดภัย ถ้าไม่ใช่ มีสิทธิ์หาที่ปลอดภัยใหม่ได้",
+      "message_title": "พักก่อน",
+      "message_body": "หยุดพักไม่ใช่ความขี้เกียจ แต่คือการชาร์จพลังใจ",
       "product_mapping": {
-        "cta_text": "สร้างที่ปลอดภัย →",
+        "cta_text": "ให้เวลาพักผ่อน →",
         "target_url": "/shop"
       }
     },
@@ -2762,10 +2762,10 @@
       "id": "family_043",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความรับผิดชอบ",
-      "message_body": "รับผิดชอบส่วนของตัวเองในครอบครัว ไม่ต้องแบกทุกอย่างคนเดียว",
+      "message_title": "ความเงียบสงบ",
+      "message_body": "หาเวลาอยู่กับความเงียบบ้าง ใจต้องการพื้นที่ว่างเพื่อหายใจ",
       "product_mapping": {
-        "cta_text": "แบ่งความรับผิดชอบ →",
+        "cta_text": "ค้นหาความสงบ →",
         "target_url": "/shop"
       }
     },
@@ -2773,10 +2773,10 @@
       "id": "family_044",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การเฉลิมฉลอง",
-      "message_body": "ฉลองความสำเร็จของคนในครอบครัว ไม่ว่าจะเล็กหรือใหญ่",
+      "message_title": "คนที่เข้าใจ",
+      "message_body": "อยู่กับคนที่รู้สึกปลอดภัย คนที่คุณเป็นตัวเองได้โดยไม่ต้องแกล้งทำ",
       "product_mapping": {
-        "cta_text": "เฉลิมฉลองด้วยกัน →",
+        "cta_text": "หาคนที่เข้าใจ →",
         "target_url": "/shop"
       }
     },
@@ -2784,10 +2784,10 @@
       "id": "family_045",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การให้กำลังใจ",
-      "message_body": "เป็นกำลังใจให้คนในครอบครัว โดยเฉพาะในช่วงเวลาที่ยาก",
+      "message_title": "กิจวัตรที่ดี",
+      "message_body": "สร้างกิจวัตรที่ทำให้ใจสงบ ไม่ว่าจะเป็นชา หนังสือ หรือเพลงที่ชอบ",
       "product_mapping": {
-        "cta_text": "เป็นกำลังใจ →",
+        "cta_text": "สร้างกิจวัตร →",
         "target_url": "/shop"
       }
     },
@@ -2795,10 +2795,10 @@
       "id": "family_046",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความทรงจำร่วม",
-      "message_body": "สร้างความทรงจำที่ดีร่วมกัน มันจะเป็นสมบัติของครอบครัว",
+      "message_title": "พื้นที่ส่วนตัว",
+      "message_body": "มีพื้นที่เล็กๆ ของตัวเองบ้าง ที่มุมหนึ่งของห้อง หรือช่วงเวลาของวัน",
       "product_mapping": {
-        "cta_text": "สร้างความทรงจำ →",
+        "cta_text": "หาพื้นที่ส่วนตัว →",
         "target_url": "/shop"
       }
     },
@@ -2806,10 +2806,10 @@
       "id": "family_047",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การโทรหา",
-      "message_body": "โทรหาครอบครัวบ้าง แม้จะแค่ไถ่ถาม มันมีความหมายมาก",
+      "message_title": "ธรรมชาติบำบัด",
+      "message_body": "ออกไปสัมผัสธรรมชาติบ้าง ต้นไม้ ท้องฟ้า สายลม ช่วยฮีลใจได้",
       "product_mapping": {
-        "cta_text": "โทรหาครอบครัว →",
+        "cta_text": "สัมผัสธรรมชาติ →",
         "target_url": "/shop"
       }
     },
@@ -2817,10 +2817,10 @@
       "id": "family_048",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การบอกรัก",
-      "message_body": "บอกรักคนในครอบครัวบ้าง อย่ารอจนสายเกินไป",
+      "message_title": "จัดการพลังงาน",
+      "message_body": "รู้จักจัดการพลังงานของตัวเอง หลีกเลี่ยงคนหรือสถานการณ์ที่ดูดพลัง",
       "product_mapping": {
-        "cta_text": "บอกรักวันนี้ →",
+        "cta_text": "ปกป้องพลังงาน →",
         "target_url": "/shop"
       }
     },
@@ -2828,10 +2828,10 @@
       "id": "family_049",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "การขอบคุณ",
-      "message_body": "ขอบคุณคนในครอบครัวบ้าง แม้จะเป็นสิ่งเล็กน้อย",
+      "message_title": "ความสบายใจ",
+      "message_body": "ทำสิ่งที่ทำให้สบายใจ ไม่ว่าจะเล็กน้อยแค่ไหน มันสำคัญ",
       "product_mapping": {
-        "cta_text": "ขอบคุณครอบครัว →",
+        "cta_text": "ค้นหาความสบายใจ →",
         "target_url": "/shop"
       }
     },
@@ -2839,10 +2839,10 @@
       "id": "family_050",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความหวัง",
-      "message_body": "ไม่ว่าครอบครัวจะเป็นอย่างไร มีหวังเสมอว่าจะดีขึ้นได้",
+      "message_title": "การดูแลตัวเอง",
+      "message_body": "Self-care ไม่ใช่ความหรูหรา แต่เป็นความจำเป็น ดูแลตัวเองก่อนดูแลคนอื่น",
       "product_mapping": {
-        "cta_text": "มีหวังเสมอ →",
+        "cta_text": "เริ่ม Self-Care →",
         "target_url": "/shop"
       }
     },
@@ -2850,10 +2850,10 @@
       "id": "family_051",
       "category": "family",
       "gradient_theme": "gradient-family",
-      "message_title": "ความรัก",
-      "message_body": "ท้ายที่สุด ความรักคือสิ่งที่สำคัญที่สุดในครอบครัว",
+      "message_title": "อยู่กับปัจจุบัน",
+      "message_body": "อยู่กับปัจจุบัน ไม่ต้องวิตกกับอนาคต หรือเจ็บปวดกับอดีต ตอนนี้คือตอนนี้",
       "product_mapping": {
-        "cta_text": "รักครอบครัว →",
+        "cta_text": "ฝึกอยู่กับปัจจุบัน →",
         "target_url": "/shop"
       }
     },
@@ -2862,7 +2862,7 @@
       "category": "family",
       "gradient_theme": "gradient-family",
       "message_title": "คุณทำได้ดีแล้ว",
-      "message_body": "ไม่ว่าครอบครัวจะเป็นอย่างไร คุณก็ยังพยายามอยู่ นั่นก็เพียงพอแล้ว",
+      "message_body": "ไม่ว่าจะยากแค่ไหน คุณก็ยังมาถึงวันนี้ได้ นั่นคือหลักฐานว่าคุณทำได้ดีแล้ว",
       "product_mapping": {
         "cta_text": "ภูมิใจในตัวเอง →",
         "target_url": "/shop"

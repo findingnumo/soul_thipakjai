@@ -23,7 +23,7 @@ const auraColors: Record<OracleCategory, { from: string; label: string }> = {
     love: { from: 'var(--love-from)', label: 'รักและความสัมพันธ์' },
     work: { from: 'var(--work-from)', label: 'เติบโตในหน้าที่' },
     finance: { from: 'var(--finance-from)', label: 'มั่นคงทางการเงิน' },
-    family: { from: 'var(--family-from)', label: 'ครอบครัวที่รัก' },
+    family: { from: 'var(--family-from)', label: 'ดูแลใจตัวเอง' },
 };
 
 export function CategoryButton({ category, onClick, disabled }: CategoryButtonProps) {

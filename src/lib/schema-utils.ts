@@ -1,6 +1,6 @@
 import { BlogPost } from '@/types/blog';
 
-const SITE_URL = 'https://thipakjai.com';
+const SITE_URL = 'https://soul.thipakjai.com';
 const SITE_NAME = 'ที่พักใจ';
 const SITE_DESCRIPTION = 'พื้นที่พักใจสำหรับคนที่ต้องการกำลังใจ คำแนะนำ และแรงบันดาลใจในการใช้ชีวิต';
 
@@ -122,6 +122,44 @@ function getCategoryName(category: string): string {
         'self-care': 'การดูแลใจและรักตัวเอง'
     };
     return categoryMap[category] || category;
+}
+
+/**
+ * Generate FAQ Schema for pillar content
+ */
+export function generateFAQSchema(faqs: Array<{ question: string; answer: string }>) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map(faq => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: faq.answer
+            }
+        }))
+    };
+}
+
+/**
+ * Generate HowTo Schema for guide content
+ */
+export function generateHowToSchema(
+    title: string,
+    steps: Array<{ name: string; text: string }>
+) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: title,
+        step: steps.map((step, index) => ({
+            '@type': 'HowToStep',
+            position: index + 1,
+            name: step.name,
+            text: step.text
+        }))
+    };
 }
 
 /**

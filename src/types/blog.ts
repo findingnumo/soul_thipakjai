@@ -11,6 +11,25 @@ export interface BlogPost {
     tags: string[];
     featured?: boolean;
     relatedOracleCategory?: 'love' | 'work' | 'life' | 'self';
+
+    // SEO Enhancement Fields
+    seoKeywords?: {
+        primary: string;           // Main keyword (e.g., "ดูดวงความรัก")
+        secondary: string[];       // Supporting keywords
+    };
+    faqSchema?: Array<{
+        question: string;
+        answer: string;
+    }>;
+    howToSchema?: {
+        title: string;
+        steps: Array<{
+            name: string;
+            text: string;
+        }>;
+    };
+    ogImage?: string;              // Custom OG image path
+    canonicalUrl?: string;         // If different from default
 }
 
 export type BlogCategory =

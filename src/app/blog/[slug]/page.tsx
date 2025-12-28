@@ -36,11 +36,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `${post.title} | Soul Spectrum`,
         description: post.description,
         keywords: post.tags,
+        alternates: {
+            canonical: post.canonicalUrl || `https://soul.thipakjai.com/blog/${post.slug}`,
+        },
         openGraph: {
             title: post.title,
             description: post.description,
             type: 'article',
-            url: `https://thipakjai.com/blog/${post.slug}`,
+            url: `https://soul.thipakjai.com/blog/${post.slug}`,
             publishedTime: post.publishDate,
             authors: [post.author],
         },

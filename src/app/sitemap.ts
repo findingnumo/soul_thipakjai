@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import blogPosts from '@/data/blog_posts.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://thipakjai.com';
+    const baseUrl = 'https://soul.thipakjai.com';
 
     // Homepage and main pages
     const routes: MetadataRoute.Sitemap = [

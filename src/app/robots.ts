@@ -20,6 +20,6 @@ export default function robots(): MetadataRoute.Robots {
                 allow: ['/blog/', '/llms.txt'],
             }
         ],
-        sitemap: 'https://thipakjai.com/sitemap.xml',
+        sitemap: 'https://soul.thipakjai.com/sitemap.xml',
     };
 }

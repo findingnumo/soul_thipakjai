@@ -31,6 +31,9 @@ const playfairDisplay = Playfair_Display({
 
 // SEO Metadata
 export const metadata: Metadata = {
+  verification: {
+    google: "qXjlon3q2wtwrMqe7qo2wXhHeSbLiR4uBKEFAWWxVDQ",
+  },
   title: {
     default: "Soul Spectrum | พื้นที่พักใจและคำตอบของชีวิต",
     template: "%s | Soul Spectrum",
@@ -84,8 +87,6 @@ export default function RootLayout({
   return (
     <html lang="th">
       <head>
-        {/* Google Site Verification */}
-        <meta name="google-site-verification" content="qXjlon3q2wtwrMqe7qo2wXhHeSbLiR4uBKEFAWWxVDQ" />
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

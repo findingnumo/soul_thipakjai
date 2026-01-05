@@ -84,6 +84,8 @@ export default function RootLayout({
   return (
     <html lang="th">
       <head>
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="qXjlon3q2wtwrMqe7qo2wXhHeSbLiR4uBKEFAWWxVDQ" />
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -128,4 +130,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </html>
   );
 }
-

@@ -40,7 +40,7 @@ function BlogCard({ post }: { post: BlogPost }) {
                 {/* Category */}
                 <p
                     className="text-teal-600 font-medium"
-                    style={{ fontSize: '14px', marginBottom: '28px' }}
+                    style={{ fontSize: '16px', marginBottom: '28px' }}
                 >
                     {categoryLabel}
                 </p>
@@ -50,7 +50,7 @@ function BlogCard({ post }: { post: BlogPost }) {
                     className="text-teal-700 font-bold leading-snug"
                     style={{
                         fontFamily: 'var(--font-heading)',
-                        fontSize: '22px',
+                        fontSize: '26px',
                         marginBottom: '24px',
                         lineHeight: '1.4'
                     }}
@@ -62,7 +62,7 @@ function BlogCard({ post }: { post: BlogPost }) {
                 <p
                     className="text-gray-600"
                     style={{
-                        fontSize: '14px',
+                        fontSize: '16px',
                         lineHeight: '1.9',
                         marginBottom: '32px'
                     }}
@@ -71,7 +71,7 @@ function BlogCard({ post }: { post: BlogPost }) {
                 </p>
 
                 {/* Read More */}
-                <p className="text-teal-600 font-medium group-hover:text-teal-700 transition-colors" style={{ fontSize: '14px' }}>
+                <p className="text-teal-600 font-medium group-hover:text-teal-700 transition-colors" style={{ fontSize: '16px' }}>
                     อ่านต่อ &nbsp;→
                 </p>
             </article>
@@ -130,13 +130,13 @@ function BlogContent() {
                             key={category.value}
                             onClick={() => setSelectedCategory(category.value)}
                             className={`transition-all duration-200 ${selectedCategory === category.value
-                                    ? 'bg-teal-600 text-white shadow-md'
-                                    : 'bg-white text-gray-700 border border-gray-200 hover:border-teal-400'
+                                ? 'bg-teal-600 text-white shadow-md'
+                                : 'bg-white text-gray-700 border border-gray-200 hover:border-teal-400'
                                 }`}
                             style={{
                                 padding: '10px 20px',
                                 borderRadius: '50px',
-                                fontSize: '14px',
+                                fontSize: '16px',
                                 fontWeight: '500',
                                 cursor: 'pointer'
                             }}

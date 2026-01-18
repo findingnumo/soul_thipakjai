@@ -79,9 +79,13 @@ function BlogCard({ post }: { post: BlogPost }) {
     );
 }
 
+// Number of posts to show per page
+const POSTS_PER_PAGE = 6;
+
 function BlogContent() {
     const allPosts = blogPosts as BlogPost[];
     const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>('all');
+    const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
 
     // Filter out future/scheduled posts and sort by date (newest first)
     const currentDate = new Date();
@@ -93,6 +97,21 @@ function BlogContent() {
     const filteredPosts = selectedCategory === 'all'
         ? publishedPosts
         : publishedPosts.filter(post => post.category === selectedCategory);
+
+    // Get visible posts based on current count
+    const visiblePosts = filteredPosts.slice(0, visibleCount);
+    const hasMorePosts = visibleCount < filteredPosts.length;
+
+    // Handle category change - reset visible count
+    const handleCategoryChange = (category: CategoryFilter) => {
+        setSelectedCategory(category);
+        setVisibleCount(POSTS_PER_PAGE);
+    };
+
+    // Handle Load More
+    const handleLoadMore = () => {
+        setVisibleCount(prev => prev + POSTS_PER_PAGE);
+    };
 
     return (
         <div style={{ padding: '80px 24px' }}>
@@ -128,7 +147,7 @@ function BlogContent() {
                     {CATEGORIES.map((category) => (
                         <button
                             key={category.value}
-                            onClick={() => setSelectedCategory(category.value)}
+                            onClick={() => handleCategoryChange(category.value)}
                             className={`transition-all duration-200 ${selectedCategory === category.value
                                 ? 'bg-teal-600 text-white shadow-md'
                                 : 'bg-white text-gray-700 border border-gray-200 hover:border-teal-400'
@@ -148,18 +167,43 @@ function BlogContent() {
 
                 {/* Cards Grid */}
                 {filteredPosts.length > 0 ? (
-                    <div
-                        style={{
-                            display: 'grid',
-                            gridTemplateColumns: 'repeat(2, 1fr)',
-                            gap: '32px'
-                        }}
-                        className="max-md:grid-cols-1"
-                    >
-                        {filteredPosts.map((post) => (
-                            <BlogCard key={post.slug} post={post} />
-                        ))}
-                    </div>
+                    <>
+                        <div
+                            style={{
+                                display: 'grid',
+                                gridTemplateColumns: 'repeat(2, 1fr)',
+                                gap: '32px'
+                            }}
+                            className="max-md:grid-cols-1"
+                        >
+                            {visiblePosts.map((post) => (
+                                <BlogCard key={post.slug} post={post} />
+                            ))}
+                        </div>
+
+                        {/* Load More Button */}
+                        {hasMorePosts && (
+                            <div style={{ textAlign: 'center', marginTop: '48px' }}>
+                                <button
+                                    onClick={handleLoadMore}
+                                    className="bg-teal-600 text-white hover:bg-teal-700 transition-colors duration-200"
+                                    style={{
+                                        padding: '14px 40px',
+                                        borderRadius: '50px',
+                                        fontSize: '16px',
+                                        fontWeight: '500',
+                                        cursor: 'pointer',
+                                        border: 'none'
+                                    }}
+                                >
+                                    โหลดเพิ่มเติม
+                                </button>
+                                <p className="text-gray-400" style={{ fontSize: '14px', marginTop: '12px' }}>
+                                    แสดง {visiblePosts.length} จาก {filteredPosts.length} บทความ
+                                </p>
+                            </div>
+                        )}
+                    </>
                 ) : (
                     <div style={{ textAlign: 'center', padding: '80px 0' }}>
                         <div style={{ fontSize: '64px', marginBottom: '16px' }}>📚</div>
